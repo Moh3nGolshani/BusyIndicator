@@ -1,5 +1,5 @@
 # BusyIndicator
-BusyIndicator for WPF with multiple indicator types  
+BusyIndicator for WPF with multiple indicator types.  
 
 <img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/DashLoader.gif" alt="Dash Loader" width="45%"></img>
 <img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/DotLoader.gif" alt="Dot Loader" width="45%"></img>
@@ -11,7 +11,7 @@ BusyIndicator for WPF with multiple indicator types
 <ul><li>.Net Framework 4.7.2 or higher</li></ul>  
 
 ## How to use:
-1. Install the package via NuGet    
+1. Install the package via [NuGet](https://www.nuget.org/packages/BusyIndicator/)    
 <pre>Install-Package BusyIndicator</pre>  
 
 2. Add resources to App.xaml  
