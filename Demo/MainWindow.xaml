@@ -1,0 +1,42 @@
+﻿<Window x:Class="Demo.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:busyindicator="clr-namespace:BusyIndicator;assembly=BusyIndicator"
+        mc:Ignorable="d"         
+        Title="MainWindow" Height="500" Width="350" MouseLeftButtonDown="Window_MouseLeftButtonDown">
+
+    <Window.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/BusyMask/BusyMask.xaml" />
+                <ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/Indicator/Indicator.xaml" />
+            </ResourceDictionary.MergedDictionaries>
+        </ResourceDictionary>
+    </Window.Resources>
+
+    <busyindicator:BusyMask x:Name="BusyIndicator" IsBusy="False" IndicatorType="DashLoader" BusyContent="Please wait..." >
+        <StackPanel>
+            <ComboBox x:Name="IndicatorComboBox" VerticalAlignment="Center" HorizontalAlignment="Center" 
+                  Text="Dash Loader" Margin="5" Width="120" SelectionChanged="ComboBox_SelectionChanged">
+                <ComboBoxItem>
+                    Dash Loader
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Dot Loader
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Progress Bar
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Progress Ring
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Spinner
+                </ComboBoxItem>
+            </ComboBox>
+            <Button Content="Start" Click="Button_Click" Margin="5" FontSize="12" Padding="0" Width="90" Height="25"/>
+        </StackPanel>
+    </busyindicator:BusyMask>
+</Window>

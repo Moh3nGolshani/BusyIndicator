@@ -1,0 +1,141 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:BI="clr-namespace:BusyIndicator">
+
+    <ControlTemplate x:Key="ProgressBar" TargetType="{x:Type BI:Indicator}">
+        <Grid x:Name="MainGrid" 
+              VerticalAlignment="Center" 
+              HorizontalAlignment="Center" >
+            
+            <StackPanel Orientation="Horizontal" >
+                <Ellipse x:Name="Ellipse1" Width="5" Height="5" Fill="#FF299ABB" Opacity="0">
+                    <Ellipse.RenderTransform>
+                        <TranslateTransform X="-75"/>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+
+                <Ellipse x:Name="Ellipse2" Width="5" Height="5" Fill="#FF299ABB" Opacity="0">
+                    <Ellipse.RenderTransform>
+                        <TranslateTransform X="-75"/>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+
+                <Ellipse x:Name="Ellipse3" Width="5" Height="5" Fill="#FF299ABB" Opacity="0">
+                    <Ellipse.RenderTransform>
+                        <TranslateTransform X="-75"/>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+
+                <Ellipse x:Name="Ellipse4" Width="5" Height="5" Fill="#FF299ABB" Opacity="0">
+                    <Ellipse.RenderTransform>
+                        <TranslateTransform X="-75"/>
+                    </Ellipse.RenderTransform>
+                </Ellipse>
+            </StackPanel>
+
+            <VisualStateManager.VisualStateGroups>
+                <VisualStateGroup x:Name="ActiveStates">
+                    <VisualState x:Name="Active">
+                        <Storyboard BeginTime="00:00:00" RepeatBehavior="Forever" >
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.50" Storyboard.TargetName="Ellipse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="20"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="20"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="90"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.50" Storyboard.TargetName="Ellipse1" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.68" Storyboard.TargetName="Ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="8"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="8"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="90"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.68" Storyboard.TargetName="Ellipse2" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.86" Storyboard.TargetName="Ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="-4"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="-4"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="90"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.86" Storyboard.TargetName="Ellipse3" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:01.04" Storyboard.TargetName="Ellipse4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="-16"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="-16"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="90"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:01.04" Storyboard.TargetName="Ellipse4" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:03.09" Storyboard.TargetName="Ellipse1" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="0"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="0"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="-90"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:03.09" Storyboard.TargetName="Ellipse1" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:03.27" Storyboard.TargetName="Ellipse2" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="2"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="2"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="-90"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:03.27" Storyboard.TargetName="Ellipse2" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:03.45" Storyboard.TargetName="Ellipse3" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="4"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="4"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="-90"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:03.45" Storyboard.TargetName="Ellipse3" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:03.63" Storyboard.TargetName="Ellipse4" Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="6"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="6"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="-90"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:03.63" Storyboard.TargetName="Ellipse4" Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.60" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="1"/>
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="0"/>
+                            </DoubleAnimationUsingKeyFrames>
+                        </Storyboard>
+                    </VisualState>
+                </VisualStateGroup>
+            </VisualStateManager.VisualStateGroups>
+        </Grid>
+    </ControlTemplate>
+</ResourceDictionary>

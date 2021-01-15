@@ -1,0 +1,31 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:BI="clr-namespace:BusyIndicator">
+
+    <ResourceDictionary.MergedDictionaries>
+        <ResourceDictionary Source="./Resource/DashLoader.xaml" />
+        <ResourceDictionary Source="./Resource/DotLoader.xaml" />
+        <ResourceDictionary Source="./Resource/ProgressBar.xaml" />
+        <ResourceDictionary Source="./Resource/ProgressRing.xaml" />
+        <ResourceDictionary Source="./Resource/Spinner.xaml" />
+    </ResourceDictionary.MergedDictionaries>
+
+    <Style TargetType="BI:Indicator">
+        <Style.Triggers>
+            <Trigger Property="IndicatorType" Value="DashLoader">
+                <Setter Property="Template" Value="{StaticResource DashLoader}" />
+            </Trigger>
+            <Trigger Property="IndicatorType" Value="DotLoader">
+                <Setter Property="Template" Value="{StaticResource DotLoader}" />
+            </Trigger>
+            <Trigger Property="IndicatorType" Value="ProgressBar">
+                <Setter Property="Template" Value="{StaticResource ProgressBar}" />
+            </Trigger>
+            <Trigger Property="IndicatorType" Value="ProgressRing">
+                <Setter Property="Template" Value="{StaticResource ProgressRing}" />
+            </Trigger>
+            <Trigger Property="IndicatorType" Value="Spinner">
+                <Setter Property="Template" Value="{StaticResource Spinner}" />
+            </Trigger>
+        </Style.Triggers>
+    </Style>
+</ResourceDictionary>

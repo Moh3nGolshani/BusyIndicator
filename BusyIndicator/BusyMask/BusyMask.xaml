@@ -1,0 +1,107 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+                    xmlns:BI="clr-namespace:BusyIndicator"
+                    xmlns:sys="clr-namespace:System;assembly=mscorlib">
+
+    <Style TargetType="BI:BusyMask">
+        <Setter Property="Background" Value="#D8FFFFFF"/>
+        <Setter Property="Template">
+            <Setter.Value>
+                <ControlTemplate TargetType="{x:Type BI:BusyMask}">
+                    <Grid>
+                        <VisualStateManager.VisualStateGroups>
+                            <VisualStateGroup x:Name="VisibilityStates">
+                                <VisualState x:Name="Visible">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00"
+                                                                       Storyboard.TargetName="BusyContent" 
+                                                                       Storyboard.TargetProperty="(UIElement.Visibility)">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Visible</Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" 
+                                                                       Storyboard.TargetName="Content" 
+                                                                       Storyboard.TargetProperty="(Control.IsEnabled)">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <sys:Boolean>False</sys:Boolean>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                                <VisualState x:Name="Hidden">
+                                    <Storyboard>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" 
+                                                                       Storyboard.TargetName="BusyContent" 
+                                                                       Storyboard.TargetProperty="(UIElement.Visibility)">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <Visibility>Collapsed</Visibility>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                        <ObjectAnimationUsingKeyFrames BeginTime="00:00:00" 
+                                                                       Storyboard.TargetName="Content" 
+                                                                       Storyboard.TargetProperty="(Control.IsEnabled)">
+                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                                <DiscreteObjectKeyFrame.Value>
+                                                    <sys:Boolean>True</sys:Boolean>
+                                                </DiscreteObjectKeyFrame.Value>
+                                            </DiscreteObjectKeyFrame>
+                                        </ObjectAnimationUsingKeyFrames>
+                                    </Storyboard>
+                                </VisualState>
+                            </VisualStateGroup>
+                        </VisualStateManager.VisualStateGroups>
+
+                        <ContentControl x:Name="Content" 
+                                        Content="{TemplateBinding Content}" 
+                                        ContentTemplate="{TemplateBinding ContentTemplate}" 
+                                        HorizontalContentAlignment="Stretch" 
+                                        VerticalContentAlignment="Stretch" />
+
+                        <Border x:Name="BusyContent" 
+                                Background="{TemplateBinding Background}" >
+
+                            <StackPanel VerticalAlignment="Center" 
+                                        HorizontalAlignment="Center">
+                                <BI:Indicator x:Name="Indicator" 
+                                              IndicatorType="{TemplateBinding IndicatorType}" />
+
+                                <TextBlock VerticalAlignment="Center" 
+                                           HorizontalAlignment="Center" 
+                                           Text="{TemplateBinding BusyContent}" >
+                                    <TextBlock.Style>
+                                        <Style TargetType="TextBlock">
+                                            <Style.Triggers>
+                                                <DataTrigger Binding="{Binding IndicatorType, ElementName= Indicator}" Value="DashLoader" >
+                                                    <Setter Property="Margin" Value="0 0 0 -80" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding IndicatorType, ElementName= Indicator}" Value="DotLoader" >
+                                                    <Setter Property="Margin" Value="0 0 0 -120" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding IndicatorType, ElementName= Indicator}" Value="ProgressBar" >
+                                                    <Setter Property="Margin" Value="0 0 0 -30" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding IndicatorType, ElementName= Indicator}" Value="ProgressRing" >
+                                                    <Setter Property="Margin" Value="0 0 0 -30" />
+                                                </DataTrigger>
+                                                <DataTrigger Binding="{Binding IndicatorType, ElementName= Indicator}" Value="Spinner" >
+                                                    <Setter Property="Margin" Value="0 0 0 -30" />
+                                                </DataTrigger>
+                                            </Style.Triggers>
+                                        </Style>
+                                    </TextBlock.Style>
+                                </TextBlock>
+                            </StackPanel>
+                        </Border>
+                    </Grid>
+                </ControlTemplate>
+            </Setter.Value>
+        </Setter>
+    </Style>
+</ResourceDictionary>
