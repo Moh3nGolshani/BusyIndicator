@@ -32,7 +32,7 @@ BusyIndicator for WPF with multiple indicator types.
 
 4. Create a BusyMask on top of your view  
 <pre><code>&lt;busyindicator:BusyMask x:Name="BusyIndicator" IsBusy="False" IndicatorType="DashLoader" BusyContent="Please wait..." &gt;  
-your view code goes here
+           --- your view code goes here ---
 &lt;/busyindicator:BusyMask&gt;</code></pre>  
 
 5. Set `IsBusy` property value to `true` or `false` to enable or disable the mask (or bind it)
