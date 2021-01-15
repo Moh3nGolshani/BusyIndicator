@@ -1,11 +1,11 @@
 # BusyIndicator
 BusyIndicator for WPF with multiple indicator types  
 
-<img src="https://github.com/Peoky/BusyIndicator/blob/main/Images/DashLoader.gif" alt="Dash Loader" width="45%"></img>
-<img src="https://github.com/Peoky/BusyIndicator/blob/main/Images/DotLoader.gif" alt="Dot Loader" width="45%"></img>
-<img src="https://github.com/Peoky/BusyIndicator/blob/main/Images/ProgressBar.gif" alt="Progress Bar" width="45%"></img>
-<img src="https://github.com/Peoky/BusyIndicator/blob/main/Images/ProgressRing.gif" alt="Progress Ring" width="45%"></img>
-<img src="https://github.com/Peoky/BusyIndicator/blob/main/Images/Spinner.gif" alt="Spinner" width="45%"></img>  
+<img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/DashLoader.gif" alt="Dash Loader" width="45%"></img>
+<img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/DotLoader.gif" alt="Dot Loader" width="45%"></img>
+<img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/ProgressBar.gif" alt="Progress Bar" width="45%"></img>
+<img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/ProgressRing.gif" alt="Progress Ring" width="45%"></img>
+<img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/Spinner.gif" alt="Spinner" width="45%"></img>  
 
 ## Prerequisites:
 <ul><li>.Net Framework 4.7.2 or higher</li></ul>  
