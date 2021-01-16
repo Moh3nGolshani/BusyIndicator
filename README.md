@@ -1,7 +1,7 @@
 # BusyIndicator
 BusyIndicator for WPF with multiple indicator types.  
 
-<img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/DashLoader.gif" alt="Dash Loader" width="45%"></img>
+<img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/Demo.gif" alt="Demo - Dash Loader" width="90%"></img>
 <img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/DotLoader.gif" alt="Dot Loader" width="45%"></img>
 <img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/ProgressBar.gif" alt="Progress Bar" width="45%"></img>
 <img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/ProgressRing.gif" alt="Progress Ring" width="45%"></img>
