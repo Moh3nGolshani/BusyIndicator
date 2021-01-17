@@ -39,7 +39,7 @@ BusyIndicator for WPF with multiple indicator types.
          
 &lt;/busyindicator:BusyMask&gt;</code></pre>  
 
-5. Set `IsBusy` property value to `true` or `false` to enable or disable the mask (or bind it)
+5. Set `IsBusy` property value to `true` or `false` to enable or disable the mask (or bind it)[check demo for a working example]
 <pre>BusyIndicator.IsBusy = true; or BusyIndicator.IsBusy = false; </pre>  
 
 ##
