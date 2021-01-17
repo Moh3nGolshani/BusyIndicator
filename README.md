@@ -30,7 +30,7 @@ BusyIndicator for WPF with multiple indicator types.
 3. Add a reference to the library in your view  
 <pre>xmlns:busyindicator="clr-namespace:BusyIndicator;assembly=BusyIndicator"</pre>  
 
-4. Create a BusyMask on top of your view  
+4. Create a BusyMask on top of main view  
 <pre><code>&lt;busyindicator:BusyMask x:Name="BusyIndicator" IsBusy="False" IndicatorType="DashLoader" BusyContent="Please wait..." &gt;  
          
          
