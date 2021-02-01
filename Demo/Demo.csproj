@@ -95,9 +95,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\BusyIndicator\BusyIndicator.csproj">
-      <Project>{be22fe0b-46f6-430b-b0b4-9386867e3db0}</Project>
-      <Name>BusyIndicator</Name>
+    <ProjectReference Include="..\Shared\Shared.csproj">
+      <Project>{e6c69629-779f-4240-94e5-f168bf660b43}</Project>
+      <Name>Shared</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
