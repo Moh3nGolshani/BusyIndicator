@@ -30,19 +30,19 @@
                                         <Style TargetType="TextBlock">
                                             <Style.Triggers>
                                                 <DataTrigger Binding="{Binding IndicatorType, ElementName=Indicator}" Value="DashLoader">
-                                                    <Setter Property="Margin" Value="0 0 0 -80" />
+                                                    <Setter Property="Margin" Value="0,0,0,-80" />
                                                 </DataTrigger>
                                                 <DataTrigger Binding="{Binding IndicatorType, ElementName=Indicator}" Value="DotLoader">
-                                                    <Setter Property="Margin" Value="0 0 0 -120" />
+                                                    <Setter Property="Margin" Value="0,0,0,-120" />
                                                 </DataTrigger>
                                                 <DataTrigger Binding="{Binding IndicatorType, ElementName=Indicator}" Value="ProgressBar">
-                                                    <Setter Property="Margin" Value="0 0 0 -30" />
+                                                    <Setter Property="Margin" Value="0,0,0,-30" />
                                                 </DataTrigger>
                                                 <DataTrigger Binding="{Binding IndicatorType, ElementName=Indicator}" Value="ProgressRing">
-                                                    <Setter Property="Margin" Value="0 0 0 -30" />
+                                                    <Setter Property="Margin" Value="0,0,0,-30" />
                                                 </DataTrigger>
                                                 <DataTrigger Binding="{Binding IndicatorType, ElementName=Indicator}" Value="Spinner">
-                                                    <Setter Property="Margin" Value="0 0 0 -30" />
+                                                    <Setter Property="Margin" Value="0,0,0,-30" />
                                                 </DataTrigger>
                                             </Style.Triggers>
                                         </Style>
