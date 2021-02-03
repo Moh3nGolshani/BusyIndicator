@@ -3,21 +3,20 @@ using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
 
-namespace Demo
+namespace Shared
 {
-    public partial class MainWindow : Window
+    /// <summary>
+    /// Interaction logic for BusyIndicatorPage.xaml
+    /// </summary>
+    public partial class BusyIndicatorPage : UserControl
     {
-        public MainWindow()
+        public BusyIndicatorPage()
         {
             InitializeComponent();
             IndicatorComboBox.SelectedIndex = 0;
-
         }
 
-        private void Window_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
-        {
-            DragMove();
-        }
+
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             BusyIndicator.IsBusy = true;

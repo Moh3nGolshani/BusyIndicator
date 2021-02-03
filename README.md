@@ -8,7 +8,8 @@ BusyIndicator for WPF with multiple indicator types.
 <img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/Spinner.gif" alt="Spinner" width="45%"></img>  
 
 ## Prerequisites:
-<ul><li>.Net Framework 4.7.2 or higher</li></ul>  
+<ul><li>.Net Framework 4.5 or higher</li></ul>  
+<ul><li>.Net Core 3.1 or higher</li></ul>  
 
 ## How to use:
 1. Install the package via [NuGet](https://www.nuget.org/packages/BusyIndicator/)    

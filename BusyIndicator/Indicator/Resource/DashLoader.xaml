@@ -1,38 +1,64 @@
-﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
-                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-                    xmlns:BI="clr-namespace:BusyIndicator">
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:BI="clr-namespace:BusyIndicator">
 
-    <ControlTemplate x:Key="DashLoader" TargetType="{x:Type BI:Indicator}" >
-        <Grid x:Name="MainGrid" 
-              VerticalAlignment="Center"
-              HorizontalAlignment="Center" >
-
-            <StackPanel Orientation="Horizontal" >
-                <Rectangle x:Name="Rectangle1" RadiusX="5" RadiusY="5" Height="10" Width="30" RenderTransformOrigin="0 0.5">
+    <ControlTemplate x:Key="DashLoader" TargetType="{x:Type BI:Indicator}">
+        <Grid
+            x:Name="MainGrid"
+            HorizontalAlignment="Center"
+            VerticalAlignment="Center">
+            <StackPanel Orientation="Horizontal">
+                <Rectangle
+                    x:Name="Rectangle1"
+                    Width="30"
+                    Height="10"
+                    RadiusX="5"
+                    RadiusY="5"
+                    RenderTransformOrigin="0 0.5">
                     <Rectangle.Effect>
-                        <DropShadowEffect x:Name="DropShadowEffect1" BlurRadius="10" Direction="315" ShadowDepth="3" Color="#FED1FF" Opacity="1" />
+                        <DropShadowEffect
+                            x:Name="DropShadowEffect1"
+                            BlurRadius="10"
+                            Direction="315"
+                            Opacity="1"
+                            ShadowDepth="3"
+                            Color="#FED1FF" />
                     </Rectangle.Effect>
                     <Rectangle.Fill>
                         <LinearGradientBrush>
-                            <GradientStop x:Name="GradientStop1_1" Color="#F330F3" Offset="0.85" />
-                            <GradientStop x:Name="GradientStop1_2" Color="#F330F3" Offset="0.65" />
-                            <GradientStop x:Name="GradientStop1_3" Color="#F330F3" Offset="0.4" />
+                            <GradientStop x:Name="GradientStop1_1" Offset="0.85" Color="#F330F3" />
+                            <GradientStop x:Name="GradientStop1_2" Offset="0.65" Color="#F330F3" />
+                            <GradientStop x:Name="GradientStop1_3" Offset="0.4" Color="#F330F3" />
                         </LinearGradientBrush>
                     </Rectangle.Fill>
                     <Rectangle.RenderTransform>
-                        <RotateTransform Angle="270"/>
+                        <RotateTransform Angle="270" />
                     </Rectangle.RenderTransform>
                 </Rectangle>
 
-                <Rectangle x:Name="Rectangle2" RadiusX="5" RadiusY="5" Height="10" Width="30" Margin="-10 0 0 0" RenderTransformOrigin="1 0.5">
+                <Rectangle
+                    x:Name="Rectangle2"
+                    Width="30"
+                    Height="10"
+                    Margin="-10,0,0,0"
+                    RadiusX="5"
+                    RadiusY="5"
+                    RenderTransformOrigin="1 0.5">
                     <Rectangle.Effect>
-                        <DropShadowEffect x:Name="DropShadowEffect2" BlurRadius="10" Direction="315" ShadowDepth="3" Color="#FED1FF" Opacity="1" />
+                        <DropShadowEffect
+                            x:Name="DropShadowEffect2"
+                            BlurRadius="10"
+                            Direction="315"
+                            Opacity="1"
+                            ShadowDepth="3"
+                            Color="#FED1FF" />
                     </Rectangle.Effect>
                     <Rectangle.Fill>
                         <LinearGradientBrush>
-                            <GradientStop x:Name="GradientStop2_1" Color="#F732E5" Offset="0.85" />
-                            <GradientStop x:Name="GradientStop2_2" Color="#F530E9" Offset="0.65" />
-                            <GradientStop x:Name="GradientStop2_3" Color="#F530ED" Offset="0.4" />
+                            <GradientStop x:Name="GradientStop2_1" Offset="0.85" Color="#F732E5" />
+                            <GradientStop x:Name="GradientStop2_2" Offset="0.65" Color="#F530E9" />
+                            <GradientStop x:Name="GradientStop2_3" Offset="0.4" Color="#F530ED" />
                         </LinearGradientBrush>
                     </Rectangle.Fill>
                     <Rectangle.RenderTransform>
@@ -40,15 +66,28 @@
                     </Rectangle.RenderTransform>
                 </Rectangle>
 
-                <Rectangle x:Name="Rectangle3" RadiusX="5" RadiusY="5" Height="10" Width="30" Margin="20 0" RenderTransformOrigin="1 0.5">
+                <Rectangle
+                    x:Name="Rectangle3"
+                    Width="30"
+                    Height="10"
+                    Margin="20,0"
+                    RadiusX="5"
+                    RadiusY="5"
+                    RenderTransformOrigin="1 0.5">
                     <Rectangle.Effect>
-                        <DropShadowEffect x:Name="DropShadowEffect3" BlurRadius="10" Direction="315" ShadowDepth="3" Color="#FED1FF" Opacity="1" />
+                        <DropShadowEffect
+                            x:Name="DropShadowEffect3"
+                            BlurRadius="10"
+                            Direction="315"
+                            Opacity="1"
+                            ShadowDepth="3"
+                            Color="#FED1FF" />
                     </Rectangle.Effect>
                     <Rectangle.Fill>
                         <LinearGradientBrush>
-                            <GradientStop x:Name="GradientStop3_1" Color="#FB32D3" Offset="0.85" />
-                            <GradientStop x:Name="GradientStop3_2" Color="#FB32D6" Offset="0.65" />
-                            <GradientStop x:Name="GradientStop3_3" Color="#F932DB" Offset="0.4" />
+                            <GradientStop x:Name="GradientStop3_1" Offset="0.85" Color="#FB32D3" />
+                            <GradientStop x:Name="GradientStop3_2" Offset="0.65" Color="#FB32D6" />
+                            <GradientStop x:Name="GradientStop3_3" Offset="0.4" Color="#F932DB" />
                         </LinearGradientBrush>
                     </Rectangle.Fill>
                     <Rectangle.RenderTransform>
@@ -56,15 +95,27 @@
                     </Rectangle.RenderTransform>
                 </Rectangle>
 
-                <Rectangle x:Name="Rectangle4" RadiusX="5" RadiusY="5" Height="10" Width="30" RenderTransformOrigin="1 0.5">
+                <Rectangle
+                    x:Name="Rectangle4"
+                    Width="30"
+                    Height="10"
+                    RadiusX="5"
+                    RadiusY="5"
+                    RenderTransformOrigin="1 0.5">
                     <Rectangle.Effect>
-                        <DropShadowEffect x:Name="DropShadowEffect4" BlurRadius="10" Direction="315" ShadowDepth="3" Color="#FED1FF" Opacity="1" />
+                        <DropShadowEffect
+                            x:Name="DropShadowEffect4"
+                            BlurRadius="10"
+                            Direction="315"
+                            Opacity="1"
+                            ShadowDepth="3"
+                            Color="#FED1FF" />
                     </Rectangle.Effect>
                     <Rectangle.Fill>
                         <LinearGradientBrush>
-                            <GradientStop x:Name="GradientStop4_1" Color="#FF32C5" Offset="0.85" />
-                            <GradientStop x:Name="GradientStop4_2" Color="#FF34C6" Offset="0.65" />
-                            <GradientStop x:Name="GradientStop4_3" Color="#FD32C9" Offset="0.4" />
+                            <GradientStop x:Name="GradientStop4_1" Offset="0.85" Color="#FF32C5" />
+                            <GradientStop x:Name="GradientStop4_2" Offset="0.65" Color="#FF34C6" />
+                            <GradientStop x:Name="GradientStop4_3" Offset="0.4" Color="#FD32C9" />
                         </LinearGradientBrush>
                     </Rectangle.Fill>
                     <Rectangle.RenderTransform>
@@ -77,79 +128,208 @@
                 <VisualStateGroup>
                     <VisualState x:Name="Active">
                         <Storyboard BeginTime="00:00:00" RepeatBehavior="Forever">
-                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00" Storyboard.TargetName="Rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.30" Value="325"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.35" Value="350"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.50" Value="380"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.80" Value="360"/>
+                            <DoubleAnimationUsingKeyFrames
+                                BeginTime="00:00:00"
+                                Storyboard.TargetName="Rectangle1"
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.30" Value="325" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.35" Value="350" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.50" Value="380" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.80" Value="360" />
                             </DoubleAnimationUsingKeyFrames>
 
-                            <ColorAnimation Storyboard.TargetName="GradientStop1_1" Storyboard.TargetProperty="Color" From="#F330F3" To="#F530EF" Duration="0:0:0.35" BeginTime="0:0:0" />
-                            <ColorAnimation Storyboard.TargetName="GradientStop1_2" Storyboard.TargetProperty="Color" From="#F330F3" To="#F530EF" Duration="0:0:0.35" BeginTime="0:0:0" />
+                            <ColorAnimation
+                                BeginTime="0:0:0"
+                                Storyboard.TargetName="GradientStop1_1"
+                                Storyboard.TargetProperty="Color"
+                                From="#F330F3"
+                                To="#F530EF"
+                                Duration="0:0:0.35" />
+                            <ColorAnimation
+                                BeginTime="0:0:0"
+                                Storyboard.TargetName="GradientStop1_2"
+                                Storyboard.TargetProperty="Color"
+                                From="#F330F3"
+                                To="#F530EF"
+                                Duration="0:0:0.35" />
 
-                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.35" Storyboard.TargetName="Rectangle2" Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.25" Value="-170"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.50" Value="-200"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.85" Value="-180"/>
+                            <DoubleAnimationUsingKeyFrames
+                                BeginTime="00:00:00.35"
+                                Storyboard.TargetName="Rectangle2"
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.25" Value="-170" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.50" Value="-200" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.85" Value="-180" />
                             </DoubleAnimationUsingKeyFrames>
 
-                            <DoubleAnimation Storyboard.TargetName="DropShadowEffect2" Storyboard.TargetProperty="Direction" From="315" To="-230" Duration="0:0:0.35" BeginTime="0:0:0.35" />
+                            <DoubleAnimation
+                                BeginTime="0:0:0.35"
+                                Storyboard.TargetName="DropShadowEffect2"
+                                Storyboard.TargetProperty="Direction"
+                                From="315"
+                                To="-230"
+                                Duration="0:0:0.35" />
 
-                            <ColorAnimation Storyboard.TargetName="GradientStop2_2" Storyboard.TargetProperty="Color" From="#F530E9" To="#F732E3" Duration="0:0:0.35" BeginTime="0:0:0.35" />
-                            <ColorAnimation Storyboard.TargetName="GradientStop2_3" Storyboard.TargetProperty="Color" From="#F530ED" To="#F932DD" Duration="0:0:0.35" BeginTime="0:0:0.35" />
+                            <ColorAnimation
+                                BeginTime="0:0:0.35"
+                                Storyboard.TargetName="GradientStop2_2"
+                                Storyboard.TargetProperty="Color"
+                                From="#F530E9"
+                                To="#F732E3"
+                                Duration="0:0:0.35" />
+                            <ColorAnimation
+                                BeginTime="0:0:0.35"
+                                Storyboard.TargetName="GradientStop2_3"
+                                Storyboard.TargetProperty="Color"
+                                From="#F530ED"
+                                To="#F932DD"
+                                Duration="0:0:0.35" />
 
-                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:00.60" Storyboard.TargetName="Rectangle3" Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.25" Value="170"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.50" Value="200"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.85" Value="180"/>
+                            <DoubleAnimationUsingKeyFrames
+                                BeginTime="00:00:00.60"
+                                Storyboard.TargetName="Rectangle3"
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.25" Value="170" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.50" Value="200" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.85" Value="180" />
                             </DoubleAnimationUsingKeyFrames>
 
-                            <DoubleAnimation Storyboard.TargetName="DropShadowEffect3" Storyboard.TargetProperty="Direction" From="315" To="-230" Duration="0:0:0.35" BeginTime="0:0:0.60" />
+                            <DoubleAnimation
+                                BeginTime="0:0:0.60"
+                                Storyboard.TargetName="DropShadowEffect3"
+                                Storyboard.TargetProperty="Direction"
+                                From="315"
+                                To="-230"
+                                Duration="0:0:0.35" />
 
-                            <ColorAnimation Storyboard.TargetName="GradientStop3_2" Storyboard.TargetProperty="Color" From="#FB32D6" To="#FD32CF" Duration="0:0:0.35" BeginTime="0:0:0.60" />
-                            <ColorAnimation Storyboard.TargetName="GradientStop3_3" Storyboard.TargetProperty="Color" From="#F932DB" To="#FD32CB" Duration="0:0:0.35" BeginTime="0:0:0.60" />
+                            <ColorAnimation
+                                BeginTime="0:0:0.60"
+                                Storyboard.TargetName="GradientStop3_2"
+                                Storyboard.TargetProperty="Color"
+                                From="#FB32D6"
+                                To="#FD32CF"
+                                Duration="0:0:0.35" />
+                            <ColorAnimation
+                                BeginTime="0:0:0.60"
+                                Storyboard.TargetName="GradientStop3_3"
+                                Storyboard.TargetProperty="Color"
+                                From="#F932DB"
+                                To="#FD32CB"
+                                Duration="0:0:0.35" />
 
-                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:0.85" Storyboard.TargetName="Rectangle4" Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.3" Value="-200"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.55" Value="-270"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="-325"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:01.05" Value="-350"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:01.20" Value="-380"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="-360"/>
+                            <DoubleAnimationUsingKeyFrames
+                                BeginTime="00:00:0.85"
+                                Storyboard.TargetName="Rectangle4"
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.3" Value="-200" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.55" Value="-270" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="-325" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.05" Value="-350" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.20" Value="-380" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="-360" />
                             </DoubleAnimationUsingKeyFrames>
 
-                            <ColorAnimation Storyboard.TargetName="GradientStop4_3" Storyboard.TargetProperty="Color" From="#FD32C9" To="#FF32C5" Duration="0:0:0.35" BeginTime="0:0:00.85" />
-                            <ColorAnimation Storyboard.TargetName="GradientStop4_3" Storyboard.TargetProperty="Color" From="#FF32C5" To="#FD32C9" Duration="0:0:0.35" BeginTime="0:0:01.40" />
+                            <ColorAnimation
+                                BeginTime="0:0:00.85"
+                                Storyboard.TargetName="GradientStop4_3"
+                                Storyboard.TargetProperty="Color"
+                                From="#FD32C9"
+                                To="#FF32C5"
+                                Duration="0:0:0.35" />
+                            <ColorAnimation
+                                BeginTime="0:0:01.40"
+                                Storyboard.TargetName="GradientStop4_3"
+                                Storyboard.TargetProperty="Color"
+                                From="#FF32C5"
+                                To="#FD32C9"
+                                Duration="0:0:0.35" />
 
-                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:01.9" Storyboard.TargetName="Rectangle3" Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.25" Value="350"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.50" Value="380"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.85" Value="360"/>
+                            <DoubleAnimationUsingKeyFrames
+                                BeginTime="00:00:01.9"
+                                Storyboard.TargetName="Rectangle3"
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.25" Value="350" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.50" Value="380" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.85" Value="360" />
                             </DoubleAnimationUsingKeyFrames>
 
-                            <DoubleAnimation Storyboard.TargetName="DropShadowEffect3" Storyboard.TargetProperty="Direction" From="-230" To="315" Duration="0:0:0.35" BeginTime="0:0:01.90" />
+                            <DoubleAnimation
+                                BeginTime="0:0:01.90"
+                                Storyboard.TargetName="DropShadowEffect3"
+                                Storyboard.TargetProperty="Direction"
+                                From="-230"
+                                To="315"
+                                Duration="0:0:0.35" />
 
-                            <ColorAnimation Storyboard.TargetName="GradientStop3_2" Storyboard.TargetProperty="Color" From="#FD32CF" To="#FB32D6" Duration="0:0:0.35" BeginTime="0:0:01.90" />
-                            <ColorAnimation Storyboard.TargetName="GradientStop3_3" Storyboard.TargetProperty="Color" From="#FD32CB" To="#F932DB" Duration="0:0:0.35" BeginTime="0:0:01.90" />
+                            <ColorAnimation
+                                BeginTime="0:0:01.90"
+                                Storyboard.TargetName="GradientStop3_2"
+                                Storyboard.TargetProperty="Color"
+                                From="#FD32CF"
+                                To="#FB32D6"
+                                Duration="0:0:0.35" />
+                            <ColorAnimation
+                                BeginTime="0:0:01.90"
+                                Storyboard.TargetName="GradientStop3_3"
+                                Storyboard.TargetProperty="Color"
+                                From="#FD32CB"
+                                To="#F932DB"
+                                Duration="0:0:0.35" />
 
-                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:02.15" Storyboard.TargetName="Rectangle2" Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.25" Value="-350"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.5" Value="-380"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.85" Value="-360"/>
+                            <DoubleAnimationUsingKeyFrames
+                                BeginTime="00:00:02.15"
+                                Storyboard.TargetName="Rectangle2"
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.25" Value="-350" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.5" Value="-380" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.85" Value="-360" />
                             </DoubleAnimationUsingKeyFrames>
 
-                            <DoubleAnimation Storyboard.TargetName="DropShadowEffect2" Storyboard.TargetProperty="Direction" From="-230" To="315" Duration="0:0:0.35" BeginTime="0:0:02.15" />
+                            <DoubleAnimation
+                                BeginTime="0:0:02.15"
+                                Storyboard.TargetName="DropShadowEffect2"
+                                Storyboard.TargetProperty="Direction"
+                                From="-230"
+                                To="315"
+                                Duration="0:0:0.35" />
 
-                            <ColorAnimation Storyboard.TargetName="GradientStop2_2" Storyboard.TargetProperty="Color" From="#F530E9" To="#F732E3" Duration="0:0:0.35" BeginTime="0:0:02.15" />
-                            <ColorAnimation Storyboard.TargetName="GradientStop2_3" Storyboard.TargetProperty="Color" From="#F530ED" To="#F932DD" Duration="0:0:0.35" BeginTime="0:0:02.15" />
+                            <ColorAnimation
+                                BeginTime="0:0:02.15"
+                                Storyboard.TargetName="GradientStop2_2"
+                                Storyboard.TargetProperty="Color"
+                                From="#F530E9"
+                                To="#F732E3"
+                                Duration="0:0:0.35" />
+                            <ColorAnimation
+                                BeginTime="0:0:02.15"
+                                Storyboard.TargetName="GradientStop2_3"
+                                Storyboard.TargetProperty="Color"
+                                From="#F530ED"
+                                To="#F932DD"
+                                Duration="0:0:0.35" />
 
-                            <DoubleAnimationUsingKeyFrames BeginTime="00:00:02.40" Storyboard.TargetName="Rectangle1" Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.3" Value="560"/>
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.55" Value="630"/>
+                            <DoubleAnimationUsingKeyFrames
+                                BeginTime="00:00:02.40"
+                                Storyboard.TargetName="Rectangle1"
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.3" Value="560" />
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.55" Value="630" />
                             </DoubleAnimationUsingKeyFrames>
 
-                            <ColorAnimation Storyboard.TargetName="GradientStop1_1" Storyboard.TargetProperty="Color" From="#F530EF" To="#F330F3" Duration="0:0:0.35" BeginTime="0:0:02.40" />
-                            <ColorAnimation Storyboard.TargetName="GradientStop1_2" Storyboard.TargetProperty="Color" From="#F530EF" To="#F330F3" Duration="0:0:0.35" BeginTime="0:0:02.40" />
+                            <ColorAnimation
+                                BeginTime="0:0:02.40"
+                                Storyboard.TargetName="GradientStop1_1"
+                                Storyboard.TargetProperty="Color"
+                                From="#F530EF"
+                                To="#F330F3"
+                                Duration="0:0:0.35" />
+                            <ColorAnimation
+                                BeginTime="0:0:02.40"
+                                Storyboard.TargetName="GradientStop1_2"
+                                Storyboard.TargetProperty="Color"
+                                From="#F530EF"
+                                To="#F330F3"
+                                Duration="0:0:0.35" />
                         </Storyboard>
                     </VisualState>
                 </VisualStateGroup>
