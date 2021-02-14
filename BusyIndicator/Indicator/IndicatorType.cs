@@ -2,10 +2,15 @@
 {
     public enum IndicatorType
     {
-        DashLoader,
-        DotLoader,
-        ProgressBar,
-        ProgressRing,
-        Spinner
+        Bar,
+        Cogs,
+        ColorDots,
+        Cupertino,
+        Dashes,
+        DotCircle,
+        Ellipse,
+        Piston,
+        Ring,
+        Swirl
     }
 }

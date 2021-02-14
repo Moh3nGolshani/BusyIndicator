@@ -3,21 +3,21 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:BI="clr-namespace:BusyIndicator">
 
-    <ControlTemplate x:Key="ProgressRing" TargetType="{x:Type BI:Indicator}">
+    <ControlTemplate x:Key="Ring" TargetType="{x:Type BI:Indicator}">
         <Grid
             x:Name="MainGrid"
             HorizontalAlignment="Center"
             VerticalAlignment="Center">
-            <Grid MinWidth="40" MinHeight="40">
+            <Grid Width="65" Height="65">
                 <Canvas RenderTransformOrigin=".5,.5">
                     <Canvas.RenderTransform>
                         <RotateTransform x:Name="E1R" />
                     </Canvas.RenderTransform>
                     <Ellipse
                         x:Name="E1"
-                        Width="5"
-                        Height="5"
-                        Margin="8"
+                        Width="8"
+                        Height="8"
+                        Margin="11"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
                         Fill="#0078D7"
@@ -30,9 +30,9 @@
                     </Canvas.RenderTransform>
                     <Ellipse
                         x:Name="E2"
-                        Width="5"
-                        Height="5"
-                        Margin="8"
+                        Width="8"
+                        Height="8"
+                        Margin="11"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
                         Fill="#0078D7"
@@ -44,9 +44,9 @@
                     </Canvas.RenderTransform>
                     <Ellipse
                         x:Name="E3"
-                        Width="5"
-                        Height="5"
-                        Margin="8"
+                        Width="8"
+                        Height="8"
+                        Margin="11"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
                         Fill="#0078D7"
@@ -58,9 +58,9 @@
                     </Canvas.RenderTransform>
                     <Ellipse
                         x:Name="E4"
-                        Width="5"
-                        Height="5"
-                        Margin="8"
+                        Width="8"
+                        Height="8"
+                        Margin="11"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
                         Fill="#0078D7"
@@ -72,9 +72,9 @@
                     </Canvas.RenderTransform>
                     <Ellipse
                         x:Name="E5"
-                        Width="5"
-                        Height="5"
-                        Margin="8"
+                        Width="8"
+                        Height="8"
+                        Margin="11"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
                         Fill="#0078D7"
@@ -86,9 +86,9 @@
                     </Canvas.RenderTransform>
                     <Ellipse
                         x:Name="E6"
-                        Width="5"
-                        Height="5"
-                        Margin="8"
+                        Width="8"
+                        Height="8"
+                        Margin="11"
                         HorizontalAlignment="Left"
                         VerticalAlignment="Top"
                         Fill="#0078D7"
@@ -104,55 +104,55 @@
                                 BeginTime="0"
                                 Storyboard.TargetName="E1"
                                 Storyboard.TargetProperty="Opacity">
-                                <DiscreteDoubleKeyFrame KeyTime="0" Value="1" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
+                                <LinearDoubleKeyFrame KeyTime="0" Value="1" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.167"
                                 Storyboard.TargetName="E2"
                                 Storyboard.TargetProperty="Opacity">
-                                <DiscreteDoubleKeyFrame KeyTime="0" Value="1" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
+                                <LinearDoubleKeyFrame KeyTime="0" Value="1" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.334"
                                 Storyboard.TargetName="E3"
                                 Storyboard.TargetProperty="Opacity">
-                                <DiscreteDoubleKeyFrame KeyTime="0" Value="1" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
+                                <LinearDoubleKeyFrame KeyTime="0" Value="1" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.501"
                                 Storyboard.TargetName="E4"
                                 Storyboard.TargetProperty="Opacity">
-                                <DiscreteDoubleKeyFrame KeyTime="0" Value="1" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
+                                <LinearDoubleKeyFrame KeyTime="0" Value="1" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.668"
                                 Storyboard.TargetName="E5"
                                 Storyboard.TargetProperty="Opacity">
-                                <DiscreteDoubleKeyFrame KeyTime="0" Value="1" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
+                                <LinearDoubleKeyFrame KeyTime="0" Value="1" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.835"
                                 Storyboard.TargetName="E6"
                                 Storyboard.TargetProperty="Opacity">
-                                <DiscreteDoubleKeyFrame KeyTime="0" Value="1" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
-                                <DiscreteDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
+                                <LinearDoubleKeyFrame KeyTime="0" Value="1" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
+                                <LinearDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="0"

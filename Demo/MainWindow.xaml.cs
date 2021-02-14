@@ -21,7 +21,7 @@ namespace Demo
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
             BusyIndicator.IsBusy = true;
-            await Task.Delay(10000);
+            await Task.Delay(5000);
             BusyIndicator.IsBusy = false;
         }
 
@@ -33,19 +33,34 @@ namespace Demo
             switch (index)
             {
                 case 0:
-                    BusyIndicator.IndicatorType = IndicatorType.DashLoader;
+                    BusyIndicator.IndicatorType = IndicatorType.Dashes;
                     break;
                 case 1:
-                    BusyIndicator.IndicatorType = IndicatorType.DotLoader;
+                    BusyIndicator.IndicatorType = IndicatorType.ColorDots;
                     break;
                 case 2:
-                    BusyIndicator.IndicatorType = IndicatorType.ProgressBar;
+                    BusyIndicator.IndicatorType = IndicatorType.Bar;
                     break;
                 case 3:
-                    BusyIndicator.IndicatorType = IndicatorType.ProgressRing;
+                    BusyIndicator.IndicatorType = IndicatorType.Ring;
                     break;
                 case 4:
-                    BusyIndicator.IndicatorType = IndicatorType.Spinner;
+                    BusyIndicator.IndicatorType = IndicatorType.Ellipse;
+                    break;
+                case 5:
+                    BusyIndicator.IndicatorType = IndicatorType.Cupertino;
+                    break;
+                case 6:
+                    BusyIndicator.IndicatorType = IndicatorType.Cogs;
+                    break;
+                case 7:
+                    BusyIndicator.IndicatorType = IndicatorType.DotCircle;
+                    break;
+                case 8:
+                    BusyIndicator.IndicatorType = IndicatorType.Piston;
+                    break;
+                case 9:
+                    BusyIndicator.IndicatorType = IndicatorType.Swirl;
                     break;
                 default:
                     break;

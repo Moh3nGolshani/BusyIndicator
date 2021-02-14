@@ -3,12 +3,12 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:BI="clr-namespace:BusyIndicator">
 
-    <ControlTemplate x:Key="DashLoader" TargetType="{x:Type BI:Indicator}">
+    <ControlTemplate x:Key="Dashes" TargetType="{x:Type BI:Indicator}">
         <Grid
             x:Name="MainGrid"
             HorizontalAlignment="Center"
             VerticalAlignment="Center">
-            <StackPanel Orientation="Horizontal">
+            <StackPanel Height="80" Orientation="Horizontal">
                 <Rectangle
                     x:Name="Rectangle1"
                     Width="30"
@@ -132,10 +132,10 @@
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="Rectangle1"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.30" Value="325" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.35" Value="350" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.50" Value="380" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.80" Value="360" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.30" Value="325" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.35" Value="350" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.50" Value="380" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.80" Value="360" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <ColorAnimation
@@ -157,9 +157,9 @@
                                 BeginTime="00:00:00.35"
                                 Storyboard.TargetName="Rectangle2"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.25" Value="-170" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.50" Value="-200" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.85" Value="-180" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.25" Value="-170" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.50" Value="-200" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.85" Value="-180" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimation
@@ -189,9 +189,9 @@
                                 BeginTime="00:00:00.60"
                                 Storyboard.TargetName="Rectangle3"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.25" Value="170" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.50" Value="200" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.85" Value="180" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.25" Value="170" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.50" Value="200" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.85" Value="180" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimation
@@ -221,12 +221,12 @@
                                 BeginTime="00:00:0.85"
                                 Storyboard.TargetName="Rectangle4"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.3" Value="-200" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.55" Value="-270" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.95" Value="-325" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:01.05" Value="-350" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:01.20" Value="-380" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:01.55" Value="-360" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.3" Value="-200" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.55" Value="-270" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.95" Value="-325" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:01.05" Value="-350" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:01.20" Value="-380" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:01.55" Value="-360" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <ColorAnimation
@@ -248,9 +248,9 @@
                                 BeginTime="00:00:01.9"
                                 Storyboard.TargetName="Rectangle3"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.25" Value="350" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.50" Value="380" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.85" Value="360" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.25" Value="350" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.50" Value="380" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.85" Value="360" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimation
@@ -280,9 +280,9 @@
                                 BeginTime="00:00:02.15"
                                 Storyboard.TargetName="Rectangle2"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.25" Value="-350" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.5" Value="-380" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.85" Value="-360" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.25" Value="-350" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.5" Value="-380" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.85" Value="-360" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimation
@@ -312,8 +312,8 @@
                                 BeginTime="00:00:02.40"
                                 Storyboard.TargetName="Rectangle1"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.3" Value="560" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.55" Value="630" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.3" Value="560" />
+                                <LinearDoubleKeyFrame KeyTime="00:00:00.55" Value="630" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <ColorAnimation

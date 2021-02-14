@@ -1,29 +1,49 @@
 ﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" xmlns:BI="clr-namespace:BusyIndicator">
 
     <ResourceDictionary.MergedDictionaries>
-        <ResourceDictionary Source="./Resource/DashLoader.xaml" />
-        <ResourceDictionary Source="./Resource/DotLoader.xaml" />
-        <ResourceDictionary Source="./Resource/ProgressBar.xaml" />
-        <ResourceDictionary Source="./Resource/ProgressRing.xaml" />
-        <ResourceDictionary Source="./Resource/Spinner.xaml" />
+        <ResourceDictionary Source="./Resource/Dashes.xaml" />
+        <ResourceDictionary Source="./Resource/ColorDots.xaml" />
+        <ResourceDictionary Source="./Resource/Bar.xaml" />
+        <ResourceDictionary Source="./Resource/Ring.xaml" />
+        <ResourceDictionary Source="./Resource/Ellipse.xaml" />
+        <ResourceDictionary Source="./Resource/Cupertino.xaml" />
+        <ResourceDictionary Source="./Resource/Cogs.xaml" />
+        <ResourceDictionary Source="./Resource/DotCircle.xaml" />
+        <ResourceDictionary Source="./Resource/Piston.xaml" />
+        <ResourceDictionary Source="./Resource/Swirl.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="BI:Indicator">
         <Style.Triggers>
-            <Trigger Property="IndicatorType" Value="DashLoader">
-                <Setter Property="Template" Value="{StaticResource DashLoader}" />
+            <Trigger Property="IndicatorType" Value="Dashes">
+                <Setter Property="Template" Value="{StaticResource Dashes}" />
             </Trigger>
-            <Trigger Property="IndicatorType" Value="DotLoader">
-                <Setter Property="Template" Value="{StaticResource DotLoader}" />
+            <Trigger Property="IndicatorType" Value="ColorDots">
+                <Setter Property="Template" Value="{StaticResource ColorDots}" />
             </Trigger>
-            <Trigger Property="IndicatorType" Value="ProgressBar">
-                <Setter Property="Template" Value="{StaticResource ProgressBar}" />
+            <Trigger Property="IndicatorType" Value="Bar">
+                <Setter Property="Template" Value="{StaticResource Bar}" />
             </Trigger>
-            <Trigger Property="IndicatorType" Value="ProgressRing">
-                <Setter Property="Template" Value="{StaticResource ProgressRing}" />
+            <Trigger Property="IndicatorType" Value="Ring">
+                <Setter Property="Template" Value="{StaticResource Ring}" />
             </Trigger>
-            <Trigger Property="IndicatorType" Value="Spinner">
-                <Setter Property="Template" Value="{StaticResource Spinner}" />
+            <Trigger Property="IndicatorType" Value="Ellipse">
+                <Setter Property="Template" Value="{StaticResource Ellipse}" />
+            </Trigger>
+            <Trigger Property="IndicatorType" Value="Cupertino">
+                <Setter Property="Template" Value="{StaticResource Cupertino}" />
+            </Trigger>
+            <Trigger Property="IndicatorType" Value="Cogs">
+                <Setter Property="Template" Value="{StaticResource Cogs}" />
+            </Trigger>
+            <Trigger Property="IndicatorType" Value="DotCircle">
+                <Setter Property="Template" Value="{StaticResource DotCircle}" />
+            </Trigger>
+            <Trigger Property="IndicatorType" Value="Piston">
+                <Setter Property="Template" Value="{StaticResource Piston}" />
+            </Trigger>
+            <Trigger Property="IndicatorType" Value="Swirl">
+                <Setter Property="Template" Value="{StaticResource Swirl}" />
             </Trigger>
         </Style.Triggers>
     </Style>

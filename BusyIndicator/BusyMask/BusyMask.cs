@@ -41,7 +41,7 @@ namespace BusyIndicator
             DependencyProperty.Register("IndicatorType", 
                 typeof(IndicatorType), 
                 typeof(BusyMask), 
-                new PropertyMetadata(IndicatorType.DashLoader));
+                new PropertyMetadata(IndicatorType.Ellipse));
 
         static BusyMask()
         {

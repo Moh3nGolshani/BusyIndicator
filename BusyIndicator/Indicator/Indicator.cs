@@ -15,7 +15,7 @@ namespace BusyIndicator
             DependencyProperty.Register("IndicatorType",
                 typeof(IndicatorType),
                 typeof(Indicator),
-                new PropertyMetadata(IndicatorType.ProgressBar));
+                new PropertyMetadata(IndicatorType.Ellipse));
 
         static Indicator()
         {
