@@ -37,7 +37,7 @@ BusyIndicator for WPF with multiple indicator types.
 <pre><code>&lt;busyindicator:BusyMask x:Name="BusyIndicator" IsBusy="False" IndicatorType="Dashes" BusyContent="Please wait..." &gt;  
          
          
-          <... main view goes here .. >
+          <... main view goes here ... >
          
          
 &lt;/busyindicator:BusyMask&gt;</code></pre>  
