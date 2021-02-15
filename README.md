@@ -1,7 +1,10 @@
 # BusyIndicator
 BusyIndicator for WPF with multiple indicator types.  
 
-<img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/Demo.gif" alt="Demo" style="width: 50%;"></img>
+<p align="center">
+  <img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/Demo.gif" alt="Demo" style="width: 50%;"></img>
+</p>
+
 <img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/Indicators.gif" alt="Indicator Types" width="95%"></img> 
 
 ## Prerequisites:
