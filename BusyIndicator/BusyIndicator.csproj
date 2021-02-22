@@ -8,7 +8,7 @@
 	<Company>Mohsen Golshani</Company>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <ApplicationIcon>Icon.ico</ApplicationIcon>
-    <PackageIcon>Icon.png</PackageIcon>
+    <PackageIcon>Icon.ico</PackageIcon>
     <RepositoryUrl>https://github.com/Peoky/BusyIndicator</RepositoryUrl>
     <PackageTags>BusyIndicator Loader Spinner LoadingIndicator</PackageTags>
     <PackageReleaseNotes>New indicator types</PackageReleaseNotes>
@@ -18,7 +18,7 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="..\..\Assets\Icon.png">
+    <None Include="Icon.ico">
       <Pack>True</Pack>
       <PackagePath></PackagePath>
     </None>
