@@ -22,8 +22,7 @@ BusyIndicator for WPF with multiple indicator types.
             &lt;ResourceDictionary.MergedDictionaries&gt;
                 &lt;ResourceDictionary&gt;
                     &lt;ResourceDictionary.MergedDictionaries&gt;
-                        &lt;ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/BusyMask/BusyMask.xaml"/&gt;
-                        &lt;ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/Indicator/Indicator.xaml"/&gt;
+                        &lt;ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/Theme/Default.xaml"/&gt;
                     &lt;/ResourceDictionary.MergedDictionaries&gt;
                 &lt;/ResourceDictionary&gt;
             &lt;/ResourceDictionary.MergedDictionaries&gt;
