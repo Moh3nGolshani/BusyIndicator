@@ -1,11 +1,13 @@
 # BusyIndicator
 BusyIndicator for WPF with multiple indicator types.  
 
-<img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/Demo.gif" alt="Demo - Dash Loader" width="90%"></img>
-<img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/DotLoader.gif" alt="Dot Loader" width="45%"></img>
-<img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/ProgressBar.gif" alt="Progress Bar" width="45%"></img>
-<img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/ProgressRing.gif" alt="Progress Ring" width="45%"></img>
-<img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/Spinner.gif" alt="Spinner" width="45%"></img>  
+<p align="center">
+  <img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/Demo.gif" alt="Demo" style="width: 50%;"></img>
+</p>
+
+<p align="center">
+  <img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/Indicators.gif" alt="Indicator Types" width="95%"></img> 
+</p>
 
 ## Prerequisites:
 <ul><li>.Net Framework 4.5 or higher</li></ul>  
@@ -32,10 +34,10 @@ BusyIndicator for WPF with multiple indicator types.
 <pre>xmlns:busyindicator="clr-namespace:BusyIndicator;assembly=BusyIndicator"</pre>  
 
 4. Create a BusyMask on top of main view  
-<pre><code>&lt;busyindicator:BusyMask x:Name="BusyIndicator" IsBusy="False" IndicatorType="DashLoader" BusyContent="Please wait..." &gt;  
+<pre><code>&lt;busyindicator:BusyMask x:Name="BusyIndicator" IsBusy="False" IndicatorType="Dashes" BusyContent="Please wait..." &gt;  
          
          
-          <... main view goes here .. >
+          <... main view goes here ... >
          
          
 &lt;/busyindicator:BusyMask&gt;</code></pre>  
