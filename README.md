@@ -17,7 +17,7 @@ BusyIndicator for WPF with multiple indicator types.
 1. Install the package via [NuGet](https://www.nuget.org/packages/BusyIndicator/)    
 <pre>Install-Package BusyIndicator</pre>  
 
-2. Add resources to App.xaml  
+2. Add resource to App.xaml  
 <pre><code>&lt;ResourceDictionary&gt;
             &lt;ResourceDictionary.MergedDictionaries&gt;
                 &lt;ResourceDictionary&gt;
