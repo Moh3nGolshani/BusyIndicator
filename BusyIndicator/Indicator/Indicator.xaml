@@ -11,6 +11,7 @@
         <ResourceDictionary Source="./Resource/DotCircle.xaml" />
         <ResourceDictionary Source="./Resource/Piston.xaml" />
         <ResourceDictionary Source="./Resource/Swirl.xaml" />
+        <ResourceDictionary Source="./Resource/Blocks.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="BI:Indicator">
@@ -44,6 +45,9 @@
             </Trigger>
             <Trigger Property="IndicatorType" Value="Swirl">
                 <Setter Property="Template" Value="{StaticResource Swirl}" />
+            </Trigger>
+            <Trigger Property="IndicatorType" Value="Blocks">
+                <Setter Property="Template" Value="{StaticResource Blocks}" />
             </Trigger>
         </Style.Triggers>
     </Style>

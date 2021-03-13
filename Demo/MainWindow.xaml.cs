@@ -62,6 +62,9 @@ namespace Demo
                 case 9:
                     BusyIndicator.IndicatorType = IndicatorType.Swirl;
                     break;
+                case 10:
+                    BusyIndicator.IndicatorType = IndicatorType.Blocks;
+                    break;
                 default:
                     break;
             }

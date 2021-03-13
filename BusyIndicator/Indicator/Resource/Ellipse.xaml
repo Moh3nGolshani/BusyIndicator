@@ -17,9 +17,9 @@
                     StrokeThickness="9">
                     <Ellipse.Stroke>
                         <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                            <GradientStop Offset="1" Color="#5484FF" />
+                            <GradientStop Offset="1" Color="#FF73CFEE" />
                             <GradientStop Offset="0.6" Color="#4EA2FF" />
-                            <GradientStop Offset="0.2" Color="#FF73CFEE" />
+                            <GradientStop Offset="0.2" Color="#5484FF" />
                         </LinearGradientBrush>
                     </Ellipse.Stroke>
                 </Ellipse>
