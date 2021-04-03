@@ -23,7 +23,8 @@
         x:Name="BusyIndicator"
         BusyContent="Please wait..."
         IndicatorType="Dashes"
-        IsBusy="False">
+        IsBusy="False" 
+        FocusAfterBusy="{Binding ElementName = MyTextBox}" >
         <StackPanel>
             <ComboBox
                 x:Name="IndicatorComboBox"
@@ -75,6 +76,7 @@
                 Click="Button_Click"
                 Content="Start"
                 FontSize="12" />
+            <TextBox x:Name="MyTextBox" Focusable="True" Margin="0 5" Width="200" Height="30" />
         </StackPanel>
     </busyIndicator:BusyMask>
 

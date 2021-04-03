@@ -5,16 +5,20 @@
     xmlns:sys="clr-namespace:System;assembly=mscorlib">
 
     <Style TargetType="BI:BusyMask">
+        <Setter Property="IsTabStop" Value="False" />
+        <Setter Property="Focusable" Value="False" />
         <Setter Property="Background" Value="#D8FFFFFF" />
         <Setter Property="Template">
             <Setter.Value>
                 <ControlTemplate TargetType="{x:Type BI:BusyMask}">
                     <Grid>
                         <ContentControl
-                            x:Name="Content"
-                            HorizontalContentAlignment="Stretch"
-                            VerticalContentAlignment="Stretch"
-                            Content="{TemplateBinding Content}"
+                            x:Name="Content" 
+                            IsTabStop="False" 
+                            Focusable="False" 
+                            VerticalContentAlignment="Stretch" 
+                            HorizontalContentAlignment="Stretch" 
+                            Content="{TemplateBinding Content}" 
                             ContentTemplate="{TemplateBinding ContentTemplate}" />
 
                         <Border x:Name="BusyContent" Background="{TemplateBinding Background}">

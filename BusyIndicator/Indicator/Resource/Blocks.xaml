@@ -3,12 +3,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:BI="clr-namespace:BusyIndicator">
 
-    <ControlTemplate x:Key="Blocks" TargetType="{x:Type BI:Indicator}">
+    <ControlTemplate
+        x:Key="Blocks"
+        TargetType="{x:Type BI:Indicator}">
         <Grid
             x:Name="MainGrid"
             HorizontalAlignment="Center"
             VerticalAlignment="Center">
-            <Grid Width="110" Height="110">
+            <Grid
+                Width="70"
+                Height="70">
                 <Grid.RowDefinitions>
                     <RowDefinition />
                     <RowDefinition />
@@ -24,150 +28,174 @@
                     x:Name="Rectangle01"
                     Grid.Row="0"
                     Grid.Column="0"
-                    Width="30"
-                    Height="30"
-                    Margin="3"
+                    Width="20"
+                    Height="20"
+                    Margin="1.5"
                     Fill="#fdfdfd"
                     Opacity="0" />
+
                 <Rectangle
                     x:Name="Rectangle02"
                     Grid.Row="0"
                     Grid.Column="1"
-                    Width="30"
-                    Height="30"
-                    Margin="3"
+                    Width="20"
+                    Height="20"
+                    Margin="1.5"
                     Fill="#fdfdfd"
                     Opacity="0" />
+
                 <Rectangle
                     x:Name="Rectangle03"
                     Grid.Row="0"
                     Grid.Column="2"
-                    Width="30"
-                    Height="30"
-                    Margin="3"
+                    Width="20"
+                    Height="20"
+                    Margin="1.5"
                     Fill="#fdfdfd"
                     Opacity="0" />
                 <Rectangle
                     x:Name="Rectangle04"
                     Grid.Row="1"
                     Grid.Column="0"
-                    Width="30"
-                    Height="30"
-                    Margin="3"
+                    Width="20"
+                    Height="20"
+                    Margin="1.5"
                     Fill="#fdfdfd"
                     Opacity="0" />
                 <Rectangle
                     x:Name="Rectangle05"
                     Grid.Row="1"
                     Grid.Column="1"
-                    Width="30"
-                    Height="30"
-                    Margin="3"
+                    Width="20"
+                    Height="20"
+                    Margin="1.5"
                     Fill="#fdfdfd"
                     Opacity="0" />
                 <Rectangle
                     x:Name="Rectangle06"
                     Grid.Row="1"
                     Grid.Column="2"
-                    Width="30"
-                    Height="30"
-                    Margin="3"
+                    Width="20"
+                    Height="20"
+                    Margin="1.5"
                     Fill="#fdfdfd"
                     Opacity="0" />
                 <Rectangle
                     x:Name="Rectangle07"
                     Grid.Row="2"
                     Grid.Column="0"
-                    Width="30"
-                    Height="30"
-                    Margin="3"
+                    Width="20"
+                    Height="20"
+                    Margin="1.5"
                     Fill="#fdfdfd"
                     Opacity="0" />
                 <Rectangle
                     x:Name="Rectangle08"
                     Grid.Row="2"
                     Grid.Column="1"
-                    Width="30"
-                    Height="30"
-                    Margin="3"
+                    Width="20"
+                    Height="20"
+                    Margin="1.5"
                     Fill="#fdfdfd"
                     Opacity="0" />
                 <Rectangle
                     x:Name="Rectangle09"
                     Grid.Row="2"
                     Grid.Column="2"
-                    Width="30"
-                    Height="30"
-                    Margin="3"
+                    Width="20"
+                    Height="20"
+                    Margin="1.5"
                     Fill="#fdfdfd"
                     Opacity="0" />
             </Grid>
 
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup>
-                    <VisualState x:Name="Active">
-                        <Storyboard BeginTime="00:00:00" RepeatBehavior="Forever">
+                    <VisualState
+                        x:Name="Active">
+                        <Storyboard
+                            BeginTime="00:00:00"
+                            Duration="00:00:02"
+                            RepeatBehavior="Forever">
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.065"
                                 Storyboard.TargetName="Rectangle01"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="1" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.13"
                                 Storyboard.TargetName="Rectangle02"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="1" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.195"
                                 Storyboard.TargetName="Rectangle03"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="1" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.325"
                                 Storyboard.TargetName="Rectangle04"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="1" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.13"
                                 Storyboard.TargetName="Rectangle05"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.5" Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.5"
+                                    Value="1" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.455"
                                 Storyboard.TargetName="Rectangle06"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="1" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.39"
                                 Storyboard.TargetName="Rectangle07"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="1" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.26"
                                 Storyboard.TargetName="Rectangle08"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="1" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="Rectangle09"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="1" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <ColorAnimation
@@ -176,7 +204,7 @@
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#fdfdfd"
                                 To="#FF299ABB"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
                                 BeginTime="00:00:00.13"
@@ -184,7 +212,7 @@
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#fdfdfd"
                                 To="#FF299ABB"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
                                 BeginTime="00:00:00.195"
@@ -192,7 +220,7 @@
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#fdfdfd"
                                 To="#FF299ABB"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
                                 BeginTime="00:00:00.325"
@@ -200,7 +228,7 @@
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#fdfdfd"
                                 To="#FF299ABB"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
                                 BeginTime="00:00:00.13"
@@ -208,7 +236,7 @@
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#fdfdfd"
                                 To="#FF299ABB"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
                                 BeginTime="00:00:00.455"
@@ -216,7 +244,7 @@
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#fdfdfd"
                                 To="#FF299ABB"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
                                 BeginTime="00:00:00.39"
@@ -224,7 +252,7 @@
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#fdfdfd"
                                 To="#FF299ABB"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
                                 BeginTime="00:00:00.26"
@@ -232,7 +260,7 @@
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#fdfdfd"
                                 To="#FF299ABB"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
                                 BeginTime="00:00:00"
@@ -240,144 +268,162 @@
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#fdfdfd"
                                 To="#FF299ABB"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <!--  Reverse  -->
 
                             <DoubleAnimationUsingKeyFrames
-                                BeginTime="00:00:01.465"
+                                BeginTime="00:00:01.065"
                                 Storyboard.TargetName="Rectangle01"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
-                                BeginTime="00:00:01.53"
+                                BeginTime="00:00:01.13"
                                 Storyboard.TargetName="Rectangle02"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
-                                BeginTime="00:00:01.595"
+                                BeginTime="00:00:01.195"
                                 Storyboard.TargetName="Rectangle03"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
-                                BeginTime="00:00:01.725"
+                                BeginTime="00:00:01.325"
                                 Storyboard.TargetName="Rectangle04"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
-                                BeginTime="00:00:01.53"
+                                BeginTime="00:00:01.13"
                                 Storyboard.TargetName="Rectangle05"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.5" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.5"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
-                                BeginTime="00:00:01.855"
+                                BeginTime="00:00:01.455"
                                 Storyboard.TargetName="Rectangle06"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
-                                BeginTime="00:00:01.79"
+                                BeginTime="00:00:01.39"
                                 Storyboard.TargetName="Rectangle07"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
-                                BeginTime="00:00:01.66"
+                                BeginTime="00:00:01.26"
                                 Storyboard.TargetName="Rectangle08"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
-                                BeginTime="00:00:01.4"
+                                BeginTime="00:00:01"
                                 Storyboard.TargetName="Rectangle09"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.22" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.22"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <ColorAnimation
-                                BeginTime="00:00:01.465"
+                                BeginTime="00:00:01.065"
                                 Storyboard.TargetName="Rectangle01"
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#FF299ABB"
                                 To="#fdfdfd"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
-                                BeginTime="00:00:01.53"
+                                BeginTime="00:00:01.13"
                                 Storyboard.TargetName="Rectangle02"
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#FF299ABB"
                                 To="#fdfdfd"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
-                                BeginTime="00:00:01.495"
+                                BeginTime="00:00:01.095"
                                 Storyboard.TargetName="Rectangle03"
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#FF299ABB"
                                 To="#fdfdfd"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
-                                BeginTime="00:00:01.725"
+                                BeginTime="00:00:01.325"
                                 Storyboard.TargetName="Rectangle04"
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#FF299ABB"
                                 To="#fdfdfd"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
-                                BeginTime="00:00:01.53"
+                                BeginTime="00:00:01.13"
                                 Storyboard.TargetName="Rectangle05"
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#FF299ABB"
                                 To="#fdfdfd"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
-                                BeginTime="00:00:01.855"
+                                BeginTime="00:00:01.455"
                                 Storyboard.TargetName="Rectangle06"
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#FF299ABB"
                                 To="#fdfdfd"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
-                                BeginTime="00:00:01.79"
+                                BeginTime="00:00:01.39"
                                 Storyboard.TargetName="Rectangle07"
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#FF299ABB"
                                 To="#fdfdfd"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
-                                BeginTime="00:00:01.66"
+                                BeginTime="00:00:01.26"
                                 Storyboard.TargetName="Rectangle08"
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#FF299ABB"
                                 To="#fdfdfd"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
 
                             <ColorAnimation
-                                BeginTime="00:00:01.4"
+                                BeginTime="00:00:01"
                                 Storyboard.TargetName="Rectangle09"
                                 Storyboard.TargetProperty="(Rectangle.Fill).Color"
                                 From="#FF299ABB"
                                 To="#fdfdfd"
-                                Duration="00:00:00.22" />
+                                Duration="00:00:00.11" />
                         </Storyboard>
                     </VisualState>
                 </VisualStateGroup>
