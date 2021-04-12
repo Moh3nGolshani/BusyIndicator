@@ -6,10 +6,10 @@ namespace BusyIndicator
 {
     internal class EllipseHelper
     {
-        public static readonly DependencyProperty StrokeDashArrayValueProperty = 
-            DependencyProperty.RegisterAttached("StrokeDashArrayValue", 
-                typeof(double), 
-                typeof(EllipseHelper), 
+        public static readonly DependencyProperty StrokeDashArrayValueProperty =
+            DependencyProperty.RegisterAttached("StrokeDashArrayValue",
+                typeof(double),
+                typeof(EllipseHelper),
                 new PropertyMetadata(0.0, OnStrokeDashArrayValueChanged));
 
         public static double GetStrokeDashArrayValue(Ellipse ellipse)

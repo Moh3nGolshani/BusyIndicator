@@ -3,12 +3,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:BI="clr-namespace:BusyIndicator">
 
-    <ControlTemplate x:Key="Cogs" TargetType="{x:Type BI:Indicator}">
+    <ControlTemplate
+        x:Key="Cogs"
+        TargetType="{x:Type BI:Indicator}">
         <Grid
             x:Name="MainGrid"
             HorizontalAlignment="Center"
             VerticalAlignment="Center">
-            <Canvas Width="50" Height="50">
+            <Canvas
+                Width="50"
+                Height="50">
                 <Path
                     x:Name="topCog"
                     Canvas.Left="5"
@@ -44,7 +48,8 @@
                         <TransformGroup>
                             <ScaleTransform />
                             <SkewTransform />
-                            <RotateTransform Angle="15" />
+                            <RotateTransform
+                                Angle="15" />
                             <TranslateTransform />
                         </TransformGroup>
                     </Path.RenderTransform>
@@ -52,24 +57,40 @@
             </Canvas>
 
             <VisualStateManager.VisualStateGroups>
-                <VisualStateGroup x:Name="ActiveStates">
-                    <VisualState x:Name="Active">
-                        <Storyboard BeginTime="00:00:00" RepeatBehavior="Forever">
+                <VisualStateGroup
+                    x:Name="ActiveStates">
+                    <VisualState
+                        x:Name="Active">
+                        <Storyboard
+                            BeginTime="00:00:00"
+                            RepeatBehavior="Forever">
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="bottomCog"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="15" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="195" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="374" />
+                                <EasingDoubleKeyFrame
+                                    KeyTime="00:00:00"
+                                    Value="15" />
+                                <EasingDoubleKeyFrame
+                                    KeyTime="00:00:00.5000000"
+                                    Value="195" />
+                                <EasingDoubleKeyFrame
+                                    KeyTime="00:00:01"
+                                    Value="374" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="topCog"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[2].(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="00:00:00" Value="0" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:00.5000000" Value="-180" />
-                                <EasingDoubleKeyFrame KeyTime="00:00:01" Value="-359" />
+                                <EasingDoubleKeyFrame
+                                    KeyTime="00:00:00"
+                                    Value="0" />
+                                <EasingDoubleKeyFrame
+                                    KeyTime="00:00:00.5000000"
+                                    Value="-180" />
+                                <EasingDoubleKeyFrame
+                                    KeyTime="00:00:01"
+                                    Value="-359" />
                             </DoubleAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>

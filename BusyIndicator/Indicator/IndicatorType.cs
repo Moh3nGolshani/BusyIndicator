@@ -9,9 +9,13 @@
         Cupertino,
         Dashes,
         DotCircle,
+        DoubleBounce,
         Ellipse,
         Piston,
+        Pulse,
         Ring,
-        Swirl
+        Swirl,
+        ThreeDots,
+        Wave
     }
 }

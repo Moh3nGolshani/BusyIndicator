@@ -3,15 +3,21 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:BI="clr-namespace:BusyIndicator">
 
-    <ControlTemplate x:Key="Ring" TargetType="{x:Type BI:Indicator}">
+    <ControlTemplate
+        x:Key="Ring"
+        TargetType="{x:Type BI:Indicator}">
         <Grid
             x:Name="MainGrid"
             HorizontalAlignment="Center"
             VerticalAlignment="Center">
-            <Grid Width="65" Height="65">
-                <Canvas RenderTransformOrigin=".5,.5">
+            <Grid
+                Width="65"
+                Height="65">
+                <Canvas
+                    RenderTransformOrigin=".5,.5">
                     <Canvas.RenderTransform>
-                        <RotateTransform x:Name="E1R" />
+                        <RotateTransform
+                            x:Name="E1R" />
                     </Canvas.RenderTransform>
                     <Ellipse
                         x:Name="E1"
@@ -24,9 +30,11 @@
                         Opacity="0" />
                 </Canvas>
 
-                <Canvas RenderTransformOrigin=".5,.5">
+                <Canvas
+                    RenderTransformOrigin=".5,.5">
                     <Canvas.RenderTransform>
-                        <RotateTransform x:Name="E2R" />
+                        <RotateTransform
+                            x:Name="E2R" />
                     </Canvas.RenderTransform>
                     <Ellipse
                         x:Name="E2"
@@ -38,9 +46,11 @@
                         Fill="#0078D7"
                         Opacity="0" />
                 </Canvas>
-                <Canvas RenderTransformOrigin=".5,.5">
+                <Canvas
+                    RenderTransformOrigin=".5,.5">
                     <Canvas.RenderTransform>
-                        <RotateTransform x:Name="E3R" />
+                        <RotateTransform
+                            x:Name="E3R" />
                     </Canvas.RenderTransform>
                     <Ellipse
                         x:Name="E3"
@@ -52,9 +62,11 @@
                         Fill="#0078D7"
                         Opacity="0" />
                 </Canvas>
-                <Canvas RenderTransformOrigin=".5,.5">
+                <Canvas
+                    RenderTransformOrigin=".5,.5">
                     <Canvas.RenderTransform>
-                        <RotateTransform x:Name="E4R" />
+                        <RotateTransform
+                            x:Name="E4R" />
                     </Canvas.RenderTransform>
                     <Ellipse
                         x:Name="E4"
@@ -66,9 +78,11 @@
                         Fill="#0078D7"
                         Opacity="0" />
                 </Canvas>
-                <Canvas RenderTransformOrigin=".5,.5">
+                <Canvas
+                    RenderTransformOrigin=".5,.5">
                     <Canvas.RenderTransform>
-                        <RotateTransform x:Name="E5R" />
+                        <RotateTransform
+                            x:Name="E5R" />
                     </Canvas.RenderTransform>
                     <Ellipse
                         x:Name="E5"
@@ -80,9 +94,12 @@
                         Fill="#0078D7"
                         Opacity="0" />
                 </Canvas>
-                <Canvas RenderTransformOrigin=".5,.5" Visibility="Visible">
+                <Canvas
+                    RenderTransformOrigin=".5,.5"
+                    Visibility="Visible">
                     <Canvas.RenderTransform>
-                        <RotateTransform x:Name="E6R" />
+                        <RotateTransform
+                            x:Name="E6R" />
                     </Canvas.RenderTransform>
                     <Ellipse
                         x:Name="E6"
@@ -97,62 +114,114 @@
             </Grid>
 
             <VisualStateManager.VisualStateGroups>
-                <VisualStateGroup x:Name="ActiveStates">
-                    <VisualState x:Name="Active">
-                        <Storyboard BeginTime="00:00:00" RepeatBehavior="Forever">
+                <VisualStateGroup
+                    x:Name="ActiveStates">
+                    <VisualState
+                        x:Name="Active">
+                        <Storyboard
+                            BeginTime="00:00:00"
+                            RepeatBehavior="Forever">
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="0"
                                 Storyboard.TargetName="E1"
                                 Storyboard.TargetProperty="Opacity">
-                                <LinearDoubleKeyFrame KeyTime="0" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.21"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.22"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.47"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.167"
                                 Storyboard.TargetName="E2"
                                 Storyboard.TargetProperty="Opacity">
-                                <LinearDoubleKeyFrame KeyTime="0" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.21"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.22"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.47"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.334"
                                 Storyboard.TargetName="E3"
                                 Storyboard.TargetProperty="Opacity">
-                                <LinearDoubleKeyFrame KeyTime="0" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.21"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.22"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.47"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.501"
                                 Storyboard.TargetName="E4"
                                 Storyboard.TargetProperty="Opacity">
-                                <LinearDoubleKeyFrame KeyTime="0" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.21"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.22"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.47"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.668"
                                 Storyboard.TargetName="E5"
                                 Storyboard.TargetProperty="Opacity">
-                                <LinearDoubleKeyFrame KeyTime="0" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.21"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.22"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.47"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.835"
                                 Storyboard.TargetName="E6"
                                 Storyboard.TargetProperty="Opacity">
-                                <LinearDoubleKeyFrame KeyTime="0" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.21" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.22" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:3.47" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.21"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.22"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:3.47"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="0"
@@ -166,7 +235,9 @@
                                     KeySpline="0.02,0.33,0.38,0.77"
                                     KeyTime="0:0:0.433"
                                     Value="10" />
-                                <SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="93" />
+                                <SplineDoubleKeyFrame
+                                    KeyTime="0:0:1.2"
+                                    Value="93" />
                                 <SplineDoubleKeyFrame
                                     KeySpline="0.57,0.17,0.95,0.75"
                                     KeyTime="0:0:1.617"
@@ -175,7 +246,9 @@
                                     KeySpline="0,0.19,0.07,0.72"
                                     KeyTime="0:0:2.017"
                                     Value="357" />
-                                <SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="439" />
+                                <SplineDoubleKeyFrame
+                                    KeyTime="0:0:2.783"
+                                    Value="439" />
                                 <SplineDoubleKeyFrame
                                     KeySpline="0,0,0.95,0.37"
                                     KeyTime="0:0:3.217"
@@ -193,7 +266,9 @@
                                     KeySpline="0.02,0.33,0.38,0.77"
                                     KeyTime="0:0:0.433"
                                     Value="4" />
-                                <SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="87" />
+                                <SplineDoubleKeyFrame
+                                    KeyTime="0:0:1.2"
+                                    Value="87" />
                                 <SplineDoubleKeyFrame
                                     KeySpline="0.57,0.17,0.95,0.75"
                                     KeyTime="0:0:1.617"
@@ -202,7 +277,9 @@
                                     KeySpline="0,0.19,0.07,0.72"
                                     KeyTime="0:0:2.017"
                                     Value="351" />
-                                <SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="433" />
+                                <SplineDoubleKeyFrame
+                                    KeyTime="0:0:2.783"
+                                    Value="433" />
                                 <SplineDoubleKeyFrame
                                     KeySpline="0,0,0.95,0.37"
                                     KeyTime="0:0:3.217"
@@ -220,7 +297,9 @@
                                     KeySpline="0.02,0.33,0.38,0.77"
                                     KeyTime="0:0:0.433"
                                     Value="-2" />
-                                <SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="81" />
+                                <SplineDoubleKeyFrame
+                                    KeyTime="0:0:1.2"
+                                    Value="81" />
                                 <SplineDoubleKeyFrame
                                     KeySpline="0.57,0.17,0.95,0.75"
                                     KeyTime="0:0:1.617"
@@ -229,7 +308,9 @@
                                     KeySpline="0,0.19,0.07,0.72"
                                     KeyTime="0:0:2.017"
                                     Value="345" />
-                                <SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="427" />
+                                <SplineDoubleKeyFrame
+                                    KeyTime="0:0:2.783"
+                                    Value="427" />
                                 <SplineDoubleKeyFrame
                                     KeySpline="0,0,0.95,0.37"
                                     KeyTime="0:0:3.217"
@@ -247,7 +328,9 @@
                                     KeySpline="0.02,0.33,0.38,0.77"
                                     KeyTime="0:0:0.433"
                                     Value="-8" />
-                                <SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="75" />
+                                <SplineDoubleKeyFrame
+                                    KeyTime="0:0:1.2"
+                                    Value="75" />
                                 <SplineDoubleKeyFrame
                                     KeySpline="0.57,0.17,0.95,0.75"
                                     KeyTime="0:0:1.617"
@@ -256,7 +339,9 @@
                                     KeySpline="0,0.19,0.07,0.72"
                                     KeyTime="0:0:2.017"
                                     Value="339" />
-                                <SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="421" />
+                                <SplineDoubleKeyFrame
+                                    KeyTime="0:0:2.783"
+                                    Value="421" />
                                 <SplineDoubleKeyFrame
                                     KeySpline="0,0,0.95,0.37"
                                     KeyTime="0:0:3.217"
@@ -274,7 +359,9 @@
                                     KeySpline="0.02,0.33,0.38,0.77"
                                     KeyTime="0:0:0.433"
                                     Value="-14" />
-                                <SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="69" />
+                                <SplineDoubleKeyFrame
+                                    KeyTime="0:0:1.2"
+                                    Value="69" />
                                 <SplineDoubleKeyFrame
                                     KeySpline="0.57,0.17,0.95,0.75"
                                     KeyTime="0:0:1.617"
@@ -283,7 +370,9 @@
                                     KeySpline="0,0.19,0.07,0.72"
                                     KeyTime="0:0:2.017"
                                     Value="331" />
-                                <SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="415" />
+                                <SplineDoubleKeyFrame
+                                    KeyTime="0:0:2.783"
+                                    Value="415" />
                                 <SplineDoubleKeyFrame
                                     KeySpline="0,0,0.95,0.37"
                                     KeyTime="0:0:3.217"
@@ -301,7 +390,9 @@
                                     KeySpline="0.02,0.33,0.38,0.77"
                                     KeyTime="0:0:0.433"
                                     Value="-20" />
-                                <SplineDoubleKeyFrame KeyTime="0:0:1.2" Value="63" />
+                                <SplineDoubleKeyFrame
+                                    KeyTime="0:0:1.2"
+                                    Value="63" />
                                 <SplineDoubleKeyFrame
                                     KeySpline="0.57,0.17,0.95,0.75"
                                     KeyTime="0:0:1.617"
@@ -310,7 +401,9 @@
                                     KeySpline="0,0.19,0.07,0.72"
                                     KeyTime="0:0:2.017"
                                     Value="325" />
-                                <SplineDoubleKeyFrame KeyTime="0:0:2.783" Value="409" />
+                                <SplineDoubleKeyFrame
+                                    KeyTime="0:0:2.783"
+                                    Value="409" />
                                 <SplineDoubleKeyFrame
                                     KeySpline="0,0,0.95,0.37"
                                     KeyTime="0:0:3.217"

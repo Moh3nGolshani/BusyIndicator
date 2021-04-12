@@ -3,7 +3,7 @@
     <OutputType>Library</OutputType>
     <UseWPF>true</UseWPF>
     <TargetFrameworks>net45;netcoreapp3.1</TargetFrameworks>
-	<Version>1.4.0.0</Version>
+	<Version>1.5.0.0</Version>
 	<Authors>Mohsen Golshani</Authors>
 	<Company>Mohsen Golshani</Company>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
@@ -11,7 +11,7 @@
     <PackageIcon>Icon.png</PackageIcon>
     <RepositoryUrl>https://github.com/Peoky/BusyIndicator</RepositoryUrl>
     <PackageTags>BusyIndicator Loader Spinner LoadingIndicator</PackageTags>
-    <PackageReleaseNotes>Added FocusAfterBusy property</PackageReleaseNotes>
+    <PackageReleaseNotes>New indicators</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Peoky/BusyIndicator</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
@@ -40,6 +40,22 @@
     </Page>
     <Page Update="Indicator\Resource\DotCircle.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
+    <Page Update="Indicator\Resource\ThreeDots.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Indicator\Resource\DoubleBounce.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Indicator\Resource\Pulse.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="Indicator\Resource\Wave.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+      <SubType>Designer</SubType>
     </Page>
     <Page Update="Indicator\Resource\Swirl.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>

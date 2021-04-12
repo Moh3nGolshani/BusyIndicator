@@ -65,6 +65,18 @@ namespace Demo
                 case 10:
                     BusyIndicator.IndicatorType = IndicatorType.Blocks;
                     break;
+                case 11:
+                    BusyIndicator.IndicatorType = IndicatorType.Wave;
+                    break;
+                case 12:
+                    BusyIndicator.IndicatorType = IndicatorType.Pulse;
+                    break;
+                case 13:
+                    BusyIndicator.IndicatorType = IndicatorType.DoubleBounce;
+                    break;
+                case 14:
+                    BusyIndicator.IndicatorType = IndicatorType.ThreeDots;
+                    break;
                 default:
                     break;
             }

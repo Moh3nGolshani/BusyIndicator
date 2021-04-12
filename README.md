@@ -33,7 +33,7 @@ BusyIndicator for WPF with multiple indicator types.
 <pre>xmlns:busyindicator="clr-namespace:BusyIndicator;assembly=BusyIndicator"</pre>  
 
 4. Create a BusyMask on top of main view  
-<pre><code>&lt;busyindicator:BusyMask x:Name="BusyIndicator" IsBusy="False" IndicatorType="Dashes" BusyContent="Please wait..." &gt;  
+<pre><code>&lt;busyindicator:BusyMask x:Name="BusyIndicator" IsBusy="False" IndicatorType="Dashes" BusyContent="Please wait..." FocusAfterBusy="{Binding ElementName = MyTextBox}" &gt;  
          
          
           <... main view goes here ... >
@@ -41,7 +41,7 @@ BusyIndicator for WPF with multiple indicator types.
          
 &lt;/busyindicator:BusyMask&gt;</code></pre>  
 
-5. Set `IsBusy` property value to `true` or `false` to enable or disable the mask (or bind it)[check demo for a working example]
+5. Set `IsBusy` property value to `true` or `false` or bind it
 <pre>BusyIndicator.IsBusy = true; or BusyIndicator.IsBusy = false; </pre>  
 
 ##

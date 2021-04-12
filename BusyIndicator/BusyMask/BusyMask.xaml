@@ -4,27 +4,42 @@
     xmlns:BI="clr-namespace:BusyIndicator"
     xmlns:sys="clr-namespace:System;assembly=mscorlib">
 
-    <Style TargetType="BI:BusyMask">
-        <Setter Property="IsTabStop" Value="False" />
-        <Setter Property="Focusable" Value="False" />
-        <Setter Property="Background" Value="#D8FFFFFF" />
-        <Setter Property="Template">
+    <Style
+        TargetType="BI:BusyMask">
+        <Setter
+            Property="IsTabStop"
+            Value="False" />
+        <Setter
+            Property="Focusable"
+            Value="False" />
+        <Setter
+            Property="Background"
+            Value="#D8FFFFFF" />
+        <Setter
+            Property="Template">
             <Setter.Value>
-                <ControlTemplate TargetType="{x:Type BI:BusyMask}">
+                <ControlTemplate
+                    TargetType="{x:Type BI:BusyMask}">
                     <Grid>
                         <ContentControl
-                            x:Name="Content" 
-                            IsTabStop="False" 
-                            Focusable="False" 
-                            VerticalContentAlignment="Stretch" 
-                            HorizontalContentAlignment="Stretch" 
-                            Content="{TemplateBinding Content}" 
+                            x:Name="Content"
+                            IsTabStop="False"
+                            Focusable="False"
+                            VerticalContentAlignment="Stretch"
+                            HorizontalContentAlignment="Stretch"
+                            Content="{TemplateBinding Content}"
                             ContentTemplate="{TemplateBinding ContentTemplate}" />
 
-                        <Border x:Name="BusyContent" Background="{TemplateBinding Background}">
+                        <Border
+                            x:Name="BusyContent"
+                            Background="{TemplateBinding Background}">
 
-                            <StackPanel HorizontalAlignment="Center" VerticalAlignment="Center">
-                                <BI:Indicator x:Name="Indicator" IndicatorType="{TemplateBinding IndicatorType}" />
+                            <StackPanel
+                                HorizontalAlignment="Center"
+                                VerticalAlignment="Center">
+                                <BI:Indicator
+                                    x:Name="Indicator"
+                                    IndicatorType="{TemplateBinding IndicatorType}" />
 
                                 <TextBlock
                                     HorizontalAlignment="Center"
@@ -43,14 +58,17 @@
                             </StackPanel>
                         </Border>
                         <VisualStateManager.VisualStateGroups>
-                            <VisualStateGroup x:Name="VisibilityStates">
-                                <VisualState x:Name="Visible">
+                            <VisualStateGroup
+                                x:Name="VisibilityStates">
+                                <VisualState
+                                    x:Name="Visible">
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames
                                             BeginTime="00:00:00"
                                             Storyboard.TargetName="BusyContent"
                                             Storyboard.TargetProperty="(UIElement.Visibility)">
-                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                            <DiscreteObjectKeyFrame
+                                                KeyTime="00:00:00">
                                                 <DiscreteObjectKeyFrame.Value>
                                                     <Visibility>Visible</Visibility>
                                                 </DiscreteObjectKeyFrame.Value>
@@ -60,7 +78,8 @@
                                             BeginTime="00:00:00"
                                             Storyboard.TargetName="Content"
                                             Storyboard.TargetProperty="(Control.IsEnabled)">
-                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                            <DiscreteObjectKeyFrame
+                                                KeyTime="00:00:00">
                                                 <DiscreteObjectKeyFrame.Value>
                                                     <sys:Boolean>False</sys:Boolean>
                                                 </DiscreteObjectKeyFrame.Value>
@@ -68,13 +87,15 @@
                                         </ObjectAnimationUsingKeyFrames>
                                     </Storyboard>
                                 </VisualState>
-                                <VisualState x:Name="Hidden">
+                                <VisualState
+                                    x:Name="Hidden">
                                     <Storyboard>
                                         <ObjectAnimationUsingKeyFrames
                                             BeginTime="00:00:00"
                                             Storyboard.TargetName="BusyContent"
                                             Storyboard.TargetProperty="(UIElement.Visibility)">
-                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                            <DiscreteObjectKeyFrame
+                                                KeyTime="00:00:00">
                                                 <DiscreteObjectKeyFrame.Value>
                                                     <Visibility>Collapsed</Visibility>
                                                 </DiscreteObjectKeyFrame.Value>
@@ -84,7 +105,8 @@
                                             BeginTime="00:00:00"
                                             Storyboard.TargetName="Content"
                                             Storyboard.TargetProperty="(Control.IsEnabled)">
-                                            <DiscreteObjectKeyFrame KeyTime="00:00:00">
+                                            <DiscreteObjectKeyFrame
+                                                KeyTime="00:00:00">
                                                 <DiscreteObjectKeyFrame.Value>
                                                     <sys:Boolean>True</sys:Boolean>
                                                 </DiscreteObjectKeyFrame.Value>

@@ -3,12 +3,16 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:BI="clr-namespace:BusyIndicator">
 
-    <ControlTemplate x:Key="Dashes" TargetType="{x:Type BI:Indicator}">
+    <ControlTemplate
+        x:Key="Dashes"
+        TargetType="{x:Type BI:Indicator}">
         <Grid
             x:Name="MainGrid"
             HorizontalAlignment="Center"
             VerticalAlignment="Center">
-            <StackPanel Height="80" Orientation="Horizontal">
+            <StackPanel
+                Height="80"
+                Orientation="Horizontal">
                 <Rectangle
                     x:Name="Rectangle1"
                     Width="30"
@@ -27,13 +31,23 @@
                     </Rectangle.Effect>
                     <Rectangle.Fill>
                         <LinearGradientBrush>
-                            <GradientStop x:Name="GradientStop1_1" Offset="0.85" Color="#F330F3" />
-                            <GradientStop x:Name="GradientStop1_2" Offset="0.65" Color="#F330F3" />
-                            <GradientStop x:Name="GradientStop1_3" Offset="0.4" Color="#F330F3" />
+                            <GradientStop
+                                x:Name="GradientStop1_1"
+                                Offset="0.85"
+                                Color="#F330F3" />
+                            <GradientStop
+                                x:Name="GradientStop1_2"
+                                Offset="0.65"
+                                Color="#F330F3" />
+                            <GradientStop
+                                x:Name="GradientStop1_3"
+                                Offset="0.4"
+                                Color="#F330F3" />
                         </LinearGradientBrush>
                     </Rectangle.Fill>
                     <Rectangle.RenderTransform>
-                        <RotateTransform Angle="270" />
+                        <RotateTransform
+                            Angle="270" />
                     </Rectangle.RenderTransform>
                 </Rectangle>
 
@@ -56,9 +70,18 @@
                     </Rectangle.Effect>
                     <Rectangle.Fill>
                         <LinearGradientBrush>
-                            <GradientStop x:Name="GradientStop2_1" Offset="0.85" Color="#F732E5" />
-                            <GradientStop x:Name="GradientStop2_2" Offset="0.65" Color="#F530E9" />
-                            <GradientStop x:Name="GradientStop2_3" Offset="0.4" Color="#F530ED" />
+                            <GradientStop
+                                x:Name="GradientStop2_1"
+                                Offset="0.85"
+                                Color="#F732E5" />
+                            <GradientStop
+                                x:Name="GradientStop2_2"
+                                Offset="0.65"
+                                Color="#F530E9" />
+                            <GradientStop
+                                x:Name="GradientStop2_3"
+                                Offset="0.4"
+                                Color="#F530ED" />
                         </LinearGradientBrush>
                     </Rectangle.Fill>
                     <Rectangle.RenderTransform>
@@ -85,9 +108,18 @@
                     </Rectangle.Effect>
                     <Rectangle.Fill>
                         <LinearGradientBrush>
-                            <GradientStop x:Name="GradientStop3_1" Offset="0.85" Color="#FB32D3" />
-                            <GradientStop x:Name="GradientStop3_2" Offset="0.65" Color="#FB32D6" />
-                            <GradientStop x:Name="GradientStop3_3" Offset="0.4" Color="#F932DB" />
+                            <GradientStop
+                                x:Name="GradientStop3_1"
+                                Offset="0.85"
+                                Color="#FB32D3" />
+                            <GradientStop
+                                x:Name="GradientStop3_2"
+                                Offset="0.65"
+                                Color="#FB32D6" />
+                            <GradientStop
+                                x:Name="GradientStop3_3"
+                                Offset="0.4"
+                                Color="#F932DB" />
                         </LinearGradientBrush>
                     </Rectangle.Fill>
                     <Rectangle.RenderTransform>
@@ -113,9 +145,18 @@
                     </Rectangle.Effect>
                     <Rectangle.Fill>
                         <LinearGradientBrush>
-                            <GradientStop x:Name="GradientStop4_1" Offset="0.85" Color="#FF32C5" />
-                            <GradientStop x:Name="GradientStop4_2" Offset="0.65" Color="#FF34C6" />
-                            <GradientStop x:Name="GradientStop4_3" Offset="0.4" Color="#FD32C9" />
+                            <GradientStop
+                                x:Name="GradientStop4_1"
+                                Offset="0.85"
+                                Color="#FF32C5" />
+                            <GradientStop
+                                x:Name="GradientStop4_2"
+                                Offset="0.65"
+                                Color="#FF34C6" />
+                            <GradientStop
+                                x:Name="GradientStop4_3"
+                                Offset="0.4"
+                                Color="#FD32C9" />
                         </LinearGradientBrush>
                     </Rectangle.Fill>
                     <Rectangle.RenderTransform>
@@ -126,16 +167,27 @@
 
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup>
-                    <VisualState x:Name="Active">
-                        <Storyboard BeginTime="00:00:00" RepeatBehavior="Forever">
+                    <VisualState
+                        x:Name="Active">
+                        <Storyboard
+                            BeginTime="00:00:00"
+                            RepeatBehavior="Forever">
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="Rectangle1"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.30" Value="325" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.35" Value="350" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.50" Value="380" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.80" Value="360" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.30"
+                                    Value="325" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.35"
+                                    Value="350" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.50"
+                                    Value="380" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.80"
+                                    Value="360" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <ColorAnimation
@@ -157,9 +209,15 @@
                                 BeginTime="00:00:00.35"
                                 Storyboard.TargetName="Rectangle2"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.25" Value="-170" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.50" Value="-200" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.85" Value="-180" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.25"
+                                    Value="-170" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.50"
+                                    Value="-200" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.85"
+                                    Value="-180" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimation
@@ -189,9 +247,15 @@
                                 BeginTime="00:00:00.60"
                                 Storyboard.TargetName="Rectangle3"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.25" Value="170" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.50" Value="200" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.85" Value="180" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.25"
+                                    Value="170" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.50"
+                                    Value="200" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.85"
+                                    Value="180" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimation
@@ -221,12 +285,24 @@
                                 BeginTime="00:00:0.85"
                                 Storyboard.TargetName="Rectangle4"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.3" Value="-200" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.55" Value="-270" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.95" Value="-325" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:01.05" Value="-350" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:01.20" Value="-380" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:01.55" Value="-360" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.3"
+                                    Value="-200" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.55"
+                                    Value="-270" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.95"
+                                    Value="-325" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:01.05"
+                                    Value="-350" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:01.20"
+                                    Value="-380" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:01.55"
+                                    Value="-360" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <ColorAnimation
@@ -248,9 +324,15 @@
                                 BeginTime="00:00:01.9"
                                 Storyboard.TargetName="Rectangle3"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.25" Value="350" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.50" Value="380" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.85" Value="360" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.25"
+                                    Value="350" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.50"
+                                    Value="380" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.85"
+                                    Value="360" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimation
@@ -280,9 +362,15 @@
                                 BeginTime="00:00:02.15"
                                 Storyboard.TargetName="Rectangle2"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.25" Value="-350" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.5" Value="-380" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.85" Value="-360" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.25"
+                                    Value="-350" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.5"
+                                    Value="-380" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.85"
+                                    Value="-360" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimation
@@ -312,8 +400,12 @@
                                 BeginTime="00:00:02.40"
                                 Storyboard.TargetName="Rectangle1"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.3" Value="560" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.55" Value="630" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.3"
+                                    Value="560" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.55"
+                                    Value="630" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <ColorAnimation

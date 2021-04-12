@@ -14,7 +14,8 @@
     <Window.Resources>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/Theme/Default.xaml" />
+                <ResourceDictionary
+                    Source="pack://application:,,,/BusyIndicator;component/Theme/Default.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>
     </Window.Resources>
@@ -23,8 +24,8 @@
         x:Name="BusyIndicator"
         BusyContent="Please wait..."
         IndicatorType="Dashes"
-        IsBusy="False" 
-        FocusAfterBusy="{Binding ElementName = MyTextBox}" >
+        IsBusy="False"
+        FocusAfterBusy="{Binding ElementName = MyTextBox}">
         <StackPanel>
             <ComboBox
                 x:Name="IndicatorComboBox"
@@ -67,6 +68,18 @@
                 <ComboBoxItem>
                     Blocks
                 </ComboBoxItem>
+                <ComboBoxItem>
+                    Wave
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Pulse
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    DoubleBounce
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    ThreeDots
+                </ComboBoxItem>
             </ComboBox>
             <Button
                 Width="90"
@@ -76,7 +89,12 @@
                 Click="Button_Click"
                 Content="Start"
                 FontSize="12" />
-            <TextBox x:Name="MyTextBox" Focusable="True" Margin="0 5" Width="200" Height="30" />
+            <TextBox
+                x:Name="MyTextBox"
+                Focusable="True"
+                Margin="0 5"
+                Width="200"
+                Height="20 "/>
         </StackPanel>
     </busyIndicator:BusyMask>
 

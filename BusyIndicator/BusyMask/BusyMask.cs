@@ -72,7 +72,7 @@ namespace BusyIndicator
             {
                 if (FocusAfterBusy != null)
                 {
-                    FocusAfterBusy.Dispatcher.Delay(100, ( _ ) =>
+                    FocusAfterBusy.Dispatcher.Delay(100, (_) =>
                     {
                         FocusAfterBusy.Focus();
                     });
