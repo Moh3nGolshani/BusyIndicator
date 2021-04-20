@@ -1,0 +1,155 @@
+{
+  "format": 1,
+  "restore": {
+    "C:\\Users\\golsh\\source\\repos\\BusyIndicator\\Demo\\Demo.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\golsh\\source\\repos\\BusyIndicator\\BusyIndicator\\BusyIndicator.csproj": {
+      "version": "1.5.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\golsh\\source\\repos\\BusyIndicator\\BusyIndicator\\BusyIndicator.csproj",
+        "projectName": "BusyIndicator",
+        "projectPath": "C:\\Users\\golsh\\source\\repos\\BusyIndicator\\BusyIndicator\\BusyIndicator.csproj",
+        "packagesPath": "C:\\Users\\golsh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\golsh\\source\\repos\\BusyIndicator\\BusyIndicator\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "C:\\Users\\golsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45",
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {}
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {}
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      }
+    },
+    "C:\\Users\\golsh\\source\\repos\\BusyIndicator\\Demo\\Demo.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\golsh\\source\\repos\\BusyIndicator\\Demo\\Demo.csproj",
+        "projectName": "Demo",
+        "projectPath": "C:\\Users\\golsh\\source\\repos\\BusyIndicator\\Demo\\Demo.csproj",
+        "packagesPath": "C:\\Users\\golsh\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\golsh\\source\\repos\\BusyIndicator\\Demo\\obj\\",
+        "projectStyle": "PackageReference",
+        "crossTargeting": true,
+        "configFilePaths": [
+          "C:\\Users\\golsh\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+        ],
+        "originalTargetFrameworks": [
+          "net45",
+          "netcoreapp3.1"
+        ],
+        "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "https://api.nuget.org/v3/index.json": {}
+        },
+        "frameworks": {
+          "netcoreapp3.1": {
+            "targetAlias": "netcoreapp3.1",
+            "projectReferences": {
+              "C:\\Users\\golsh\\source\\repos\\BusyIndicator\\BusyIndicator\\BusyIndicator.csproj": {
+                "projectPath": "C:\\Users\\golsh\\source\\repos\\BusyIndicator\\BusyIndicator\\BusyIndicator.csproj"
+              }
+            }
+          },
+          "net45": {
+            "targetAlias": "net45",
+            "projectReferences": {
+              "C:\\Users\\golsh\\source\\repos\\BusyIndicator\\BusyIndicator\\BusyIndicator.csproj": {
+                "projectPath": "C:\\Users\\golsh\\source\\repos\\BusyIndicator\\BusyIndicator\\BusyIndicator.csproj"
+              }
+            }
+          }
+        },
+        "warningProperties": {
+          "warnAsError": [
+            "NU1605"
+          ]
+        }
+      },
+      "frameworks": {
+        "netcoreapp3.1": {
+          "targetAlias": "netcoreapp3.1",
+          "imports": [
+            "net461",
+            "net462",
+            "net47",
+            "net471",
+            "net472",
+            "net48"
+          ],
+          "assetTargetFallback": true,
+          "warn": true,
+          "frameworkReferences": {
+            "Microsoft.NETCore.App": {
+              "privateAssets": "all"
+            },
+            "Microsoft.WindowsDesktop.App.WPF": {
+              "privateAssets": "none"
+            }
+          },
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        },
+        "net45": {
+          "targetAlias": "net45",
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.202\\RuntimeIdentifierGraph.json"
+        }
+      },
+      "runtimes": {
+        "win7-x86": {
+          "#import": []
+        }
+      }
+    }
+  }
+}

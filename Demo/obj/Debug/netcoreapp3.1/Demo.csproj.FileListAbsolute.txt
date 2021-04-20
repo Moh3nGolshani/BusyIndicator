@@ -1,0 +1,44 @@
+D:\My Projects\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\Demo.exe
+D:\My Projects\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\Demo.dll.config
+D:\My Projects\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\Demo.deps.json
+D:\My Projects\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\Demo.runtimeconfig.json
+D:\My Projects\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\Demo.runtimeconfig.dev.json
+D:\My Projects\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\Demo.dll
+D:\My Projects\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\Demo.pdb
+D:\My Projects\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\BusyIndicator.dll
+D:\My Projects\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\BusyIndicator.pdb
+D:\My Projects\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.csprojAssemblyReference.cache
+D:\My Projects\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\MainWindow.baml
+D:\My Projects\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+D:\My Projects\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\App.g.cs
+D:\My Projects\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo_MarkupCompile.cache
+D:\My Projects\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.g.resources
+D:\My Projects\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.Properties.Resources.resources
+D:\My Projects\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.GenerateResource.cache
+D:\My Projects\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CoreCompileInputs.cache
+D:\My Projects\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CopyComplete
+D:\My Projects\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.dll
+D:\My Projects\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.pdb
+D:\My Projects\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.genruntimeconfig.cache
+C:\Users\golsh\source\repos\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\Demo.exe
+C:\Users\golsh\source\repos\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\Demo.dll.config
+C:\Users\golsh\source\repos\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\Demo.deps.json
+C:\Users\golsh\source\repos\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\Demo.runtimeconfig.json
+C:\Users\golsh\source\repos\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\Demo.runtimeconfig.dev.json
+C:\Users\golsh\source\repos\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\Demo.dll
+C:\Users\golsh\source\repos\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\Demo.pdb
+C:\Users\golsh\source\repos\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\BusyIndicator.dll
+C:\Users\golsh\source\repos\BusyIndicator\Demo\bin\Debug\netcoreapp3.1\BusyIndicator.pdb
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.csprojAssemblyReference.cache
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\MainWindow.baml
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\MainWindow.g.cs
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\App.g.cs
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo_MarkupCompile.cache
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.g.resources
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.Properties.Resources.resources
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.GenerateResource.cache
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CoreCompileInputs.cache
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.csproj.CopyComplete
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.dll
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.pdb
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\netcoreapp3.1\Demo.genruntimeconfig.cache

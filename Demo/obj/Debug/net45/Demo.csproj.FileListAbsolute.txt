@@ -1,0 +1,34 @@
+D:\My Projects\BusyIndicator\Demo\bin\Debug\net45\Demo.exe.config
+D:\My Projects\BusyIndicator\Demo\bin\Debug\net45\Demo.exe
+D:\My Projects\BusyIndicator\Demo\bin\Debug\net45\Demo.pdb
+D:\My Projects\BusyIndicator\Demo\bin\Debug\net45\BusyIndicator.dll
+D:\My Projects\BusyIndicator\Demo\bin\Debug\net45\BusyIndicator.pdb
+D:\My Projects\BusyIndicator\Demo\obj\Debug\net45\Demo.csprojAssemblyReference.cache
+D:\My Projects\BusyIndicator\Demo\obj\Debug\net45\MainWindow.baml
+D:\My Projects\BusyIndicator\Demo\obj\Debug\net45\MainWindow.g.cs
+D:\My Projects\BusyIndicator\Demo\obj\Debug\net45\App.g.cs
+D:\My Projects\BusyIndicator\Demo\obj\Debug\net45\Demo_MarkupCompile.cache
+D:\My Projects\BusyIndicator\Demo\obj\Debug\net45\Demo.g.resources
+D:\My Projects\BusyIndicator\Demo\obj\Debug\net45\Demo.Properties.Resources.resources
+D:\My Projects\BusyIndicator\Demo\obj\Debug\net45\Demo.csproj.GenerateResource.cache
+D:\My Projects\BusyIndicator\Demo\obj\Debug\net45\Demo.csproj.CoreCompileInputs.cache
+D:\My Projects\BusyIndicator\Demo\obj\Debug\net45\Demo.csproj.CopyComplete
+D:\My Projects\BusyIndicator\Demo\obj\Debug\net45\Demo.exe
+D:\My Projects\BusyIndicator\Demo\obj\Debug\net45\Demo.pdb
+C:\Users\golsh\source\repos\BusyIndicator\Demo\bin\Debug\net45\Demo.exe.config
+C:\Users\golsh\source\repos\BusyIndicator\Demo\bin\Debug\net45\Demo.exe
+C:\Users\golsh\source\repos\BusyIndicator\Demo\bin\Debug\net45\Demo.pdb
+C:\Users\golsh\source\repos\BusyIndicator\Demo\bin\Debug\net45\BusyIndicator.dll
+C:\Users\golsh\source\repos\BusyIndicator\Demo\bin\Debug\net45\BusyIndicator.pdb
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\net45\Demo.csprojAssemblyReference.cache
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\net45\MainWindow.baml
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\net45\MainWindow.g.cs
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\net45\App.g.cs
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\net45\Demo_MarkupCompile.cache
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\net45\Demo.g.resources
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\net45\Demo.Properties.Resources.resources
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\net45\Demo.csproj.GenerateResource.cache
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\net45\Demo.csproj.CoreCompileInputs.cache
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\net45\Demo.csproj.CopyComplete
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\net45\Demo.exe
+C:\Users\golsh\source\repos\BusyIndicator\Demo\obj\Debug\net45\Demo.pdb

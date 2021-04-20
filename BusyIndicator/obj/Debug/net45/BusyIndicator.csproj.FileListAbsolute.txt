@@ -1,0 +1,56 @@
+D:\My Projects\BusyIndicator\BusyIndicator\bin\Debug\net45\BusyIndicator.dll
+D:\My Projects\BusyIndicator\BusyIndicator\bin\Debug\net45\BusyIndicator.pdb
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Theme\Default.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\GeneratedInternalTypeHelper.g.cs
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\BusyIndicator_MarkupCompile.cache
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\BusyIndicator_MarkupCompile.lref
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\BusyMask\BusyMask.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Indicator.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Bar.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Blocks.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Cogs.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\ColorDots.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Cupertino.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Dashes.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\DotCircle.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\DoubleBounce.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Ellipse.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Grid.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Piston.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Pulse.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Ring.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Swirl.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\ThreeDots.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Wave.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\BusyIndicator.g.resources
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\BusyIndicator.csproj.CoreCompileInputs.cache
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\BusyIndicator.dll
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\net45\BusyIndicator.pdb
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\bin\Debug\net45\BusyIndicator.dll
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\bin\Debug\net45\BusyIndicator.pdb
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Theme\Default.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\GeneratedInternalTypeHelper.g.cs
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\BusyIndicator_MarkupCompile.cache
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\BusyIndicator_MarkupCompile.lref
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\BusyMask\BusyMask.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Indicator.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Bar.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Blocks.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Cogs.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\ColorDots.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Cupertino.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Dashes.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\DotCircle.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\DoubleBounce.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Ellipse.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Grid.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Piston.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Pulse.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Ring.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Swirl.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\ThreeDots.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\Indicator\Resource\Wave.baml
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\BusyIndicator.g.resources
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\BusyIndicator.csproj.CoreCompileInputs.cache
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\BusyIndicator.dll
+C:\Users\golsh\source\repos\BusyIndicator\BusyIndicator\obj\Debug\net45\BusyIndicator.pdb
