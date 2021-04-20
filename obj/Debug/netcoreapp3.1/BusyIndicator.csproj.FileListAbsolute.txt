@@ -1,0 +1,74 @@
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\bin\Debug\netcoreapp3.1\BusyIndicator.deps.json
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\bin\Debug\netcoreapp3.1\BusyIndicator.dll
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\bin\Debug\netcoreapp3.1\BusyIndicator.pdb
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator_MarkupCompile.cache
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator_MarkupCompile.lref
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyMask\BusyMask.baml
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Indicator.baml
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\DashLoader.baml
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\DotLoader.baml
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\ProgressBar.baml
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\ProgressRing.baml
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Spinner.baml
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator.g.resources
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator.csproj.CoreCompileInputs.cache
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator.dll
+C:\Users\golsh\Source\Repos\Peoky\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator.pdb
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\bin\Debug\netcoreapp3.1\BusyIndicator.deps.json
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\bin\Debug\netcoreapp3.1\BusyIndicator.dll
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\bin\Debug\netcoreapp3.1\BusyIndicator.pdb
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Theme\Default.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator_MarkupCompile.cache
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator_MarkupCompile.lref
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyMask\BusyMask.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Indicator.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Bar.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Blocks.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Cogs.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\ColorDots.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Cupertino.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Dashes.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\DotCircle.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Ellipse.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Piston.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Ring.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Swirl.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator.g.resources
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator.csproj.CoreCompileInputs.cache
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator.dll
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator.pdb
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\DoubleBounce.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Pulse.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\ThreeDots.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Wave.baml
+D:\My Projects\BusyIndicator\BusyIndicator\bin\Debug\netcoreapp3.1\BusyIndicator.deps.json
+D:\My Projects\BusyIndicator\BusyIndicator\bin\Debug\netcoreapp3.1\BusyIndicator.dll
+D:\My Projects\BusyIndicator\BusyIndicator\bin\Debug\netcoreapp3.1\BusyIndicator.pdb
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Theme\Default.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\GeneratedInternalTypeHelper.g.cs
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator_MarkupCompile.cache
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator_MarkupCompile.lref
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyMask\BusyMask.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Indicator.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Bar.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Blocks.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Cogs.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\ColorDots.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Cupertino.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Dashes.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\DotCircle.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\DoubleBounce.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Ellipse.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Piston.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Pulse.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Ring.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Swirl.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\ThreeDots.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Wave.baml
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator.g.resources
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator.csproj.CoreCompileInputs.cache
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator.dll
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\BusyIndicator.pdb
+D:\My Projects\BusyIndicator\BusyIndicator\obj\Debug\netcoreapp3.1\Indicator\Resource\Grid.baml

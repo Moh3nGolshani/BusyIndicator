@@ -1,0 +1,17 @@
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\bin\Release\net45\BusyIndicator.dll
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\bin\Release\net45\BusyIndicator.pdb
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\GeneratedInternalTypeHelper.g.cs
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\BusyIndicator_MarkupCompile.cache
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\BusyIndicator_MarkupCompile.lref
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\BusyMask\BusyMask.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\Indicator\Indicator.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\Indicator\Resource\DashLoader.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\Indicator\Resource\DotLoader.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\Indicator\Resource\ProgressBar.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\Indicator\Resource\ProgressRing.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\Indicator\Resource\Spinner.baml
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\BusyIndicator.g.resources
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\BusyIndicator.csproj.CoreCompileInputs.cache
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\BusyIndicator.dll
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\BusyIndicator.pdb
+D:\My Projects\BusyIndicator\BusyIndicator\BusyIndicator\obj\Release\net45\BusyIndicator.csprojAssemblyReference.cache
