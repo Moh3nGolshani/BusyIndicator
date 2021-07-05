@@ -291,13 +291,13 @@
                                     KeyTime="00:00:00"
                                     Value="1" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.1000000"
+                                    KeyTime="00:00:00.10"
                                     Value="0.5" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.2000000"
+                                    KeyTime="00:00:00.20"
                                     Value="0.25" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.3000000"
+                                    KeyTime="00:00:00.30"
                                     Value="0.2" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
@@ -308,16 +308,16 @@
                                     KeyTime="00:00:00"
                                     Value="0.5" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.1000000"
+                                    KeyTime="00:00:00.10"
                                     Value="0.25" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.2000000"
+                                    KeyTime="00:00:00.20"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
                                     KeyTime="00:00:01"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:01.1000000"
+                                    KeyTime="00:00:01.10"
                                     Value="1" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
@@ -328,16 +328,16 @@
                                     KeyTime="00:00:00"
                                     Value="0.25" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.1000000"
+                                    KeyTime="00:00:00.10"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.9000000"
+                                    KeyTime="00:00:00.90"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
                                     KeyTime="00:00:01"
                                     Value="1" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:01.1000000"
+                                    KeyTime="00:00:01.10"
                                     Value="0.5" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
@@ -345,16 +345,16 @@
                                 Storyboard.TargetName="Rectangle02"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.1000000"
+                                    KeyTime="00:00:00.10"
                                     Value="1" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.2000000"
+                                    KeyTime="00:00:00.20"
                                     Value="0.5" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.3000000"
+                                    KeyTime="00:00:00.30"
                                     Value="0.25" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.4000000"
+                                    KeyTime="00:00:00.40"
                                     Value="0.2" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
@@ -362,19 +362,19 @@
                                 Storyboard.TargetName="Rectangle03"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.1000000"
+                                    KeyTime="00:00:00.10"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.2000000"
+                                    KeyTime="00:00:00.20"
                                     Value="1" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.3000000"
+                                    KeyTime="00:00:00.30"
                                     Value="0.5" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.4000000"
+                                    KeyTime="00:00:00.40"
                                     Value="0.25" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.5000000"
+                                    KeyTime="00:00:00.50"
                                     Value="0.2" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
@@ -382,22 +382,22 @@
                                 Storyboard.TargetName="Rectangle04"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.1000000"
+                                    KeyTime="00:00:00.10"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.2000000"
+                                    KeyTime="00:00:00.20"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.3000000"
+                                    KeyTime="00:00:00.30"
                                     Value="1" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.4000000"
+                                    KeyTime="00:00:00.40"
                                     Value="0.5" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.5000000"
+                                    KeyTime="00:00:00.50"
                                     Value="0.25" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.6000000"
+                                    KeyTime="00:00:00.60"
                                     Value="0.2" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
@@ -405,22 +405,22 @@
                                 Storyboard.TargetName="Rectangle05"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.1000000"
+                                    KeyTime="00:00:00.10"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.3000000"
+                                    KeyTime="00:00:00.30"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.4000000"
+                                    KeyTime="00:00:00.40"
                                     Value="1" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.5000000"
+                                    KeyTime="00:00:00.50"
                                     Value="0.5" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.6000000"
+                                    KeyTime="00:00:00.60"
                                     Value="0.25" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.7000000"
+                                    KeyTime="00:00:00.70"
                                     Value="0.2" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
@@ -428,22 +428,22 @@
                                 Storyboard.TargetName="Rectangle06"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.1000000"
+                                    KeyTime="00:00:00.10"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.4000000"
+                                    KeyTime="00:00:00.40"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.5000000"
+                                    KeyTime="00:00:00.50"
                                     Value="1" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.6000000"
+                                    KeyTime="00:00:00.60"
                                     Value="0.5" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.7000000"
+                                    KeyTime="00:00:00.70"
                                     Value="0.25" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.8000000"
+                                    KeyTime="00:00:00.80"
                                     Value="0.2" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
@@ -451,22 +451,22 @@
                                 Storyboard.TargetName="Rectangle07"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.1000000"
+                                    KeyTime="00:00:00.10"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.5000000"
+                                    KeyTime="00:00:00.50"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.6000000"
+                                    KeyTime="00:00:00.60"
                                     Value="1" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.7000000"
+                                    KeyTime="00:00:00.70"
                                     Value="0.5" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.8000000"
+                                    KeyTime="00:00:00.80"
                                     Value="0.25" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.9000000"
+                                    KeyTime="00:00:00.90"
                                     Value="0.2" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
@@ -474,19 +474,19 @@
                                 Storyboard.TargetName="Rectangle08"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.1000000"
+                                    KeyTime="00:00:00.10"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.6000000"
+                                    KeyTime="00:00:00.60"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.7000000"
+                                    KeyTime="00:00:00.70"
                                     Value="1" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.8000000"
+                                    KeyTime="00:00:00.80"
                                     Value="0.5" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.9000000"
+                                    KeyTime="00:00:00.90"
                                     Value="0.25" />
                                 <EasingDoubleKeyFrame
                                     KeyTime="00:00:01"
@@ -497,22 +497,22 @@
                                 Storyboard.TargetName="Rectangle09"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.1000000"
+                                    KeyTime="00:00:00.10"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.7000000"
+                                    KeyTime="00:00:00.70"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.8000000"
+                                    KeyTime="00:00:00.80"
                                     Value="1" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.9000000"
+                                    KeyTime="00:00:00.90"
                                     Value="0.5" />
                                 <EasingDoubleKeyFrame
                                     KeyTime="00:00:01"
                                     Value="0.25" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:01.1000000"
+                                    KeyTime="00:00:01.10"
                                     Value="0.2" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
@@ -520,19 +520,19 @@
                                 Storyboard.TargetName="Rectangle10"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.1000000"
+                                    KeyTime="00:00:00.10"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
                                     KeyTime="00:00:00.8000000"
                                     Value="0.2" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.9000000"
+                                    KeyTime="00:00:00.90"
                                     Value="1" />
                                 <EasingDoubleKeyFrame
                                     KeyTime="00:00:01"
                                     Value="0.5" />
                                 <EasingDoubleKeyFrame
-                                    KeyTime="00:00:01.1000000"
+                                    KeyTime="00:00:01.10"
                                     Value="0.25" />
                             </DoubleAnimationUsingKeyFrames>
                         </Storyboard>

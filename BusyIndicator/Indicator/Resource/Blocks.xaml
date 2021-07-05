@@ -159,7 +159,7 @@
                                 Storyboard.TargetName="Rectangle05"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
                                 <LinearDoubleKeyFrame
-                                    KeyTime="00:00:00.5"
+                                    KeyTime="00:00:00.22"
                                     Value="1" />
                             </DoubleAnimationUsingKeyFrames>
 
@@ -242,7 +242,7 @@
                                 Storyboard.TargetName="Rectangle05"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
                                 <LinearDoubleKeyFrame
-                                    KeyTime="00:00:00.5"
+                                    KeyTime="00:00:00.22"
                                     Value="0" />
                             </DoubleAnimationUsingKeyFrames>
 

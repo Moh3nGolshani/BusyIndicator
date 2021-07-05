@@ -15,7 +15,6 @@
                 Height="70"
                 Margin="10">
                 <Ellipse
-                    x:Name="Ellipse"
                     RenderTransformOrigin="0.5,0.5"
                     Fill="#CC119EDA">
                     <Ellipse.RenderTransform>

@@ -39,7 +39,7 @@
                     Dashes
                 </ComboBoxItem>
                 <ComboBoxItem>
-                    ColorDots
+                    FourDots
                 </ComboBoxItem>
                 <ComboBoxItem>
                     Bar
@@ -83,6 +83,9 @@
                 <ComboBoxItem>
                     Grid
                 </ComboBoxItem>
+                <ComboBoxItem>
+                    BouncingDot
+                </ComboBoxItem>
             </ComboBox>
             <Button
                 Width="90"
@@ -92,13 +95,20 @@
                 Click="Button_Click"
                 Content="Start"
                 FontSize="12" />
-            <TextBox
-                x:Name="MyTextBox"
-                Focusable="True"
-                Margin="0 5"
-                Width="200"
-                Height="20 "/>
+            <StackPanel
+                Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock
+                    Text="Duration: "
+                    Margin="5" />
+                <TextBox
+                    x:Name="MyTextBox"
+                    PreviewTextInput="NumberValidationTextBox"
+                    Focusable="True"
+                    Margin="0 5"
+                    Width="100"
+                    Height="20"
+                    Text="10"/>
+            </StackPanel>
         </StackPanel>
     </busyIndicator:BusyMask>
-
 </Window>

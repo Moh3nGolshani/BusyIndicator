@@ -2,6 +2,8 @@
 using System.Threading.Tasks;
 using System.Windows;
 using System.Windows.Controls;
+using System.Text.RegularExpressions;
+using System.Windows.Input;
 
 namespace Demo
 {
@@ -10,18 +12,30 @@ namespace Demo
         public MainWindow()
         {
             InitializeComponent();
-            IndicatorComboBox.SelectedIndex = 15;
+            IndicatorComboBox.SelectedIndex = 0;
 
         }
 
-        private void Window_MouseLeftButtonDown(object sender, System.Windows.Input.MouseButtonEventArgs e)
+        private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)
         {
             DragMove();
         }
+
+        private void NumberValidationTextBox(object sender, TextCompositionEventArgs e)
+        {
+            Regex regex = new Regex("[^0-9]+");
+            e.Handled = regex.IsMatch(e.Text);
+        }
+
         private async void Button_Click(object sender, RoutedEventArgs e)
         {
+            if (!double.TryParse(MyTextBox.Text, out double duration))
+            {
+                duration = 10;
+            }
+
             BusyIndicator.IsBusy = true;
-            await Task.Delay(5000);
+            await Task.Delay(System.TimeSpan.FromSeconds(duration));
             BusyIndicator.IsBusy = false;
         }
 
@@ -36,7 +50,7 @@ namespace Demo
                     BusyIndicator.IndicatorType = IndicatorType.Dashes;
                     break;
                 case 1:
-                    BusyIndicator.IndicatorType = IndicatorType.ColorDots;
+                    BusyIndicator.IndicatorType = IndicatorType.FourDots;
                     break;
                 case 2:
                     BusyIndicator.IndicatorType = IndicatorType.Bar;
@@ -80,10 +94,12 @@ namespace Demo
                 case 15:
                     BusyIndicator.IndicatorType = IndicatorType.Grid;
                     break;
+                case 16:
+                    BusyIndicator.IndicatorType = IndicatorType.BouncingDot;
+                    break;
                 default:
                     break;
             }
         }
-
     }
 }

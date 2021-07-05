@@ -4,7 +4,7 @@
     xmlns:BI="clr-namespace:BusyIndicator">
 
     <ControlTemplate
-        x:Key="ColorDots"
+        x:Key="FourDots"
         TargetType="{x:Type BI:Indicator}">
         <Grid
             x:Name="MainGrid"
@@ -17,7 +17,7 @@
                     x:Name="Ellipse1"
                     Width="17"
                     Height="17"
-                    Fill="#FDBB18"
+                    Fill="#CC119EDA"
                     RenderTransformOrigin="3.6 0.5">
                     <Ellipse.RenderTransform>
                         <RotateTransform />
@@ -29,7 +29,7 @@
                     Width="17"
                     Height="17"
                     Margin="10,0"
-                    Fill="#7C9728"
+                    Fill="#CC119EDA"
                     RenderTransformOrigin="2.6 0.5">
                     <Ellipse.RenderTransform>
                         <RotateTransform />
@@ -40,7 +40,7 @@
                     x:Name="Ellipse3"
                     Width="17"
                     Height="17"
-                    Fill="#958B84"
+                    Fill="#CC119EDA"
                     RenderTransformOrigin="2.1 0.5">
                     <Ellipse.RenderTransform>
                         <RotateTransform />
@@ -52,7 +52,7 @@
                     Width="17"
                     Height="17"
                     Margin="10,0"
-                    Fill="#2B5F7D"
+                    Fill="#CC119EDA"
                     RenderTransformOrigin="-2.6 0.5">
                     <Ellipse.RenderTransform>
                         <RotateTransform />

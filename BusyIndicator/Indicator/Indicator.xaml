@@ -6,7 +6,7 @@
         <ResourceDictionary
             Source="./Resource/Dashes.xaml" />
         <ResourceDictionary
-            Source="./Resource/ColorDots.xaml" />
+            Source="./Resource/FourDots.xaml" />
         <ResourceDictionary
             Source="./Resource/Bar.xaml" />
         <ResourceDictionary
@@ -35,6 +35,8 @@
             Source="./Resource/DoubleBounce.xaml" />
         <ResourceDictionary
             Source="./Resource/Grid.xaml" />
+        <ResourceDictionary
+            Source="./Resource/BouncingDot.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style
@@ -49,10 +51,10 @@
             </Trigger>
             <Trigger
                 Property="IndicatorType"
-                Value="ColorDots">
+                Value="FourDots">
                 <Setter
                     Property="Template"
-                    Value="{StaticResource ColorDots}" />
+                    Value="{StaticResource FourDots}" />
             </Trigger>
             <Trigger
                 Property="IndicatorType"
@@ -151,6 +153,13 @@
                 <Setter
                     Property="Template"
                     Value="{StaticResource Grid}" />
+            </Trigger>
+            <Trigger
+                Property="IndicatorType"
+                Value="BouncingDot">
+                <Setter
+                    Property="Template"
+                    Value="{StaticResource BouncingDot}" />
             </Trigger>
         </Style.Triggers>
     </Style>
