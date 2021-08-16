@@ -3,18 +3,23 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:BI="clr-namespace:BusyIndicator">
 
-    <ControlTemplate x:Key="DotCircle" TargetType="{x:Type BI:Indicator}">
+    <ControlTemplate
+        x:Key="DotCircle"
+        TargetType="{x:Type BI:Indicator}">
         <Grid
             x:Name="MainGrid"
             HorizontalAlignment="Center"
             VerticalAlignment="Center">
-            <Canvas Width="48" Height="48">
+            <Canvas
+                Width="48"
+                Height="48"
+                Margin="10">
                 <Ellipse
                     x:Name="ellipse01"
                     Canvas.Top="20"
                     Width="8"
                     Height="8"
-                    Fill="#0078D7"
+                    Fill="#CC119EDA"
                     Opacity="0" />
                 <Ellipse
                     x:Name="ellipse02"
@@ -22,7 +27,7 @@
                     Canvas.Top="10"
                     Width="8"
                     Height="8"
-                    Fill="#0078D7"
+                    Fill="#CC119EDA"
                     Opacity="0" />
                 <Ellipse
                     x:Name="ellipse03"
@@ -30,7 +35,7 @@
                     Canvas.Top="2.8"
                     Width="8"
                     Height="8"
-                    Fill="#0078D7"
+                    Fill="#CC119EDA"
                     Opacity="0" />
                 <Ellipse
                     x:Name="ellipse04"
@@ -38,7 +43,7 @@
                     Canvas.Top="0"
                     Width="8"
                     Height="8"
-                    Fill="#0078D7"
+                    Fill="#CC119EDA"
                     Opacity="0" />
                 <Ellipse
                     x:Name="ellipse05"
@@ -46,7 +51,7 @@
                     Canvas.Top="2.8"
                     Width="8"
                     Height="8"
-                    Fill="#0078D7"
+                    Fill="#CC119EDA"
                     Opacity="0" />
                 <Ellipse
                     x:Name="ellipse06"
@@ -54,7 +59,7 @@
                     Canvas.Top="10"
                     Width="8"
                     Height="8"
-                    Fill="#0078D7"
+                    Fill="#CC119EDA"
                     Opacity="0" />
                 <Ellipse
                     x:Name="ellipse07"
@@ -62,7 +67,7 @@
                     Canvas.Top="20"
                     Width="8"
                     Height="8"
-                    Fill="#0078D7"
+                    Fill="#CC119EDA"
                     Opacity="0" />
                 <Ellipse
                     x:Name="ellipse08"
@@ -70,7 +75,7 @@
                     Canvas.Top="30"
                     Width="8"
                     Height="8"
-                    Fill="#0078D7"
+                    Fill="#CC119EDA"
                     Opacity="0" />
                 <Ellipse
                     x:Name="ellipse09"
@@ -78,7 +83,7 @@
                     Canvas.Top="37.32"
                     Width="8"
                     Height="8"
-                    Fill="#0078D7"
+                    Fill="#CC119EDA"
                     Opacity="0" />
                 <Ellipse
                     x:Name="ellipse10"
@@ -86,7 +91,7 @@
                     Canvas.Top="40"
                     Width="8"
                     Height="8"
-                    Fill="#0078D7"
+                    Fill="#CC119EDA"
                     Opacity="0" />
                 <Ellipse
                     x:Name="ellipse11"
@@ -94,7 +99,7 @@
                     Canvas.Top="37.32"
                     Width="8"
                     Height="8"
-                    Fill="#0078D7"
+                    Fill="#CC119EDA"
                     Opacity="0" />
                 <Ellipse
                     x:Name="ellipse12"
@@ -102,137 +107,268 @@
                     Canvas.Top="30"
                     Width="8"
                     Height="8"
-                    Fill="#0078D7"
+                    Fill="#CC119EDA"
                     Opacity="0" />
             </Canvas>
 
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup>
-                    <VisualState x:Name="Active">
-                        <Storyboard BeginTime="00:00:00" RepeatBehavior="Forever">
+                    <VisualState
+                        x:Name="Active">
+                        <Storyboard
+                            BeginTime="00:00:00"
+                            RepeatBehavior="Forever">
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="ellipse01"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.5" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.25" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.10"
+                                    Value="0.5" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.20"
+                                    Value="0.25" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.30"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="ellipse12"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00" Value="0.5" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0.25" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:01" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:01.1000000" Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00"
+                                    Value="0.5" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.10"
+                                    Value="0.25" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.20"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:01"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:01.10"
+                                    Value="1" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="ellipse11"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00" Value="0.25" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:01" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0.5" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00"
+                                    Value="0.25" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.10"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.90"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:01"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:01.10"
+                                    Value="0.5" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="ellipse02"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.1000000" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0.5" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.25" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.10"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.20"
+                                    Value="0.5" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.30"
+                                    Value="0.25" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.40"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="ellipse03"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.2000000" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0.5" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.25" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.10"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.20"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.30"
+                                    Value="0.5" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.40"
+                                    Value="0.25" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.50"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="ellipse04"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.2000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.3000000" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0.5" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.25" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.10"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.20"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.30"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.40"
+                                    Value="0.5" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.50"
+                                    Value="0.25" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.60"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="ellipse05"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.3000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.4000000" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0.5" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0.25" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.10"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.30"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.40"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.50"
+                                    Value="0.5" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.60"
+                                    Value="0.25" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.70"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="ellipse06"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.4000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.5000000" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0.5" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.25" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.10"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.40"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.50"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.60"
+                                    Value="0.5" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.70"
+                                    Value="0.25" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.80"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="ellipse07"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.5000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.6000000" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0.5" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.25" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.10"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.50"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.60"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.70"
+                                    Value="0.5" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.80"
+                                    Value="0.25" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.90"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="ellipse08"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.6000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.7000000" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0.5" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0.25" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:01" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.10"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.60"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.70"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.80"
+                                    Value="0.5" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.90"
+                                    Value="0.25" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:01"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="ellipse09"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.7000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.8000000" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.9000000" Value="0.5" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:01" Value="0.25" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.10"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.70"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.80"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.90"
+                                    Value="0.5" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:01"
+                                    Value="0.25" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:01.10"
+                                    Value="0" />
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="ellipse10"
                                 Storyboard.TargetProperty="(UIElement.Opacity)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.1000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.8000000" Value="0" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.9000000" Value="1" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:01" Value="0.5" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:01.1000000" Value="0.25" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.10"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.80"
+                                    Value="0" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.90"
+                                    Value="1" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:01"
+                                    Value="0.5" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:01.10"
+                                    Value="0.25" />
                             </DoubleAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>

@@ -3,14 +3,21 @@
     public enum IndicatorType
     {
         Bar,
+        Blocks,
+        BouncingDot,
         Cogs,
-        ColorDots,
         Cupertino,
         Dashes,
         DotCircle,
+        DoubleBounce,
         Ellipse,
+        FourDots,
+        Grid,
         Piston,
+        Pulse,
         Ring,
-        Swirl
+        Swirl,
+        ThreeDots,
+        Wave
     }
 }

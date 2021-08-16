@@ -3,12 +3,15 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:BI="clr-namespace:BusyIndicator">
 
-    <ControlTemplate x:Key="Ellipse" TargetType="{x:Type BI:Indicator}">
+    <ControlTemplate
+        x:Key="Ellipse"
+        TargetType="{x:Type BI:Indicator}">
         <Grid
             x:Name="MainGrid"
             HorizontalAlignment="Center"
             VerticalAlignment="Center">
-            <Grid Height="100">
+            <Grid
+                Height="100">
                 <Ellipse
                     Width="80"
                     Height="80"
@@ -16,10 +19,18 @@
                     Opacity="0.2"
                     StrokeThickness="9">
                     <Ellipse.Stroke>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                            <GradientStop Offset="1" Color="#5484FF" />
-                            <GradientStop Offset="0.6" Color="#4EA2FF" />
-                            <GradientStop Offset="0.2" Color="#FF73CFEE" />
+                        <LinearGradientBrush
+                            StartPoint="0,0"
+                            EndPoint="1,0">
+                            <GradientStop
+                                Offset="1"
+                                Color="#FF73CFEE" />
+                            <GradientStop
+                                Offset="0.6"
+                                Color="#4EA2FF" />
+                            <GradientStop
+                                Offset="0.2"
+                                Color="#5484FF" />
                         </LinearGradientBrush>
                     </Ellipse.Stroke>
                 </Ellipse>
@@ -32,39 +43,68 @@
                     StrokeDashCap="Round"
                     StrokeThickness="9">
                     <Ellipse.Stroke>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                            <GradientStop Offset="1" Color="#FF73CFEE" />
-                            <GradientStop x:Name="GradientStop" Offset="0.5" Color="#4EA2FF" />
+                        <LinearGradientBrush
+                            StartPoint="0,0"
+                            EndPoint="1,0">
+                            <GradientStop
+                                Offset="1"
+                                Color="#FF73CFEE" />
+                            <GradientStop
+                                x:Name="GradientStop"
+                                Offset="0.5"
+                                Color="#4EA2FF" />
                         </LinearGradientBrush>
                     </Ellipse.Stroke>
                     <Ellipse.RenderTransform>
-                        <RotateTransform Angle="45" />
+                        <RotateTransform
+                            Angle="45" />
                     </Ellipse.RenderTransform>
                 </Ellipse>
             </Grid>
 
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup>
-                    <VisualState x:Name="Active">
-                        <Storyboard BeginTime="00:00:00" RepeatBehavior="Forever">
-                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="InnerEllipse" Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <EasingDoubleKeyFrame KeyTime="0:0:0.25" Value="110">
+                    <VisualState
+                        x:Name="Active">
+                        <Storyboard
+                            BeginTime="00:00:00"
+                            RepeatBehavior="Forever">
+                            <DoubleAnimationUsingKeyFrames
+                                Storyboard.TargetName="InnerEllipse"
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
+                                <EasingDoubleKeyFrame
+                                    KeyTime="0:0:0.25"
+                                    Value="110">
                                     <EasingDoubleKeyFrame.EasingFunction>
-                                        <PowerEase EasingMode="EaseOut" Power="2.5" />
+                                        <PowerEase
+                                            EasingMode="EaseOut"
+                                            Power="2.5" />
                                     </EasingDoubleKeyFrame.EasingFunction>
                                 </EasingDoubleKeyFrame>
-                                <EasingDoubleKeyFrame KeyTime="0:0:01.0" Value="-10">
+                                <EasingDoubleKeyFrame
+                                    KeyTime="0:0:01.0"
+                                    Value="-10">
                                     <EasingDoubleKeyFrame.EasingFunction>
-                                        <PowerEase EasingMode="EaseInOut" Power="2.5" />
+                                        <PowerEase
+                                            EasingMode="EaseInOut"
+                                            Power="2.5" />
                                     </EasingDoubleKeyFrame.EasingFunction>
                                 </EasingDoubleKeyFrame>
-                                <EasingDoubleKeyFrame KeyTime="0:0:01.3" Value="45">
+                                <EasingDoubleKeyFrame
+                                    KeyTime="0:0:01.3"
+                                    Value="45">
                                     <EasingDoubleKeyFrame.EasingFunction>
-                                        <PowerEase EasingMode="EaseIn" Power="2.5" />
+                                        <PowerEase
+                                            EasingMode="EaseIn"
+                                            Power="2.5" />
                                     </EasingDoubleKeyFrame.EasingFunction>
                                 </EasingDoubleKeyFrame>
-                                <EasingDoubleKeyFrame KeyTime="0:0:01.4" Value="85" />
-                                <EasingDoubleKeyFrame KeyTime="0:0:01.9" Value="765" />
+                                <EasingDoubleKeyFrame
+                                    KeyTime="0:0:01.4"
+                                    Value="85" />
+                                <EasingDoubleKeyFrame
+                                    KeyTime="0:0:01.9"
+                                    Value="765" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <ColorAnimation
@@ -96,12 +136,24 @@
                                 To="#4EA2FF"
                                 Duration="0:0:0.4" />
 
-                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="InnerEllipse" Storyboard.TargetProperty="(BI:EllipseHelper.StrokeDashArrayValue)">
-                                <LinearDoubleKeyFrame KeyTime="0:0:0" Value="5.6" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:1" Value="5.6" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:1.5" Value="5.6" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:1.6" Value="17" />
-                                <LinearDoubleKeyFrame KeyTime="0:0:1.9" Value="5.6" />
+                            <DoubleAnimationUsingKeyFrames
+                                Storyboard.TargetName="InnerEllipse"
+                                Storyboard.TargetProperty="(BI:EllipseHelper.StrokeDashArrayValue)">
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:0"
+                                    Value="5.6" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:1"
+                                    Value="5.6" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:1.5"
+                                    Value="5.6" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:1.6"
+                                    Value="17" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:1.9"
+                                    Value="5.6" />
                             </DoubleAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>

@@ -5,7 +5,7 @@
     xmlns:busyIndicator="https://github.com/Peoky/BusyIndicator"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
-    Title="MainWindow"
+    Title="Demo"
     Width="350"
     Height="500"
     MouseLeftButtonDown="Window_MouseLeftButtonDown"
@@ -15,8 +15,8 @@
         <ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/Theme/Default.xaml" />
         <!--<ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/BusyMask/BusyMask.xaml" />
-                <ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/Indicator/Indicator.xaml" />
+                <ResourceDictionary
+                    Source="pack://application:,,,/BusyIndicator;component/Theme/Default.xaml" />
             </ResourceDictionary.MergedDictionaries>
         </ResourceDictionary>-->
     </Window.Resources>
@@ -25,7 +25,8 @@
         x:Name="BusyIndicator"
         BusyContent="Please wait..."
         IndicatorType="Dashes"
-        IsBusy="False">
+        IsBusy="False"
+        FocusAfterBusy="{Binding ElementName = MyTextBox}">
         <StackPanel>
             <ComboBox
                 x:Name="IndicatorComboBox"
@@ -39,7 +40,7 @@
                     Dashes
                 </ComboBoxItem>
                 <ComboBoxItem>
-                    ColorDots
+                    FourDots
                 </ComboBoxItem>
                 <ComboBoxItem>
                     Bar
@@ -65,6 +66,27 @@
                 <ComboBoxItem>
                     Swirl
                 </ComboBoxItem>
+                <ComboBoxItem>
+                    Blocks
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Wave
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Pulse
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    DoubleBounce
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    ThreeDots
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Grid
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    BouncingDot
+                </ComboBoxItem>
             </ComboBox>
             <Button
                 Width="90"
@@ -74,7 +96,20 @@
                 Click="Button_Click"
                 Content="Start"
                 FontSize="12" />
+            <StackPanel
+                Orientation="Horizontal" HorizontalAlignment="Center">
+                <TextBlock
+                    Text="Duration: "
+                    Margin="5" />
+                <TextBox
+                    x:Name="MyTextBox"
+                    PreviewTextInput="NumberValidationTextBox"
+                    Focusable="True"
+                    Margin="0 5"
+                    Width="100"
+                    Height="20"
+                    Text="10"/>
+            </StackPanel>
         </StackPanel>
     </busyIndicator:BusyMask>
-
 </Window>

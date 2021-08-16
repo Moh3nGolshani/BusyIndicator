@@ -3,17 +3,21 @@
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:BI="clr-namespace:BusyIndicator">
 
-    <ControlTemplate x:Key="ColorDots" TargetType="{x:Type BI:Indicator}">
+    <ControlTemplate
+        x:Key="FourDots"
+        TargetType="{x:Type BI:Indicator}">
         <Grid
             x:Name="MainGrid"
             HorizontalAlignment="Center"
             VerticalAlignment="Center">
-            <StackPanel Height="120" Orientation="Horizontal">
+            <StackPanel
+                Height="120"
+                Orientation="Horizontal">
                 <Ellipse
                     x:Name="Ellipse1"
                     Width="17"
                     Height="17"
-                    Fill="#FDBB18"
+                    Fill="#CC119EDA"
                     RenderTransformOrigin="3.6 0.5">
                     <Ellipse.RenderTransform>
                         <RotateTransform />
@@ -25,7 +29,7 @@
                     Width="17"
                     Height="17"
                     Margin="10,0"
-                    Fill="#7C9728"
+                    Fill="#CC119EDA"
                     RenderTransformOrigin="2.6 0.5">
                     <Ellipse.RenderTransform>
                         <RotateTransform />
@@ -36,7 +40,7 @@
                     x:Name="Ellipse3"
                     Width="17"
                     Height="17"
-                    Fill="#958B84"
+                    Fill="#CC119EDA"
                     RenderTransformOrigin="2.1 0.5">
                     <Ellipse.RenderTransform>
                         <RotateTransform />
@@ -48,7 +52,7 @@
                     Width="17"
                     Height="17"
                     Margin="10,0"
-                    Fill="#2B5F7D"
+                    Fill="#CC119EDA"
                     RenderTransformOrigin="-2.6 0.5">
                     <Ellipse.RenderTransform>
                         <RotateTransform />
@@ -57,43 +61,71 @@
             </StackPanel>
 
             <VisualStateManager.VisualStateGroups>
-                <VisualStateGroup x:Name="ActiveStates">
-                    <VisualState x:Name="Active">
-                        <Storyboard BeginTime="00:00:00" RepeatBehavior="Forever">
+                <VisualStateGroup
+                    x:Name="ActiveStates">
+                    <VisualState
+                        x:Name="Active">
+                        <Storyboard
+                            BeginTime="00:00:00"
+                            RepeatBehavior="Forever">
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.45"
                                 Storyboard.TargetName="Ellipse1"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.15" Value="180" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.30" Value="290" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.65" Value="360" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.15"
+                                    Value="180" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.30"
+                                    Value="290" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.65"
+                                    Value="360" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00.65"
                                 Storyboard.TargetName="Ellipse2"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.15" Value="180" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.30" Value="290" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.65" Value="360" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.15"
+                                    Value="180" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.30"
+                                    Value="290" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.65"
+                                    Value="360" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:01.0"
                                 Storyboard.TargetName="Ellipse3"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.15" Value="180" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.30" Value="290" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.65" Value="360" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.15"
+                                    Value="180" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.30"
+                                    Value="290" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.65"
+                                    Value="360" />
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:01.2"
                                 Storyboard.TargetName="Ellipse4"
                                 Storyboard.TargetProperty="(UIElement.RenderTransform).(RotateTransform.Angle)">
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.15" Value="180" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.30" Value="290" />
-                                <LinearDoubleKeyFrame KeyTime="00:00:00.65" Value="360" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.15"
+                                    Value="180" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.30"
+                                    Value="290" />
+                                <LinearDoubleKeyFrame
+                                    KeyTime="00:00:00.65"
+                                    Value="360" />
                             </DoubleAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>

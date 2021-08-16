@@ -14,9 +14,9 @@ namespace BusyIndicator
         }
 
         public static readonly DependencyProperty IsBusyProperty =
-            DependencyProperty.Register("IsBusy", 
-                typeof(bool), 
-                typeof(BusyMask), 
+            DependencyProperty.Register("IsBusy",
+                typeof(bool),
+                typeof(BusyMask),
                 new PropertyMetadata(false, OnIsBusyChanged));
 
         public string BusyContent
@@ -26,9 +26,9 @@ namespace BusyIndicator
         }
 
         public static readonly DependencyProperty BusyContentProperty =
-            DependencyProperty.Register("BusyContent", 
-                typeof(string), 
-                typeof(BusyMask), 
+            DependencyProperty.Register("BusyContent",
+                typeof(string),
+                typeof(BusyMask),
                 new PropertyMetadata("Please wait..."));
 
         public IndicatorType IndicatorType
@@ -38,14 +38,26 @@ namespace BusyIndicator
         }
 
         public static readonly DependencyProperty IndicatorTypeProperty =
-            DependencyProperty.Register("IndicatorType", 
-                typeof(IndicatorType), 
-                typeof(BusyMask), 
-                new PropertyMetadata(IndicatorType.Ellipse));
+            DependencyProperty.Register("IndicatorType",
+                typeof(IndicatorType),
+                typeof(BusyMask),
+                new PropertyMetadata(IndicatorType.Grid));
+
+        public Control FocusAfterBusy
+        {
+            get { return (Control)GetValue(FocusAfterBusyProperty); }
+            set { SetValue(FocusAfterBusyProperty, value); }
+        }
+
+        public static readonly DependencyProperty FocusAfterBusyProperty =
+            DependencyProperty.Register("FocusAfterBusy",
+                typeof(Control),
+                typeof(BusyMask),
+                new PropertyMetadata(null));
 
         static BusyMask()
         {
-            DefaultStyleKeyProperty.OverrideMetadata(typeof(BusyMask), 
+            DefaultStyleKeyProperty.OverrideMetadata(typeof(BusyMask),
                 new FrameworkPropertyMetadata(typeof(BusyMask)));
         }
 
@@ -56,6 +68,17 @@ namespace BusyIndicator
 
         protected virtual void OnIsBusyChanged(DependencyPropertyChangedEventArgs e)
         {
+            if (!(bool)e.NewValue)
+            {
+                if (FocusAfterBusy != null)
+                {
+                    FocusAfterBusy.Dispatcher.Delay(100, (_) =>
+                    {
+                        FocusAfterBusy.Focus();
+                    });
+                }
+            }
+
             ChangeVisualState((bool)e.NewValue);
         }
 
