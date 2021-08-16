@@ -2,6 +2,7 @@
     <ResourceDictionary.MergedDictionaries>
         <ResourceDictionary>
             <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/Theme/Colors.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/BusyMask/BusyMask.xaml" />
                 <ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/Indicator/Indicator.xaml" />
             </ResourceDictionary.MergedDictionaries>

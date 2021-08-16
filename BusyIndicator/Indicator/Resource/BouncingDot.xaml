@@ -1,30 +1,32 @@
 ﻿<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:BI="clr-namespace:BusyIndicator">
+    xmlns:BI="clr-namespace:BusyIndicator"
+    >
 
-    <ControlTemplate
-        x:Key="BouncingDot"
-        TargetType="{x:Type BI:Indicator}">
+    <ControlTemplate x:Key="BouncingDot" TargetType="{x:Type BI:Indicator}">
         <Grid
             x:Name="MainGrid"
             HorizontalAlignment="Center"
-            VerticalAlignment="Center">
+            VerticalAlignment="Center"
+            >
             <Grid>
                 <Border
                     Width="200"
                     Height="15"
                     Margin="5"
+                    Background="{DynamicResource IndicatorBackground}"
                     CornerRadius="7.5"
-                    Background="#ddd">
+                    >
                     <Rectangle
                         x:Name="Bouncer"
                         Width="15"
                         Height="15"
+                        HorizontalAlignment="Left"
+                        Fill="{DynamicResource IndicatorForeground}"
                         RadiusX="7.5"
                         RadiusY="7.5"
-                        HorizontalAlignment="Left"
-                        Fill="#CC119EDA">
+                        >
                         <Rectangle.RenderTransform>
                             <TranslateTransform />
                         </Rectangle.RenderTransform>
@@ -33,48 +35,37 @@
             </Grid>
 
             <VisualStateManager.VisualStateGroups>
-                <VisualStateGroup
-                    x:Name="ActiveStates">
-                    <VisualState
-                        x:Name="Active">
+                <VisualStateGroup x:Name="ActiveStates">
+                    <VisualState x:Name="Active">
                         <Storyboard
+                            AutoReverse="True"
                             BeginTime="00:00:00"
                             RepeatBehavior="Forever"
-                            AutoReverse="True">
+                            >
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="Bouncer"
-                                Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)">
-                                <EasingDoubleKeyFrame
-                                    KeyTime="00:00:01.00"
-                                    Value="185">
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
+                                >
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.00" Value="185">
                                     <EasingDoubleKeyFrame.EasingFunction>
-                                        <PowerEase
-                                            EasingMode="EaseInOut"
-                                            Power="2.5" />
+                                        <PowerEase EasingMode="EaseInOut" Power="2.5" />
                                     </EasingDoubleKeyFrame.EasingFunction>
                                 </EasingDoubleKeyFrame>
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="Bouncer"
-                                Storyboard.TargetProperty="Width">
-                                <EasingDoubleKeyFrame
-                                    KeyTime="00:00:00.50"
-                                    Value="45">
+                                Storyboard.TargetProperty="Width"
+                                >
+                                <EasingDoubleKeyFrame KeyTime="00:00:00.50" Value="45">
                                     <EasingDoubleKeyFrame.EasingFunction>
-                                        <PowerEase
-                                            EasingMode="EaseInOut"
-                                            Power="2.5" />
+                                        <PowerEase EasingMode="EaseInOut" Power="2.5" />
                                     </EasingDoubleKeyFrame.EasingFunction>
                                 </EasingDoubleKeyFrame>
-                                <EasingDoubleKeyFrame
-                                    KeyTime="00:00:01.00"
-                                    Value="15">
+                                <EasingDoubleKeyFrame KeyTime="00:00:01.00" Value="15">
                                     <EasingDoubleKeyFrame.EasingFunction>
-                                        <PowerEase
-                                            EasingMode="EaseInOut"
-                                            Power="2.5" />
+                                        <PowerEase EasingMode="EaseInOut" Power="2.5" />
                                     </EasingDoubleKeyFrame.EasingFunction>
                                 </EasingDoubleKeyFrame>
                             </DoubleAnimationUsingKeyFrames>

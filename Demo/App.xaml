@@ -3,4 +3,9 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="clr-namespace:Demo"
-    StartupUri="MainWindow.xaml" />
+    StartupUri="MainWindow.xaml"
+    >
+    <Application.Resources>
+        <ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/Theme/Default.xaml" />
+    </Application.Resources>
+</Application>

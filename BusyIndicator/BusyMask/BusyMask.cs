@@ -1,4 +1,5 @@
-﻿using System.Windows;
+﻿using System.ComponentModel;
+using System.Windows;
 using System.Windows.Controls;
 
 namespace BusyIndicator
@@ -7,6 +8,8 @@ namespace BusyIndicator
     [TemplateVisualState(Name = VisualStates.StateVisible, GroupName = VisualStates.GroupVisibility)]
     public class BusyMask : ContentControl
     {
+        [Category(nameof(BusyIndicator))]
+        [Description("Gets or sets whether the indicator is busy.")]
         public bool IsBusy
         {
             get { return (bool)GetValue(IsBusyProperty); }
@@ -19,6 +22,8 @@ namespace BusyIndicator
                 typeof(BusyMask),
                 new PropertyMetadata(false, OnIsBusyChanged));
 
+        [Category(nameof(BusyIndicator))]
+        [Description("Gets or sets indicator content such as waiting message.")]
         public string BusyContent
         {
             get { return (string)GetValue(BusyContentProperty); }
@@ -31,6 +36,8 @@ namespace BusyIndicator
                 typeof(BusyMask),
                 new PropertyMetadata("Please wait..."));
 
+        [Category(nameof(BusyIndicator))]
+        [Description("Gets or sets the indicator type.")]
         public IndicatorType IndicatorType
         {
             get { return (IndicatorType)GetValue(IndicatorTypeProperty); }
@@ -43,6 +50,8 @@ namespace BusyIndicator
                 typeof(BusyMask),
                 new PropertyMetadata(IndicatorType.Grid));
 
+        [Category(nameof(BusyIndicator))]
+        [Description("Gets or sets the control which gets focused after the wait is over.")]
         public Control FocusAfterBusy
         {
             get { return (Control)GetValue(FocusAfterBusyProperty); }

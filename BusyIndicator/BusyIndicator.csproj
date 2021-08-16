@@ -3,12 +3,12 @@
     <OutputType>Library</OutputType>
     <UseWPF>true</UseWPF>
     <TargetFrameworks>net45;netcoreapp3.1</TargetFrameworks>
-	<Version>1.7.0.0</Version>
-	<Authors>Mohsen Golshani</Authors>
-	<Company>Mohsen Golshani</Company>
+	  <Version>1.7.0.0</Version>
+	  <Authors>Mohsen Golshani</Authors>
+	  <Company>Mohsen Golshani</Company>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <ApplicationIcon>Icon.ico</ApplicationIcon>
-    <PackageIcon>Icon.ico</PackageIcon>
+    <!--<PackageIcon>Icon.ico</PackageIcon>-->
     <RepositoryUrl>https://github.com/Peoky/BusyIndicator</RepositoryUrl>
     <PackageTags>BusyIndicator Loader Spinner LoadingIndicator</PackageTags>
     <PackageReleaseNotes>New indicators</PackageReleaseNotes>
@@ -18,11 +18,16 @@
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <ItemGroup>
-    <None Include="..\..\Assets\Icon.png">
-      <Pack>True</Pack>
-      <PackagePath></PackagePath>
-    </None>
+    <None Remove="Icon.ico" />
+    <None Remove="Icon.png" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="Icon.ico">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Icon.png" />
+  </ItemGroup>
+ 
   <ItemGroup>
     <Page Update="Indicator\Resource\BouncingDot.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>

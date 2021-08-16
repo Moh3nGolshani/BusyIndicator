@@ -9,24 +9,23 @@
     Width="350"
     Height="500"
     MouseLeftButtonDown="Window_MouseLeftButtonDown"
-    mc:Ignorable="d">
-
+    mc:Ignorable="d"
+    >
     <Window.Resources>
-        <ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/Theme/Default.xaml" />
-        <!--<ResourceDictionary>
-            <ResourceDictionary.MergedDictionaries>
-                <ResourceDictionary
-                    Source="pack://application:,,,/BusyIndicator;component/Theme/Default.xaml" />
-            </ResourceDictionary.MergedDictionaries>
-        </ResourceDictionary>-->
+        <LinearGradientBrush x:Key="IndicatorForeground" StartPoint="0.5,0" EndPoint="0.5,1">
+            <GradientStop Offset="1" Color="#eaafc8" />
+            <GradientStop Offset="0" Color="#654ea3" />
+        </LinearGradientBrush>
+        <SolidColorBrush x:Key="IndicatorBackground" Color="White" />
     </Window.Resources>
 
     <busyIndicator:BusyMask
         x:Name="BusyIndicator"
         BusyContent="Please wait..."
+        FocusAfterBusy="{Binding ElementName=MyTextBox}"
         IndicatorType="Dashes"
         IsBusy="False"
-        FocusAfterBusy="{Binding ElementName = MyTextBox}">
+        >
         <StackPanel>
             <ComboBox
                 x:Name="IndicatorComboBox"
@@ -35,7 +34,8 @@
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
                 SelectionChanged="ComboBox_SelectionChanged"
-                Text="Dash Loader">
+                Text="Dash Loader"
+                >
                 <ComboBoxItem>
                     Dashes
                 </ComboBoxItem>
@@ -95,20 +95,19 @@
                 Padding="0"
                 Click="Button_Click"
                 Content="Start"
-                FontSize="12" />
-            <StackPanel
-                Orientation="Horizontal" HorizontalAlignment="Center">
-                <TextBlock
-                    Text="Duration: "
-                    Margin="5" />
+                FontSize="12"
+                />
+            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                <TextBlock Margin="5" Text="Duration: " />
                 <TextBox
                     x:Name="MyTextBox"
-                    PreviewTextInput="NumberValidationTextBox"
-                    Focusable="True"
-                    Margin="0 5"
                     Width="100"
                     Height="20"
-                    Text="10"/>
+                    Margin="0 5"
+                    Focusable="True"
+                    PreviewTextInput="NumberValidationTextBox"
+                    Text="10"
+                    />
             </StackPanel>
         </StackPanel>
     </busyIndicator:BusyMask>
