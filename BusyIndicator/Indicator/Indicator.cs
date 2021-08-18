@@ -5,6 +5,7 @@ namespace BusyIndicator
 {
     public class Indicator : Control
     {
+
         public IndicatorType IndicatorType
         {
             get { return (IndicatorType)GetValue(IndicatorTypeProperty); }

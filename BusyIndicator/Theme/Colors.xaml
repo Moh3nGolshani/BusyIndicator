@@ -1,0 +1,18 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:fr="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
+    >
+
+    <SolidColorBrush
+        x:Key="IndicatorForeground"
+        fr:Freeze="True"
+        Color="#CC119EDA"
+        />
+    <SolidColorBrush
+        x:Key="IndicatorBackground"
+        fr:Freeze="True"
+        Color="#DDDDDD"
+        />
+
+</ResourceDictionary>

@@ -8,5 +8,8 @@
     <Page Update="Indicator\Resource\Grid.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Theme\Colors.xaml">
+      <SubType>Designer</SubType>
+    </Page>
   </ItemGroup>
 </Project>
