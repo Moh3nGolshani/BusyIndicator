@@ -10,7 +10,7 @@ BusyIndicator for WPF with multiple indicator types.
 </p>
 
 ## Prerequisites:
-<ul><li>.Net Framework 4.5 or higher</li></ul>  
+<ul><li>.Net Framework 4.6 or higher</li></ul>  
 <ul><li>.Net Core 3.1 or higher</li></ul>  
 
 ## How to use:
