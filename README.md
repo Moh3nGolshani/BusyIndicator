@@ -41,10 +41,10 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 ### How to change indicator colors:
 Indicator colors can be changed now, All you have to do is overriding the colors on your Window, UserControl or even BusyMask resources as following:
 <pre>
-    &lt;Window.Resources>
-        &lt;SolidColorBrush x:Key="IndicatorForeground" Color="Orange" />
-        &lt;SolidColorBrush x:Key="IndicatorBackground" Color="WhiteSmoke" />
-    &lt;/Window.Resources>
+&lt;Window.Resources>
+    &lt;SolidColorBrush x:Key="IndicatorForeground" Color="Orange" />
+    &lt;SolidColorBrush x:Key="IndicatorBackground" Color="WhiteSmoke" />
+&lt;/Window.Resources>
 </pre>  
 
 You can also use gradients:
