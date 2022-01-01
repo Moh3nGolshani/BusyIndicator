@@ -15,7 +15,7 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 <ul><li>.Net 5.0</li></ul>
 
 ## How to use:
-1. Install the package via [NuGet](https://www.nuget.org/packages/BusyIndicator/){target="_blank"}   
+1. Install the package via [NuGet](https://www.nuget.org/packages/BusyIndicator/){:target="_blank" rel="noopener"}  
 <pre>Install-Package BusyIndicator</pre>
 
 2. Add resource call to App.xaml
