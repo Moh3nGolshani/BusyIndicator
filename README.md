@@ -1,3 +1,5 @@
+markdown: kramdown
+
 # BusyIndicator
 BusyIndicator for Windows Presentation Foundation (WPF)
 
