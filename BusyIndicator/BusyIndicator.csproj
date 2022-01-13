@@ -3,7 +3,7 @@
     <OutputType>Library</OutputType>
     <UseWPF>true</UseWPF>
     <TargetFrameworks>net46;netcoreapp3.1;net5.0-windows</TargetFrameworks>
-	  <Version>2.0.0.0</Version>
+	  <Version>2.0.0.1</Version>
 	  <Authors>Mohsen Golshani</Authors>
 	  <Company>Mohsen Golshani</Company>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
@@ -11,15 +11,14 @@
     <!--<PackageIcon>Icon.ico</PackageIcon>-->
     <RepositoryUrl>https://github.com/Peoky/BusyIndicator</RepositoryUrl>
     <PackageTags>BusyIndicator Loader Spinner LoadingIndicator</PackageTags>
-    <PackageReleaseNotes>1. New indicator =&gt; Escalade <br /> 2. All indicators colors can be changed now (Ellipse + Swirl)</PackageReleaseNotes>
+    <PackageReleaseNotes>1. New indicator: Escalade 2. All indicators colors can be changed now (Ellipse + Swirl)</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/Peoky/BusyIndicator</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <AssemblyVersion>2.0.0.0</AssemblyVersion>
-    <FileVersion>2.0.0.0</FileVersion>
+    <AssemblyVersion>2.0.0.1</AssemblyVersion>
+    <FileVersion>2.0.0.1</FileVersion>
     <PackageIcon>Icon.jpg</PackageIcon>
-    <PackageReadmeFile>README.md</PackageReadmeFile>
   </PropertyGroup>
   <ItemGroup>
     <Content Include="Icon.ico" />
