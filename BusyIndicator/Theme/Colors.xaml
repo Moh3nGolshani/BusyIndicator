@@ -7,7 +7,7 @@
     <SolidColorBrush
         x:Key="IndicatorForeground"
         fr:Freeze="True"
-        Color="#CC119EDA"
+        Color="#4EA2FF"
         />
     <SolidColorBrush
         x:Key="IndicatorBackground"

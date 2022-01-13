@@ -12,15 +12,15 @@
     mc:Ignorable="d"
     >
     <Window.Resources>
-        <SolidColorBrush x:Key="IndicatorForeground" Color="#FF3997ED" />
+        <!--<SolidColorBrush x:Key="IndicatorForeground" Color="#FF3997ED" />-->
         <SolidColorBrush x:Key="IndicatorBackground" Color="WhiteSmoke" />
-        
-        <!--<LinearGradientBrush x:Key="IndicatorForeground" StartPoint="0,0" EndPoint="1,0">
-            <GradientStop Offset="0.2" Color="#FF73CFEE" />
-            <GradientStop Offset="0.6" Color="#4EA2FF" />
-            <GradientStop Offset="1" Color="#5484FF" />
+
+        <LinearGradientBrush x:Key="IndicatorForeground" StartPoint="0,0" EndPoint="0,1">
+            <!--<GradientStop Offset="0" Color="#FF73CFEE" />
+            <GradientStop Offset="1" Color="#4EA2FF" />-->
+            <GradientStop Offset="0" Color="#FF56A1" />
+            <GradientStop Offset="1" Color="#FF9350" />
         </LinearGradientBrush>
-        <SolidColorBrush x:Key="IndicatorBackground" Color="White" />-->
     </Window.Resources>
 
     <busyIndicator:BusyMask
@@ -90,6 +90,9 @@
                 </ComboBoxItem>
                 <ComboBoxItem>
                     BouncingDot
+                </ComboBoxItem>
+                <ComboBoxItem>
+                    Escalade
                 </ComboBoxItem>
             </ComboBox>
             <Button

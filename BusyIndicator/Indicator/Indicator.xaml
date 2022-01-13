@@ -18,6 +18,7 @@
         <ResourceDictionary Source="./Resource/DoubleBounce.xaml" />
         <ResourceDictionary Source="./Resource/Grid.xaml" />
         <ResourceDictionary Source="./Resource/BouncingDot.xaml" />
+        <ResourceDictionary Source="./Resource/Escalade.xaml" />
     </ResourceDictionary.MergedDictionaries>
 
     <Style TargetType="BI:Indicator">
@@ -72,6 +73,9 @@
             </Trigger>
             <Trigger Property="IndicatorType" Value="BouncingDot">
                 <Setter Property="Template" Value="{StaticResource BouncingDot}" />
+            </Trigger>
+            <Trigger Property="IndicatorType" Value="Escalade">
+                <Setter Property="Template" Value="{StaticResource Escalade}" />
             </Trigger>
         </Style.Triggers>
     </Style>

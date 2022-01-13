@@ -97,6 +97,9 @@ namespace Demo
                 case 16:
                     BusyIndicator.IndicatorType = IndicatorType.BouncingDot;
                     break;
+                case 17:
+                    BusyIndicator.IndicatorType = IndicatorType.Escalade;
+                    break;
                 default:
                     break;
             }

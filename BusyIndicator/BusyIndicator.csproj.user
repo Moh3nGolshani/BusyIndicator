@@ -5,6 +5,9 @@
     <Page Update="Indicator\Resource\BouncingDot.xaml">
       <SubType>Designer</SubType>
     </Page>
+    <Page Update="Indicator\Resource\Escalade.xaml">
+      <SubType>Designer</SubType>
+    </Page>
     <Page Update="Indicator\Resource\Grid.xaml">
       <SubType>Designer</SubType>
     </Page>

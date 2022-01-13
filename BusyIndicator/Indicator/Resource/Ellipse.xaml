@@ -17,14 +17,8 @@
                     Fill="White"
                     Opacity="0.2"
                     StrokeThickness="9"
+                    Stroke="{DynamicResource IndicatorForeground}"
                     >
-                    <Ellipse.Stroke>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                            <GradientStop Offset="1" Color="#FF73CFEE" />
-                            <GradientStop Offset="0.6" Color="#4EA2FF" />
-                            <GradientStop Offset="0.2" Color="#5484FF" />
-                        </LinearGradientBrush>
-                    </Ellipse.Stroke>
                 </Ellipse>
                 <Ellipse
                     x:Name="InnerEllipse"
@@ -34,13 +28,7 @@
                     RenderTransformOrigin="0.5 0.5"
                     StrokeDashCap="Round"
                     StrokeThickness="9"
-                    >
-                    <Ellipse.Stroke>
-                        <LinearGradientBrush StartPoint="0,0" EndPoint="1,0">
-                            <GradientStop Offset="1" Color="#FF73CFEE" />
-                            <GradientStop x:Name="GradientStop" Offset="0.5" Color="#4EA2FF" />
-                        </LinearGradientBrush>
-                    </Ellipse.Stroke>
+                    Stroke="{DynamicResource IndicatorForeground}">
                     <Ellipse.RenderTransform>
                         <RotateTransform Angle="45" />
                     </Ellipse.RenderTransform>
@@ -70,39 +58,6 @@
                                 <EasingDoubleKeyFrame KeyTime="0:0:01.4" Value="85" />
                                 <EasingDoubleKeyFrame KeyTime="0:0:01.9" Value="765" />
                             </DoubleAnimationUsingKeyFrames>
-
-                            <ColorAnimation
-                                BeginTime="0"
-                                Storyboard.TargetName="GradientStop"
-                                Storyboard.TargetProperty="Color"
-                                From="#4EA2FF"
-                                To="#5484FF"
-                                Duration="0:0:0.25"
-                                />
-                            <ColorAnimation
-                                BeginTime="0:0:0.25"
-                                Storyboard.TargetName="GradientStop"
-                                Storyboard.TargetProperty="Color"
-                                From="#5484FF"
-                                To="#FF73CFEE"
-                                Duration="0:0:0.75"
-                                />
-                            <ColorAnimation
-                                BeginTime="0:0:1.0"
-                                Storyboard.TargetName="GradientStop"
-                                Storyboard.TargetProperty="Color"
-                                From="#FF73CFEE"
-                                To="#5484FF"
-                                Duration="0:0:0.5"
-                                />
-                            <ColorAnimation
-                                BeginTime="0:0:1.5"
-                                Storyboard.TargetName="GradientStop"
-                                Storyboard.TargetProperty="Color"
-                                From="#5484FF"
-                                To="#4EA2FF"
-                                Duration="0:0:0.4"
-                                />
 
                             <DoubleAnimationUsingKeyFrames Storyboard.TargetName="InnerEllipse" Storyboard.TargetProperty="(BI:EllipseHelper.StrokeDashArrayValue)">
                                 <LinearDoubleKeyFrame KeyTime="0:0:0" Value="5.6" />

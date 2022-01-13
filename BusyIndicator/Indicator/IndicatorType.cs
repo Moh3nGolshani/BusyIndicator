@@ -11,6 +11,7 @@
         DotCircle,
         DoubleBounce,
         Ellipse,
+        Escalade,
         FourDots,
         Grid,
         Piston,
