@@ -2,10 +2,9 @@
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:BI="clr-namespace:BusyIndicator"
-    xmlns:sys="clr-namespace:System;assembly=mscorlib"
-    >
+    xmlns:sys="clr-namespace:System;assembly=mscorlib">
 
-    <Style TargetType="BI:BusyMask">
+    <Style x:Key="BusyMaskStyle" TargetType="BI:BusyMask">
         <Setter Property="IsTabStop" Value="False" />
         <Setter Property="Focusable" Value="False" />
         <Setter Property="Background" Value="#D8FFFFFF" />
@@ -106,4 +105,6 @@
             </Setter.Value>
         </Setter>
     </Style>
+     
+    <Style TargetType="BI:BusyMask" BasedOn="{StaticResource BusyMaskStyle}"/>
 </ResourceDictionary>
