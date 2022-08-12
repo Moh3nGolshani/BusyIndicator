@@ -10,9 +10,8 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 </p>
 
 ## Prerequisites:
-<ul><li>.Net Framework 4.6 or higher</li></ul>
-<ul><li>.Net Core 3.1</li></ul>
-<ul><li>.Net 5.0</li></ul>
+<ul><li>.Net Framework 4.6+</li></ul>
+<ul><li>.Net Core6+</li></ul>
 
 ## How to use:
 1. Install the package via [NuGet](https://www.nuget.org/packages/BusyIndicator/):

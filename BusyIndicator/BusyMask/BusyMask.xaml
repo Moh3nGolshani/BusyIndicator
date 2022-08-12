@@ -30,18 +30,7 @@
                                 <TextBlock
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
-                                    Text="{TemplateBinding BusyContent}"
-                                    >
-                                    <!--<TextBlock.Style>
-                                        <Style TargetType="TextBlock">
-                                            <Style.Triggers>
-                                                <DataTrigger Binding="{Binding IndicatorType, ElementName=Indicator}" Value="Dashes">
-                                                    <Setter Property="Margin" Value="0,0,0,-80" />
-                                                </DataTrigger>
-                                            </Style.Triggers>
-                                        </Style>
-                                    </TextBlock.Style>-->
-                                </TextBlock>
+                                    Text="{TemplateBinding BusyContent}"/>
                             </StackPanel>
                         </Border>
                         <VisualStateManager.VisualStateGroups>
