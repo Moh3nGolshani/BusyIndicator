@@ -12,7 +12,8 @@
 			>
             <Grid
 				MinWidth="49"
-				MinHeight="49">
+				MinHeight="49"
+                Margin="10">
                 <Canvas
 					RenderTransformOrigin=".5,.5">
                     <Canvas.RenderTransform>
@@ -23,8 +24,8 @@
 						x:Name="E1"
 						Width="10"
 						Height="10"
-						Canvas.Left="14.1"
-						Canvas.Top="14.1"
+						Canvas.Left="13.4"
+						Canvas.Top="13.4"
 						Fill="{DynamicResource IndicatorBackground}" />
                 </Canvas>
                 <Canvas
@@ -37,40 +38,42 @@
 						x:Name="E2"
 						Width="10"
 						Height="10"
-						Canvas.Left="14.1"
-						Canvas.Top="14.1"
+						Canvas.Left="13.4"
+						Canvas.Top="13.4"
 						Fill="{DynamicResource IndicatorForeground}" />
                 </Canvas>
                 <Canvas
 					RenderTransformOrigin=".5,.5">
                     <Canvas.RenderTransform>
                         <RotateTransform
-							x:Name="C3" Angle="180" />
+                            x:Name="C3"
+                            Angle="180" />
                     </Canvas.RenderTransform>
                     <Ellipse
-						x:Name="E3"
-						Width="10"
-						Height="10"
-						Canvas.Left="14.1"
-						Canvas.Top="14.1"
-						Fill="{DynamicResource IndicatorForeground}" />
+                        x:Name="E3"
+                        Width="10"
+                        Height="10"
+                        Canvas.Left="13.4"
+                        Canvas.Top="13.4"
+                        Fill="{DynamicResource IndicatorForeground}" />
                 </Canvas>
                 <Canvas
                     RenderTransformOrigin=".5,.5">
                     <Canvas.RenderTransform>
                         <RotateTransform
-							x:Name="C4" Angle="270" />
+                            x:Name="C4"
+                            Angle="270" />
                     </Canvas.RenderTransform>
                     <Ellipse
-						x:Name="E4"
-						Width="10"
-						Height="10"
-						Canvas.Left="14.1"
-						Canvas.Top="14.1"
-						Fill="{DynamicResource IndicatorForeground}" />
+                        x:Name="E4"
+                        Width="10"
+                        Height="10"
+                        Canvas.Left="13.4"
+                        Canvas.Top="13.4"
+                        Fill="{DynamicResource IndicatorForeground}" />
                 </Canvas>
             </Grid>
-
+            
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="ActiveStates">
                     <VisualState x:Name="Active">
@@ -89,13 +92,13 @@
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="E1"
                                 Storyboard.TargetProperty="(Canvas.Left)"
-                                From="14.1" To="4" Duration="00:00:00.4"
+                                From="13.4" To="4" Duration="00:00:00.4"
                                 AutoReverse="True" />
                             <DoubleAnimation
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="E1"
                                 Storyboard.TargetProperty="(Canvas.Top)"
-                                From="14.1" To="4" Duration="00:00:00.4"
+                                From="13.4" To="4" Duration="00:00:00.4"
                                 AutoReverse="True" />
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
@@ -109,13 +112,13 @@
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="E2"
                                 Storyboard.TargetProperty="(Canvas.Left)"
-                                From="14.1" To="4" Duration="00:00:00.4"
+                                From="13.4" To="4" Duration="00:00:00.4"
                                 AutoReverse="True" />
                             <DoubleAnimation
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="E2"
                                 Storyboard.TargetProperty="(Canvas.Top)"
-                                From="14.1" To="4" Duration="00:00:00.4"
+                                From="13.4" To="4" Duration="00:00:00.4"
                                 AutoReverse="True" />
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
@@ -129,13 +132,13 @@
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="E3"
                                 Storyboard.TargetProperty="(Canvas.Left)"
-                                From="14.1" To="4" Duration="00:00:00.4"
+                                From="13.4" To="4" Duration="00:00:00.4"
                                 AutoReverse="True" />
                             <DoubleAnimation
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="E3"
                                 Storyboard.TargetProperty="(Canvas.Top)"
-                                From="14.1" To="4" Duration="00:00:00.4"
+                                From="13.4" To="4" Duration="00:00:00.4"
                                 AutoReverse="True" />
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
@@ -149,13 +152,13 @@
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="E4"
                                 Storyboard.TargetProperty="(Canvas.Left)"
-                                From="14.1" To="4" Duration="00:00:00.4"
+                                From="13.4" To="4" Duration="00:00:00.4"
                                 AutoReverse="True" />
                             <DoubleAnimation
                                 BeginTime="00:00:00"
                                 Storyboard.TargetName="E4"
                                 Storyboard.TargetProperty="(Canvas.Top)"
-                                From="14.1" To="4" Duration="00:00:00.4"
+                                From="13.4" To="4" Duration="00:00:00.4"
                                 AutoReverse="True" />
                         </Storyboard>
                     </VisualState>

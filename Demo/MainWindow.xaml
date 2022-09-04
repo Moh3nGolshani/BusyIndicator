@@ -29,6 +29,7 @@
         FocusAfterBusy="{Binding ElementName=MyTextBox}"
         IndicatorType="Dashes"
         IsBusy="False"
+        Background="#D8FFFFFF"
         >
         <StackPanel>
             <ComboBox
