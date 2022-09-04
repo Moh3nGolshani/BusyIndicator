@@ -56,7 +56,7 @@
 						Fill="{DynamicResource IndicatorForeground}" />
                 </Canvas>
                 <Canvas
-			RenderTransformOrigin=".5,.5">
+                    RenderTransformOrigin=".5,.5">
                     <Canvas.RenderTransform>
                         <RotateTransform
 							x:Name="C4" Angle="270" />
