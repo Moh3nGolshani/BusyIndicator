@@ -19,6 +19,7 @@
         Ring,
         Swirl,
         ThreeDots,
+        Twist,
         Wave
     }
 }

@@ -16,7 +16,7 @@ namespace BusyIndicator
             DependencyProperty.Register("IndicatorType",
                 typeof(IndicatorType),
                 typeof(Indicator),
-                new PropertyMetadata(IndicatorType.Grid));
+                new PropertyMetadata(IndicatorType.Twist));
 
         static Indicator()
         {

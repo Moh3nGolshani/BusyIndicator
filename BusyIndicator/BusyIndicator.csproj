@@ -34,10 +34,13 @@
     </None>
   </ItemGroup>
   <ItemGroup>
-	  <None Include="Icon.png" Pack="true" PackagePath=""/>
+	  <None Include="Icon.png" Pack="true" PackagePath="" />
   </ItemGroup>
  
   <ItemGroup>
+    <Page Update="Indicator\Resource\Twist.xaml">
+      <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
+    </Page>
     <Page Update="Indicator\Resource\BouncingDot.xaml">
       <XamlRuntime>$(DefaultXamlRuntime)</XamlRuntime>
       <SubType>Designer</SubType>

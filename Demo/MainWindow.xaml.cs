@@ -100,6 +100,9 @@ namespace Demo
                 case 17:
                     BusyIndicator.IndicatorType = IndicatorType.Escalade;
                     break;
+                case 18:
+                    BusyIndicator.IndicatorType = IndicatorType.Twist;
+                    break;
                 default:
                     break;
             }

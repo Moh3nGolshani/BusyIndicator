@@ -48,7 +48,7 @@ namespace BusyIndicator
             DependencyProperty.Register("IndicatorType",
                 typeof(IndicatorType),
                 typeof(BusyMask),
-                new PropertyMetadata(IndicatorType.Grid));
+                new PropertyMetadata(IndicatorType.Twist));
 
         [Category(nameof(BusyIndicator))]
         [Description("Gets or sets the control which gets focused after the wait is over.")]
