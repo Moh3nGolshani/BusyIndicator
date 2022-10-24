@@ -20,7 +20,7 @@
                         <RotateTransform
 							x:Name="C1" Angle="0"/>
                     </Canvas.RenderTransform>
-                    <Ellipse 
+                    <Ellipse
 						x:Name="E1"
 						Width="10"
 						Height="10"
@@ -73,7 +73,7 @@
                         Fill="{DynamicResource IndicatorForeground}" />
                 </Canvas>
             </Grid>
-            
+
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="ActiveStates">
                     <VisualState x:Name="Active">
@@ -162,6 +162,7 @@
                                 AutoReverse="True" />
                         </Storyboard>
                     </VisualState>
+                    <VisualState x:Name="Inactive" />
                 </VisualStateGroup>
             </VisualStateManager.VisualStateGroups>
         </Grid>

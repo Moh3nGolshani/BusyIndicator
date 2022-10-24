@@ -400,6 +400,7 @@
                             </DoubleAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
+                    <VisualState x:Name="Inactive" />
                 </VisualStateGroup>
             </VisualStateManager.VisualStateGroups>
         </Grid>

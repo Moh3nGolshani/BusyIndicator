@@ -88,7 +88,7 @@
                                     Value="9"
                                     KeySpline="0.8, 0, 0.2, 1"/>
                             </DoubleAnimationUsingKeyFrames>
-                            
+
                             <DoubleAnimationUsingKeyFrames
                                 Storyboard.TargetName="Path1"
                                 RepeatBehavior="Forever"
@@ -134,6 +134,7 @@
                             </DoubleAnimationUsingKeyFrames>
                         </Storyboard>
                     </VisualState>
+                    <VisualState x:Name="Inactive" />
                 </VisualStateGroup>
             </VisualStateManager.VisualStateGroups>
         </Grid>
