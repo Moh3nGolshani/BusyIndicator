@@ -27,7 +27,7 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 <pre>xmlns:busyIndicator="https://github.com/Peoky/BusyIndicator"</pre>
 
 4. Create a BusyMask on top of main view:
-<pre><code>&lt;busyindicator:BusyMask x:Name="BusyIndicator" IsBusy="False" IndicatorType="Dashes" BusyContent="Please wait..." &gt;
+<pre><code>&lt;busyIndicator:BusyMask x:Name="BusyIndicator" IsBusy="False" IndicatorType="Dashes" BusyContent="Please wait..." &gt;
          
          
           <... MAIN VIEW GOES HERE... >
