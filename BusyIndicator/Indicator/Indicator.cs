@@ -26,8 +26,28 @@ namespace BusyIndicator
 
         public override void OnApplyTemplate()
         {
-            VisualStateManager.GoToElementState((FrameworkElement)GetTemplateChild("MainGrid"), "Active", true);
+            this.UpdateVisualState();
+        }
+
+        protected override void OnPropertyChanged(DependencyPropertyChangedEventArgs e)
+        {
+            base.OnPropertyChanged(e);
+
+            if (e.Property == IsVisibleProperty)
+            {
+                this.UpdateVisualState();
+            }
+        }
+
+        private void UpdateVisualState()
+        {
+            if (this.Template == null)
+            {
+                return;
+            }
+
+            var targetState = this.IsVisible ? "Active" : "Inactive";
+            VisualStateManager.GoToElementState((FrameworkElement)GetTemplateChild("MainGrid"), targetState, true);
         }
     }
 }
-
