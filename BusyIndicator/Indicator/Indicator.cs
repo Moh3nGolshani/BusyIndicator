@@ -46,8 +46,14 @@ namespace BusyIndicator
                 return;
             }
 
+            var mainGrid = (FrameworkElement)GetTemplateChild("MainGrid");
+            if (mainGrid == null)
+            {
+                return;
+            }
+
             var targetState = this.IsVisible ? "Active" : "Inactive";
-            VisualStateManager.GoToElementState((FrameworkElement)GetTemplateChild("MainGrid"), targetState, true);
+            VisualStateManager.GoToElementState(mainGrid, targetState, true);
         }
     }
 }
