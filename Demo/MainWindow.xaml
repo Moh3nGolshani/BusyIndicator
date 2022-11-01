@@ -12,15 +12,49 @@
     mc:Ignorable="d"
     >
     <Window.Resources>
-        <SolidColorBrush x:Key="IndicatorForeground" Color="#FF0991FA" />
-        <SolidColorBrush x:Key="IndicatorBackground" Color="#FF36E00E" />
+        <!--<SolidColorBrush x:Key="IndicatorForeground" Color="#FF0991FA" />-->
+        <!--<SolidColorBrush x:Key="IndicatorBackground" Color="#FF36E00E" />-->
 
         <!--<LinearGradientBrush x:Key="IndicatorForeground" StartPoint="0,0" EndPoint="0,1">
-            --><!--<GradientStop Offset="0" Color="#FF73CFEE" />
-            <GradientStop Offset="1" Color="#4EA2FF" />--><!--
-            <GradientStop Offset="0" Color="#FF56A1" />
-            <GradientStop Offset="1" Color="#FF9350" />
+            <GradientStop Offset="0" Color="#FF73CFEE" />
+            <GradientStop Offset="1" Color="#4EA2FF" />
         </LinearGradientBrush>-->
+
+        <!--Swirl color example-->
+        <LinearGradientBrush
+            x:Key="IndicatorForeground"
+            MappingMode="Absolute"
+            StartPoint="399.906,240.414"
+            EndPoint="419.903,240.414">
+            <LinearGradientBrush.GradientStops>
+                <GradientStop
+                    Offset="0.26"
+                    Color="#0078D7" />
+                <GradientStop
+                    Offset="1.00"
+                    Color="#FF005599" />
+            </LinearGradientBrush.GradientStops>
+            <LinearGradientBrush.Transform>
+                <MatrixTransform Matrix="-1.000,0.000,0.000,-1.000,419.905,245.373" />
+            </LinearGradientBrush.Transform>
+        </LinearGradientBrush>
+        <LinearGradientBrush
+            x:Key="IndicatorBackground"
+            MappingMode="Absolute"
+            StartPoint="489.491,230.414"
+            EndPoint="509.491,230.414">
+            <LinearGradientBrush.GradientStops>
+                <GradientStop
+                    Offset="0.00"
+                    Color="#FFD8E7FD" />
+                <GradientStop
+                    Offset="0.73"
+                    Color="#0078D7" />
+            </LinearGradientBrush.GradientStops>
+            <LinearGradientBrush.Transform>
+                <MatrixTransform Matrix="1.000,0.000,-0.000,-1.000,-489.491,245.373" />
+            </LinearGradientBrush.Transform>
+        </LinearGradientBrush>
     </Window.Resources>
 
     <busyIndicator:BusyMask
