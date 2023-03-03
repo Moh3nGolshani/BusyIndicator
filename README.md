@@ -38,20 +38,23 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 5. Bind or Set `IsBusy` property: 
 
 ### How to change indicator Size:
-Indicators size can be changed now, All you have to do is overriding the scale on your Window, UserControl or even BusyMask resources as following:
+Indicators size can be changed now:
 
-Add a reference to the mscorlib in your view:
+1. Add a reference to the mscorlib in your view:
 <pre>xmlns:sys="clr-namespace:System;assembly=mscorlib"</pre>
+
+2. Override the IndicatorScaleX & IndicatorScaleY on your Window, UserControl or even BusyMask resources as following:
 
 <pre>
 &lt;Window.Resources>
-    &lt;sys:Double x:Key="IndicatorScaleX />2&lt;/sys:Double>
-    &lt;sys:Double x:Key="IndicatorScaleY />2&lt;/sys:Double>
+    &lt;sys:Double x:Key="IndicatorScaleX" />2&lt;/sys:Double>
+    &lt;sys:Double x:Key="IndicatorScaleY" />2&lt;/sys:Double>
 &lt;/Window.Resources>
 </pre>
 
 ### How to change indicator color:
-Indicators color can be changed now, All you have to do is overriding the colors on your Window, UserControl or even BusyMask resources as following:
+Override the IndicatorForeground & IndicatorBackground on your Window, UserControl or even BusyMask resources as following:
+
 <pre>
 &lt;Window.Resources>
     &lt;SolidColorBrush x:Key="IndicatorForeground" Color="Orange" />
