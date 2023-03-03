@@ -21,6 +21,7 @@
     <PackageIcon>Icon.png</PackageIcon>
     <PackageReadmeFile></PackageReadmeFile>
     <Description>Loading indicator for WPF applications.</Description>
+    <PackageId>BusyIndicators</PackageId>
   </PropertyGroup>
   <PropertyGroup Condition="'$(Configuration)|$(TargetFramework)|$(Platform)'=='Debug|net6.0-windows|AnyCPU'">
     <WarningLevel>4</WarningLevel>
