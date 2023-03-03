@@ -10,7 +10,14 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             >
-            <Grid>
+            <Grid
+                RenderTransformOrigin="0.5 0.5">
+                <Grid.RenderTransform>
+                    <ScaleTransform 
+                        ScaleX="{DynamicResource IndicatorScaleX}"
+                        ScaleY="{DynamicResource IndicatorScaleY}"/>
+                </Grid.RenderTransform>
+                
                 <Border
                     Width="200"
                     Height="15"

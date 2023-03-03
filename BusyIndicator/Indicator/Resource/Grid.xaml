@@ -11,10 +11,13 @@
             VerticalAlignment="Center"
             >
             <Grid
-                Width="66"
-                Height="66"
-                Margin="10"
-                >
+                RenderTransformOrigin="0.5 0.5">
+                <Grid.RenderTransform>
+                    <ScaleTransform 
+                        ScaleX="{DynamicResource IndicatorScaleX}"
+                        ScaleY="{DynamicResource IndicatorScaleY}"/>
+                </Grid.RenderTransform>
+                
                 <Grid.RowDefinitions>
                     <RowDefinition />
                     <RowDefinition />

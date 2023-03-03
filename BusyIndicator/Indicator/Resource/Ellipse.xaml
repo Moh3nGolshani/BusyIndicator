@@ -10,7 +10,14 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             >
-            <Grid Height="100">
+            <Grid
+                RenderTransformOrigin="0.5 0.5">
+                <Grid.RenderTransform>
+                    <ScaleTransform 
+                        ScaleX="{DynamicResource IndicatorScaleX}"
+                        ScaleY="{DynamicResource IndicatorScaleY}"/>
+                </Grid.RenderTransform>
+                
                 <Ellipse
                     Width="80"
                     Height="80"

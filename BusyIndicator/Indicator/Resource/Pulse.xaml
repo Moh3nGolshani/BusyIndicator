@@ -11,12 +11,17 @@
             VerticalAlignment="Center"
             >
             <Grid
-                Width="60"
-                Height="60"
-                Margin="10"
-                >
+                RenderTransformOrigin="0.5 0.5">
+                <Grid.RenderTransform>
+                    <ScaleTransform 
+                        ScaleX="{DynamicResource IndicatorScaleX}"
+                        ScaleY="{DynamicResource IndicatorScaleY}"/>
+                </Grid.RenderTransform>
+                
                 <Ellipse
                     x:Name="Ellipse"
+                    Width="20"
+                    Height="20"
                     Fill="{DynamicResource IndicatorForeground}"
                     RenderTransformOrigin="0.5,0.5"
                     >

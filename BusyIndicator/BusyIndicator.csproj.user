@@ -14,7 +14,7 @@
     <Page Update="Indicator\Resource\Grid.xaml">
       <SubType>Designer</SubType>
     </Page>
-    <Page Update="Theme\Colors.xaml">
+    <Page Update="Theme\Options.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>

@@ -11,11 +11,18 @@
             VerticalAlignment="Center"
             >
             <Grid
-                Width="70"
-                Height="70"
-                Margin="10"
-                >
-                <Ellipse Fill="{DynamicResource IndicatorForeground}" RenderTransformOrigin="0.5,0.5">
+                RenderTransformOrigin="0.5 0.5">
+                <Grid.RenderTransform>
+                    <ScaleTransform
+                        ScaleX="{DynamicResource IndicatorScaleX}"
+                        ScaleY="{DynamicResource IndicatorScaleY}"/>
+                </Grid.RenderTransform>
+
+                <Ellipse
+                    Width="20"
+                    Height="20"
+                    Fill="{DynamicResource IndicatorForeground}"
+                    RenderTransformOrigin="0.5,0.5">
                     <Ellipse.RenderTransform>
                         <ScaleTransform ScaleX="0.2" ScaleY="0.2" />
                     </Ellipse.RenderTransform>
@@ -23,39 +30,43 @@
 
                 <Ellipse
                     x:Name="Ellipse1"
+                    Width="20"
+                    Height="20"
                     Fill="{DynamicResource IndicatorForeground}"
-                    RenderTransformOrigin="0.5,0.5"
-                    >
+                    RenderTransformOrigin="0.5,0.5">
                     <Ellipse.RenderTransform>
                         <ScaleTransform ScaleX="0.2" ScaleY="0.2" />
                     </Ellipse.RenderTransform>
                 </Ellipse>
 
                 <Ellipse
+                    Width="20"
+                    Height="20"
                     x:Name="Ellipse2"
                     Fill="{DynamicResource IndicatorForeground}"
-                    RenderTransformOrigin="0.5,0.5"
-                    >
+                    RenderTransformOrigin="0.5,0.5">
                     <Ellipse.RenderTransform>
                         <ScaleTransform ScaleX="0.2" ScaleY="0.2" />
                     </Ellipse.RenderTransform>
                 </Ellipse>
 
                 <Ellipse
+                    Width="20"
+                    Height="20"
                     x:Name="Ellipse3"
                     Fill="{DynamicResource IndicatorForeground}"
-                    RenderTransformOrigin="0.5,0.5"
-                    >
+                    RenderTransformOrigin="0.5,0.5">
                     <Ellipse.RenderTransform>
                         <ScaleTransform ScaleX="0.2" ScaleY="0.2" />
                     </Ellipse.RenderTransform>
                 </Ellipse>
 
                 <Ellipse
+                    Width="20"
+                    Height="20"
                     x:Name="Ellipse4"
                     Fill="{DynamicResource IndicatorForeground}"
-                    RenderTransformOrigin="0.5,0.5"
-                    >
+                    RenderTransformOrigin="0.5,0.5">
                     <Ellipse.RenderTransform>
                         <ScaleTransform ScaleX="0.2" ScaleY="0.2" />
                     </Ellipse.RenderTransform>

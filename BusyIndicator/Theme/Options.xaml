@@ -1,6 +1,7 @@
 ﻿<ResourceDictionary
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
     xmlns:fr="http://schemas.microsoft.com/winfx/2006/xaml/presentation/options"
     >
 
@@ -14,5 +15,13 @@
         fr:Freeze="True"
         Color="#DDDDDD"
         />
+
+    <sys:Double
+        x:Key="IndicatorScaleX"
+        fr:Freeze="True">1</sys:Double>
+
+    <sys:Double
+        x:Key="IndicatorScaleY"
+        fr:Freeze="True">1</sys:Double>
 
 </ResourceDictionary>

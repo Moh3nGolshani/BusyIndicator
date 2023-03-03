@@ -10,12 +10,20 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             >
-            <Canvas
+            <Grid
+                RenderTransformOrigin="0.5 0.5">
+                <Grid.RenderTransform>
+                    <ScaleTransform 
+                        ScaleX="{DynamicResource IndicatorScaleX}"
+                        ScaleY="{DynamicResource IndicatorScaleY}"/>
+                </Grid.RenderTransform>
+
+                <Canvas
                 Width="50"
                 Height="50"
                 Margin="10"
                 >
-                <Path
+                    <Path
                     x:Name="topCog"
                     Canvas.Left="5"
                     Canvas.Top="5"
@@ -27,16 +35,16 @@
                     Stretch="Fill"
                     UseLayoutRounding="False"
                     >
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform />
-                            <TranslateTransform />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-                <Path
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform />
+                                <TranslateTransform />
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path
                     x:Name="bottomCog"
                     Canvas.Left="22"
                     Canvas.Top="20.5"
@@ -48,16 +56,17 @@
                     Stretch="Fill"
                     UseLayoutRounding="False"
                     >
-                    <Path.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform Angle="15" />
-                            <TranslateTransform />
-                        </TransformGroup>
-                    </Path.RenderTransform>
-                </Path>
-            </Canvas>
+                        <Path.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="15" />
+                                <TranslateTransform />
+                            </TransformGroup>
+                        </Path.RenderTransform>
+                    </Path>
+                </Canvas>
+            </Grid>
 
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="ActiveStates">

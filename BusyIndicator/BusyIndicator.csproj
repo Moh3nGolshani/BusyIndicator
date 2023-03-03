@@ -3,21 +3,21 @@
     <OutputType>Library</OutputType>
     <UseWPF>true</UseWPF>
     <TargetFrameworks>net46;net6.0-windows</TargetFrameworks>
-	  <Version>2.0.2.1</Version>
+	  <Version>2.1.0.0</Version>
 	  <Authors>Mohsen Golshani</Authors>
 	  <Company>Mohsen Golshani</Company>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <ApplicationIcon>Icon.ico</ApplicationIcon>
     <!--<PackageIcon>Icon.ico</PackageIcon>-->
-    <RepositoryUrl>https://github.com/Peoky/BusyIndicator</RepositoryUrl>
+    <RepositoryUrl>https://github.com/moh3ngolshani/BusyIndicator</RepositoryUrl>
     <PackageTags>BusyIndicator Loader Spinner LoadingIndicator</PackageTags>
-    <PackageReleaseNotes>Fixed NullReferenceException which may occur after the CPU/GPU fix (#10) - Fixed Swirl indicator color</PackageReleaseNotes>
+    <PackageReleaseNotes>Indicators size can be changed now by 2 new dynamic resources: IndicatorScaleX and IndicatorScaleY; New dependency property BusyContentMargin, Fixed Escalade indicator beginning animation bug; Renamed XmlnsPrefix according to github new username</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
-    <PackageProjectUrl>https://github.com/Peoky/BusyIndicator</PackageProjectUrl>
+    <PackageProjectUrl>https://github.com/moh3ngolshani/BusyIndicator</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <AssemblyVersion>2.0.2.1</AssemblyVersion>
-    <FileVersion>2.0.2.1</FileVersion>
+    <AssemblyVersion>2.1.0.0</AssemblyVersion>
+    <FileVersion>2.1.0.0</FileVersion>
     <PackageIcon>Icon.png</PackageIcon>
     <PackageReadmeFile></PackageReadmeFile>
     <Description>Loading indicator for WPF applications.</Description>

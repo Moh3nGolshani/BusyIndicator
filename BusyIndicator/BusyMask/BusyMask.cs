@@ -37,6 +37,20 @@ namespace BusyIndicator
                 new PropertyMetadata("Please wait..."));
 
         [Category(nameof(BusyIndicator))]
+        [Description("Gets or sets indicator content margin.")]
+        public Thickness BusyContentMargin
+        {
+            get { return (Thickness)GetValue(BusyContentMarginProperty); }
+            set { SetValue(BusyContentMarginProperty, value); }
+        }
+
+        public static readonly DependencyProperty BusyContentMarginProperty =
+            DependencyProperty.Register("BusyContentMargin",
+                typeof(Thickness),
+                typeof(BusyMask),
+                new PropertyMetadata(new Thickness(10)));
+
+        [Category(nameof(BusyIndicator))]
         [Description("Gets or sets the indicator type.")]
         public IndicatorType IndicatorType
         {

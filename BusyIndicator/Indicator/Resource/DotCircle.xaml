@@ -10,12 +10,20 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             >
-            <Canvas
+            <Grid
+                RenderTransformOrigin="0.5 0.5">
+                <Grid.RenderTransform>
+                    <ScaleTransform 
+                        ScaleX="{DynamicResource IndicatorScaleX}"
+                        ScaleY="{DynamicResource IndicatorScaleY}"/>
+                </Grid.RenderTransform>
+
+                <Canvas
                 Width="48"
                 Height="48"
                 Margin="10"
                 >
-                <Ellipse
+                    <Ellipse
                     x:Name="ellipse01"
                     Canvas.Top="20"
                     Width="8"
@@ -23,7 +31,7 @@
                     Fill="{DynamicResource IndicatorForeground}"
                     Opacity="0"
                     />
-                <Ellipse
+                    <Ellipse
                     x:Name="ellipse02"
                     Canvas.Left="2.8"
                     Canvas.Top="10"
@@ -32,7 +40,7 @@
                     Fill="{DynamicResource IndicatorForeground}"
                     Opacity="0"
                     />
-                <Ellipse
+                    <Ellipse
                     x:Name="ellipse03"
                     Canvas.Left="10"
                     Canvas.Top="2.8"
@@ -41,7 +49,7 @@
                     Fill="{DynamicResource IndicatorForeground}"
                     Opacity="0"
                     />
-                <Ellipse
+                    <Ellipse
                     x:Name="ellipse04"
                     Canvas.Left="20"
                     Canvas.Top="0"
@@ -50,7 +58,7 @@
                     Fill="{DynamicResource IndicatorForeground}"
                     Opacity="0"
                     />
-                <Ellipse
+                    <Ellipse
                     x:Name="ellipse05"
                     Canvas.Left="30"
                     Canvas.Top="2.8"
@@ -59,7 +67,7 @@
                     Fill="{DynamicResource IndicatorForeground}"
                     Opacity="0"
                     />
-                <Ellipse
+                    <Ellipse
                     x:Name="ellipse06"
                     Canvas.Left="37.32"
                     Canvas.Top="10"
@@ -68,7 +76,7 @@
                     Fill="{DynamicResource IndicatorForeground}"
                     Opacity="0"
                     />
-                <Ellipse
+                    <Ellipse
                     x:Name="ellipse07"
                     Canvas.Left="40"
                     Canvas.Top="20"
@@ -77,7 +85,7 @@
                     Fill="{DynamicResource IndicatorForeground}"
                     Opacity="0"
                     />
-                <Ellipse
+                    <Ellipse
                     x:Name="ellipse08"
                     Canvas.Left="37.4"
                     Canvas.Top="30"
@@ -86,7 +94,7 @@
                     Fill="{DynamicResource IndicatorForeground}"
                     Opacity="0"
                     />
-                <Ellipse
+                    <Ellipse
                     x:Name="ellipse09"
                     Canvas.Left="30"
                     Canvas.Top="37.32"
@@ -95,7 +103,7 @@
                     Fill="{DynamicResource IndicatorForeground}"
                     Opacity="0"
                     />
-                <Ellipse
+                    <Ellipse
                     x:Name="ellipse10"
                     Canvas.Left="20"
                     Canvas.Top="40"
@@ -104,7 +112,7 @@
                     Fill="{DynamicResource IndicatorForeground}"
                     Opacity="0"
                     />
-                <Ellipse
+                    <Ellipse
                     x:Name="ellipse11"
                     Canvas.Left="10"
                     Canvas.Top="37.32"
@@ -113,7 +121,7 @@
                     Fill="{DynamicResource IndicatorForeground}"
                     Opacity="0"
                     />
-                <Ellipse
+                    <Ellipse
                     x:Name="ellipse12"
                     Canvas.Left="2.8"
                     Canvas.Top="30"
@@ -122,7 +130,8 @@
                     Fill="{DynamicResource IndicatorForeground}"
                     Opacity="0"
                     />
-            </Canvas>
+                </Canvas>
+            </Grid>
 
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup>

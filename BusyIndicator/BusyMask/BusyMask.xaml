@@ -30,7 +30,8 @@
                                 <TextBlock
                                     HorizontalAlignment="Center"
                                     VerticalAlignment="Center"
-                                    Text="{TemplateBinding BusyContent}"/>
+                                    Text="{TemplateBinding BusyContent}"
+                                    Margin="{TemplateBinding BusyContentMargin}"/>
                             </StackPanel>
                         </Border>
                         <VisualStateManager.VisualStateGroups>

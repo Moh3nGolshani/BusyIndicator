@@ -10,42 +10,51 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             >
-            <Canvas
-                x:Name="canvas"
-                Width="50"
-                Height="50"
-                Margin="10"
-                RenderTransformOrigin="0.5,0.5"
-                >
-                <Canvas.RenderTransform>
-                    <TransformGroup>
-                        <ScaleTransform />
-                        <SkewTransform />
-                        <RotateTransform />
-                        <TranslateTransform />
-                    </TransformGroup>
-                </Canvas.RenderTransform>
-                <Path
-                    Canvas.Left="1.937"
-                    Canvas.Top="1.932"
-                    Data="F1 M 10.000,2.918 C 6.123,2.918 2.964,6.050 2.920,9.917 L 0.002,9.917 C 0.046,4.441 4.514,0.000 10.000,0.000 C 15.487,0.000 19.954,4.441 19.999,9.917 L 17.080,9.917 C 17.036,6.050 13.878,2.918 10.000,2.918 Z"
-                    UseLayoutRounding="False"
-                    Fill="{DynamicResource IndicatorForeground}">
-                    <Path.RenderTransform>
-                        <ScaleTransform ScaleX="2.3" ScaleY="2.3" />
-                    </Path.RenderTransform>
-                </Path>
-                <Path
-                    Canvas.Left="1.937"
-                    Canvas.Top="1.932"
-                    Data="F1 M 17.080,9.917 C 17.080,9.945 17.083,9.972 17.083,10.000 C 17.083,13.904 13.905,17.082 10.000,17.082 C 6.095,17.082 2.917,13.904 2.917,10.000 C 2.917,9.972 2.920,9.945 2.920,9.917 L 0.002,9.917 C 0.002,9.945 0.000,9.972 0.000,10.000 C 0.000,15.514 4.485,20.000 10.000,20.000 C 15.514,20.000 20.000,15.514 20.000,10.000 C 20.000,9.972 19.999,9.945 19.999,9.917 L 17.080,9.917 Z"
-                    UseLayoutRounding="False"
-                    Fill="{DynamicResource IndicatorBackground}">
-                    <Path.RenderTransform>
-                        <ScaleTransform ScaleX="2.3" ScaleY="2.3" />
-                    </Path.RenderTransform>
-                </Path>
-            </Canvas>
+            <Grid
+                RenderTransformOrigin="0.5 0.5">
+                <Grid.RenderTransform>
+                    <ScaleTransform
+                        ScaleX="{DynamicResource IndicatorScaleX}"
+                        ScaleY="{DynamicResource IndicatorScaleY}"/>
+                </Grid.RenderTransform>
+
+                <Canvas
+                    x:Name="canvas"
+                    Width="50"
+                    Height="50"
+                    Margin="10"
+                    RenderTransformOrigin="0.5,0.5"
+                    >
+                    <Canvas.RenderTransform>
+                        <TransformGroup>
+                            <ScaleTransform />
+                            <SkewTransform />
+                            <RotateTransform />
+                            <TranslateTransform />
+                        </TransformGroup>
+                    </Canvas.RenderTransform>
+                    <Path
+                        Canvas.Left="1.937"
+                        Canvas.Top="1.932"
+                        Data="F1 M 10.000,2.918 C 6.123,2.918 2.964,6.050 2.920,9.917 L 0.002,9.917 C 0.046,4.441 4.514,0.000 10.000,0.000 C 15.487,0.000 19.954,4.441 19.999,9.917 L 17.080,9.917 C 17.036,6.050 13.878,2.918 10.000,2.918 Z"
+                        UseLayoutRounding="False"
+                        Fill="{DynamicResource IndicatorForeground}">
+                        <Path.RenderTransform>
+                            <ScaleTransform ScaleX="2.3" ScaleY="2.3" />
+                        </Path.RenderTransform>
+                    </Path>
+                    <Path
+                        Canvas.Left="1.937"
+                        Canvas.Top="1.932"
+                        Data="F1 M 17.080,9.917 C 17.080,9.945 17.083,9.972 17.083,10.000 C 17.083,13.904 13.905,17.082 10.000,17.082 C 6.095,17.082 2.917,13.904 2.917,10.000 C 2.917,9.972 2.920,9.945 2.920,9.917 L 0.002,9.917 C 0.002,9.945 0.000,9.972 0.000,10.000 C 0.000,15.514 4.485,20.000 10.000,20.000 C 15.514,20.000 20.000,15.514 20.000,10.000 C 20.000,9.972 19.999,9.945 19.999,9.917 L 17.080,9.917 Z"
+                        UseLayoutRounding="False"
+                        Fill="{DynamicResource IndicatorBackground}">
+                        <Path.RenderTransform>
+                            <ScaleTransform ScaleX="2.3" ScaleY="2.3" />
+                        </Path.RenderTransform>
+                    </Path>
+                </Canvas>
+            </Grid>
 
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="ActiveStates">

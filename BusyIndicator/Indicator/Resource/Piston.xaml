@@ -10,50 +10,46 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             >
-            <Canvas
-                Width="50"
-                Height="50"
-                Margin="10"
-                HorizontalAlignment="Center"
-                VerticalAlignment="Center"
-                >
-                <Ellipse
-                    x:Name="ellipse"
-                    Canvas.Left="32"
-                    Canvas.Top="4"
-                    Width="12"
-                    Height="12"
-                    Fill="{DynamicResource IndicatorForeground}"
-                    RenderTransformOrigin="0.5,0.5"
-                    >
-                    <Ellipse.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform />
+            <Grid
+                RenderTransformOrigin="0.5 0.5">
+                <Grid.RenderTransform>
+                    <ScaleTransform
+                        ScaleX="{DynamicResource IndicatorScaleX}"
+                        ScaleY="{DynamicResource IndicatorScaleY}"/>
+                </Grid.RenderTransform>
+
+                <Canvas
+                    Width="50"
+                    Height="50"
+                    HorizontalAlignment="Left"
+                    VerticalAlignment="Top">
+                    <Ellipse
+                        x:Name="Ellipse1"
+                        Canvas.Left="32"
+                        Canvas.Top="4"
+                        Width="12"
+                        Height="12"
+                        Fill="{DynamicResource IndicatorForeground}"
+                        RenderTransformOrigin="0.5 0.5">
+                        <Ellipse.RenderTransform>
                             <TranslateTransform />
-                        </TransformGroup>
-                    </Ellipse.RenderTransform>
-                </Ellipse>
-                <Ellipse
-                    x:Name="ellipse1"
-                    Canvas.Left="4"
-                    Canvas.Top="32"
-                    Width="12"
-                    Height="12"
-                    Fill="{DynamicResource IndicatorForeground}"
-                    RenderTransformOrigin="0.5,0.5"
-                    >
-                    <Ellipse.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform />
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+
+                    <Ellipse
+                        x:Name="Ellipse2"
+                        Canvas.Left="4"
+                        Canvas.Top="32"
+                        Width="12"
+                        Height="12"
+                        Fill="{DynamicResource IndicatorForeground}"
+                        RenderTransformOrigin="0.5 0.5">
+                        <Ellipse.RenderTransform>
                             <TranslateTransform />
-                        </TransformGroup>
-                    </Ellipse.RenderTransform>
-                </Ellipse>
-            </Canvas>
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                </Canvas>
+            </Grid>
 
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="ActiveStates">
@@ -61,8 +57,8 @@
                         <Storyboard BeginTime="00:00:00" RepeatBehavior="Forever">
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
-                                Storyboard.TargetName="ellipse1"
-                                Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)"
+                                Storyboard.TargetName="Ellipse2"
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
                                 >
                                 <LinearDoubleKeyFrame KeyTime="00:00:00" Value="0" />
                                 <LinearDoubleKeyFrame KeyTime="00:00:00.10" Value="-13.66" />
@@ -72,8 +68,8 @@
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
-                                Storyboard.TargetName="ellipse"
-                                Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.Y)"
+                                Storyboard.TargetName="Ellipse1"
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.Y)"
                                 >
                                 <LinearDoubleKeyFrame KeyTime="00:00:00" Value="0" />
                                 <LinearDoubleKeyFrame KeyTime="00:00:00.10" Value="13.90" />
@@ -83,8 +79,8 @@
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
-                                Storyboard.TargetName="ellipse"
-                                Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)"
+                                Storyboard.TargetName="Ellipse1"
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
                                 >
                                 <LinearDoubleKeyFrame KeyTime="00:00:00" Value="0" />
                                 <LinearDoubleKeyFrame KeyTime="00:00:00.2440000" Value="0" />
@@ -94,8 +90,8 @@
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
-                                Storyboard.TargetName="ellipse1"
-                                Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[3].(TranslateTransform.X)"
+                                Storyboard.TargetName="Ellipse2"
+                                Storyboard.TargetProperty="(UIElement.RenderTransform).(TranslateTransform.X)"
                                 >
                                 <LinearDoubleKeyFrame KeyTime="00:00:00" Value="0" />
                                 <LinearDoubleKeyFrame KeyTime="00:00:00.20" Value="0" />
@@ -105,7 +101,7 @@
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
-                                Storyboard.TargetName="ellipse"
+                                Storyboard.TargetName="Ellipse1"
                                 Storyboard.TargetProperty="(UIElement.Opacity)"
                                 >
                                 <LinearDoubleKeyFrame KeyTime="00:00:00" Value="1" />
@@ -116,7 +112,7 @@
                             </DoubleAnimationUsingKeyFrames>
                             <DoubleAnimationUsingKeyFrames
                                 BeginTime="00:00:00"
-                                Storyboard.TargetName="ellipse1"
+                                Storyboard.TargetName="Ellipse2"
                                 Storyboard.TargetProperty="(UIElement.Opacity)"
                                 >
                                 <LinearDoubleKeyFrame KeyTime="00:00:00" Value="1" />

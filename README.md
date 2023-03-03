@@ -2,11 +2,11 @@
 BusyIndicator for Windows Presentation Foundation (WPF)
 
 <p align="center">
-  <img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/Demo.gif" alt="Demo" style="width: 50%;"></img>
+  <img src="https://github.com/moh3ngolshani/BusyIndicator/blob/master/Images/Demo.gif" alt="Demo" style="width: 50%;"></img>
 </p>
 
 <p align="center">
-  <img src="https://github.com/Peoky/BusyIndicator/blob/master/Images/Indicators.gif" alt="Indicator Types" width="95%"></img>
+  <img src="https://github.com/moh3ngolshani/BusyIndicator/blob/master/Images/Indicators.gif" alt="Indicator Types" width="95%"></img>
 </p>
 
 ## Prerequisites:
@@ -24,10 +24,10 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 </code></pre>  
 
 3. Add a reference to the library in your view:
-<pre>xmlns:busyIndicator="https://github.com/Peoky/BusyIndicator"</pre>
+<pre>xmlns:busyIndicator="https://github.com/moh3ngolshani/BusyIndicator"</pre>
 
 4. Create a BusyMask on top of main view:
-<pre><code>&lt;busyIndicator:BusyMask x:Name="BusyIndicator" IsBusy="False" IndicatorType="Dashes" BusyContent="Please wait..." &gt;
+<pre><code>&lt;busyIndicator:BusyMask x:Name="BusyIndicator" IsBusy="False" IndicatorType="Dashes" BusyContent="Please wait..." BusyContentMargin="0,20,0,0" &gt;
          
          
           <... MAIN VIEW GOES HERE... >
@@ -37,8 +37,21 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 
 5. Bind or Set `IsBusy` property: 
 
-### How to change indicator colors:
-Indicator colors can be changed now, All you have to do is overriding the colors on your Window, UserControl or even BusyMask resources as following:
+### How to change indicator Size:
+Indicators size can be changed now, All you have to do is overriding the scale on your Window, UserControl or even BusyMask resources as following:
+
+Add a reference to the mscorlib in your view:
+<pre>xmlns:sys="clr-namespace:System;assembly=mscorlib"</pre>
+
+<pre>
+&lt;Window.Resources>
+    &lt;sys:Double x:Key="IndicatorScaleX />2&lt;/sys:Double>
+    &lt;sys:Double x:Key="IndicatorScaleY />2&lt;/sys:Double>
+&lt;/Window.Resources>
+</pre>
+
+### How to change indicator color:
+Indicators color can be changed now, All you have to do is overriding the colors on your Window, UserControl or even BusyMask resources as following:
 <pre>
 &lt;Window.Resources>
     &lt;SolidColorBrush x:Key="IndicatorForeground" Color="Orange" />
@@ -62,5 +75,4 @@ You can also use gradients:
 If you like this, give it a * please.
 
 <a href="https://www.buymeacoffee.com/coffeemakes" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
-
 

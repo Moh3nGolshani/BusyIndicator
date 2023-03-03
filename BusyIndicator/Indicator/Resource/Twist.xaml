@@ -11,9 +11,13 @@
 			VerticalAlignment="Center"
 			>
             <Grid
-				MinWidth="49"
-				MinHeight="49"
-                Margin="10">
+				RenderTransformOrigin="0.5 0.5">
+                <Grid.RenderTransform>
+                    <ScaleTransform 
+                        ScaleX="{DynamicResource IndicatorScaleX}"
+                        ScaleY="{DynamicResource IndicatorScaleY}"/>
+                </Grid.RenderTransform>
+                
                 <Canvas
 					RenderTransformOrigin=".5,.5">
                     <Canvas.RenderTransform>

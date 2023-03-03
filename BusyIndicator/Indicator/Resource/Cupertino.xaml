@@ -10,12 +10,20 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             >
-            <Canvas
+            <Grid
+                RenderTransformOrigin="0.5 0.5">
+                <Grid.RenderTransform>
+                    <ScaleTransform 
+                        ScaleX="{DynamicResource IndicatorScaleX}"
+                        ScaleY="{DynamicResource IndicatorScaleY}"/>
+                </Grid.RenderTransform>
+
+                <Canvas
                 Width="48"
                 Height="48"
                 Margin="10"
                 >
-                <Rectangle
+                    <Rectangle
                     x:Name="Rectangle01"
                     Canvas.Left="22"
                     Canvas.Top="4"
@@ -26,7 +34,7 @@
                     RadiusX="2"
                     RadiusY="2"
                     />
-                <Rectangle
+                    <Rectangle
                     x:Name="Rectangle02"
                     Canvas.Left="22"
                     Canvas.Top="4"
@@ -38,16 +46,16 @@
                     RadiusY="2"
                     RenderTransformOrigin="0.5,0.5"
                     >
-                    <Rectangle.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform Angle="30" />
-                            <TranslateTransform X="7.5" Y="2" />
-                        </TransformGroup>
-                    </Rectangle.RenderTransform>
-                </Rectangle>
-                <Rectangle
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="30" />
+                                <TranslateTransform X="7.5" Y="2" />
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle
                     x:Name="Rectangle03"
                     Canvas.Left="22"
                     Canvas.Top="4"
@@ -60,16 +68,16 @@
                     RenderTransformOrigin="0.5,0.5"
                     UseLayoutRounding="False"
                     >
-                    <Rectangle.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform Angle="60" />
-                            <TranslateTransform X="13" Y="7.5" />
-                        </TransformGroup>
-                    </Rectangle.RenderTransform>
-                </Rectangle>
-                <Rectangle
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="60" />
+                                <TranslateTransform X="13" Y="7.5" />
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle
                     x:Name="Rectangle04"
                     Canvas.Left="22"
                     Canvas.Top="4"
@@ -82,16 +90,16 @@
                     RenderTransformOrigin="0.5,0.5"
                     UseLayoutRounding="False"
                     >
-                    <Rectangle.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform Angle="90" />
-                            <TranslateTransform X="15" Y="15" />
-                        </TransformGroup>
-                    </Rectangle.RenderTransform>
-                </Rectangle>
-                <Rectangle
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="90" />
+                                <TranslateTransform X="15" Y="15" />
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle
                     x:Name="Rectangle05"
                     Canvas.Left="22"
                     Canvas.Top="4"
@@ -104,16 +112,16 @@
                     RenderTransformOrigin="0.5,0.5"
                     UseLayoutRounding="False"
                     >
-                    <Rectangle.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform Angle="120" />
-                            <TranslateTransform X="13" Y="22.5" />
-                        </TransformGroup>
-                    </Rectangle.RenderTransform>
-                </Rectangle>
-                <Rectangle
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="120" />
+                                <TranslateTransform X="13" Y="22.5" />
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle
                     x:Name="Rectangle06"
                     Canvas.Left="22"
                     Canvas.Top="4"
@@ -126,16 +134,16 @@
                     RenderTransformOrigin="0.5,0.5"
                     UseLayoutRounding="False"
                     >
-                    <Rectangle.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform Angle="150" />
-                            <TranslateTransform X="7.5" Y="28" />
-                        </TransformGroup>
-                    </Rectangle.RenderTransform>
-                </Rectangle>
-                <Rectangle
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="150" />
+                                <TranslateTransform X="7.5" Y="28" />
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle
                     x:Name="Rectangle07"
                     Canvas.Left="22"
                     Canvas.Top="34"
@@ -147,7 +155,7 @@
                     RadiusY="2"
                     RenderTransformOrigin="0.562,0.3"
                     />
-                <Rectangle
+                    <Rectangle
                     x:Name="Rectangle08"
                     Canvas.Left="22"
                     Canvas.Top="34"
@@ -159,16 +167,16 @@
                     RadiusY="2"
                     RenderTransformOrigin="0.5,0.5"
                     >
-                    <Rectangle.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform Angle="30" />
-                            <TranslateTransform X="-7.5" Y="-2" />
-                        </TransformGroup>
-                    </Rectangle.RenderTransform>
-                </Rectangle>
-                <Rectangle
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="30" />
+                                <TranslateTransform X="-7.5" Y="-2" />
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle
                     x:Name="Rectangle09"
                     Canvas.Left="22"
                     Canvas.Top="34"
@@ -181,16 +189,16 @@
                     RenderTransformOrigin="0.5,0.5"
                     UseLayoutRounding="False"
                     >
-                    <Rectangle.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform Angle="60" />
-                            <TranslateTransform X="-13" Y="-7.5" />
-                        </TransformGroup>
-                    </Rectangle.RenderTransform>
-                </Rectangle>
-                <Rectangle
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="60" />
+                                <TranslateTransform X="-13" Y="-7.5" />
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle
                     x:Name="Rectangle10"
                     Canvas.Left="22"
                     Canvas.Top="34"
@@ -203,16 +211,16 @@
                     RenderTransformOrigin="0.5,0.5"
                     UseLayoutRounding="False"
                     >
-                    <Rectangle.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform Angle="90" />
-                            <TranslateTransform X="-15" Y="-15" />
-                        </TransformGroup>
-                    </Rectangle.RenderTransform>
-                </Rectangle>
-                <Rectangle
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="90" />
+                                <TranslateTransform X="-15" Y="-15" />
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle
                     x:Name="Rectangle11"
                     Canvas.Left="22"
                     Canvas.Top="34"
@@ -225,16 +233,16 @@
                     RenderTransformOrigin="0.5,0.5"
                     UseLayoutRounding="False"
                     >
-                    <Rectangle.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform Angle="120" />
-                            <TranslateTransform X="-13" Y="-22.5" />
-                        </TransformGroup>
-                    </Rectangle.RenderTransform>
-                </Rectangle>
-                <Rectangle
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="120" />
+                                <TranslateTransform X="-13" Y="-22.5" />
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                    <Rectangle
                     x:Name="Rectangle12"
                     Canvas.Left="22"
                     Canvas.Top="34"
@@ -247,16 +255,17 @@
                     RenderTransformOrigin="0.5,0.5"
                     UseLayoutRounding="False"
                     >
-                    <Rectangle.RenderTransform>
-                        <TransformGroup>
-                            <ScaleTransform />
-                            <SkewTransform />
-                            <RotateTransform Angle="150" />
-                            <TranslateTransform X="-7.5" Y="-28" />
-                        </TransformGroup>
-                    </Rectangle.RenderTransform>
-                </Rectangle>
-            </Canvas>
+                        <Rectangle.RenderTransform>
+                            <TransformGroup>
+                                <ScaleTransform />
+                                <SkewTransform />
+                                <RotateTransform Angle="150" />
+                                <TranslateTransform X="-7.5" Y="-28" />
+                            </TransformGroup>
+                        </Rectangle.RenderTransform>
+                    </Rectangle>
+                </Canvas>
+            </Grid>
 
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="ActiveStates">

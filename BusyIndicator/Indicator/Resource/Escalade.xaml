@@ -10,11 +10,19 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             >
-            <Grid x:Name="Grid1" Margin="0,0,0,25">
+            <Grid
+                RenderTransformOrigin="0.5 0.5">
                 <Grid.RenderTransform>
-                    <TranslateTransform/>
+                    <ScaleTransform 
+                        ScaleX="{DynamicResource IndicatorScaleX}"
+                        ScaleY="{DynamicResource IndicatorScaleY}"/>
                 </Grid.RenderTransform>
-                <Path
+
+                <Grid x:Name="Grid1" Margin="0,0,0,25">
+                    <Grid.RenderTransform>
+                        <TranslateTransform/>
+                    </Grid.RenderTransform>
+                    <Path
                     x:Name="Path1"
                     Data="M 50,100 A 1,1 0 0 1 50,0"
                     StrokeDashArray="0 10"
@@ -24,14 +32,14 @@
                     StrokeStartLineCap="Round"
                     StrokeThickness="18"
                     Stroke="{DynamicResource IndicatorForeground}">
-                </Path>
-            </Grid>
+                    </Path>
+                </Grid>
 
-            <Grid x:Name="Grid2">
-                <Grid.RenderTransform>
-                    <TranslateTransform/>
-                </Grid.RenderTransform>
-                <Path
+                <Grid x:Name="Grid2">
+                    <Grid.RenderTransform>
+                        <TranslateTransform/>
+                    </Grid.RenderTransform>
+                    <Path
                     x:Name="Path2"
                     Data="M 50,75 A 1,1 0 0 0 50,-25"
                     StrokeDashArray="0 10"
@@ -40,8 +48,10 @@
                     StrokeEndLineCap="Round"
                     StrokeStartLineCap="Round"
                     StrokeThickness="18"
+                    Opacity="0"
                     Stroke="{DynamicResource IndicatorForeground}">
-                </Path>
+                    </Path>
+                </Grid>
             </Grid>
 
             <VisualStateManager.VisualStateGroups>
@@ -101,6 +111,15 @@
                                     KeyTime="0:0:2"
                                     Value="-8.7"
                                     KeySpline="0.8, 0, 0.2, 1"/>
+                            </DoubleAnimationUsingKeyFrames>
+
+                            <DoubleAnimationUsingKeyFrames
+                                BeginTime="00:00:00.5"
+                                Storyboard.TargetName="Path2"
+                                Storyboard.TargetProperty="(UIElement.Opacity)">
+                                <LinearDoubleKeyFrame
+                                    KeyTime="0:0:0"
+                                    Value="1"/>
                             </DoubleAnimationUsingKeyFrames>
 
                             <DoubleAnimationUsingKeyFrames

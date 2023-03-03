@@ -10,20 +10,28 @@
             HorizontalAlignment="Center"
             VerticalAlignment="Center"
             >
-            <StackPanel Height="120" Orientation="Horizontal">
-                <Ellipse
+            <Grid
+                RenderTransformOrigin="0.5 0.5">
+                <Grid.RenderTransform>
+                    <ScaleTransform 
+                        ScaleX="{DynamicResource IndicatorScaleX}"
+                        ScaleY="{DynamicResource IndicatorScaleY}"/>
+                </Grid.RenderTransform>
+
+                <StackPanel Orientation="Horizontal">
+                    <Ellipse
                     x:Name="Ellipse1"
                     Width="17"
                     Height="17"
                     Fill="{DynamicResource IndicatorForeground}"
                     RenderTransformOrigin="3.6 0.5"
                     >
-                    <Ellipse.RenderTransform>
-                        <RotateTransform />
-                    </Ellipse.RenderTransform>
-                </Ellipse>
+                        <Ellipse.RenderTransform>
+                            <RotateTransform />
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
 
-                <Ellipse
+                    <Ellipse
                     x:Name="Ellipse2"
                     Width="17"
                     Height="17"
@@ -31,24 +39,24 @@
                     Fill="{DynamicResource IndicatorForeground}"
                     RenderTransformOrigin="2.6 0.5"
                     >
-                    <Ellipse.RenderTransform>
-                        <RotateTransform />
-                    </Ellipse.RenderTransform>
-                </Ellipse>
+                        <Ellipse.RenderTransform>
+                            <RotateTransform />
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
 
-                <Ellipse
+                    <Ellipse
                     x:Name="Ellipse3"
                     Width="17"
                     Height="17"
                     Fill="{DynamicResource IndicatorForeground}"
                     RenderTransformOrigin="2.1 0.5"
                     >
-                    <Ellipse.RenderTransform>
-                        <RotateTransform />
-                    </Ellipse.RenderTransform>
-                </Ellipse>
+                        <Ellipse.RenderTransform>
+                            <RotateTransform />
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
 
-                <Ellipse
+                    <Ellipse
                     x:Name="Ellipse4"
                     Width="17"
                     Height="17"
@@ -56,11 +64,12 @@
                     Fill="{DynamicResource IndicatorForeground}"
                     RenderTransformOrigin="-2.6 0.5"
                     >
-                    <Ellipse.RenderTransform>
-                        <RotateTransform />
-                    </Ellipse.RenderTransform>
-                </Ellipse>
-            </StackPanel>
+                        <Ellipse.RenderTransform>
+                            <RotateTransform />
+                        </Ellipse.RenderTransform>
+                    </Ellipse>
+                </StackPanel>
+            </Grid>
 
             <VisualStateManager.VisualStateGroups>
                 <VisualStateGroup x:Name="ActiveStates">
