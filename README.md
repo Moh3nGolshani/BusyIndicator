@@ -14,8 +14,12 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 <ul><li>.Net Core6+</li></ul>
 
 ## How to use:
+
 1. Install the package via [NuGet](https://www.nuget.org/packages/BusyIndicators):
 <pre>Install-Package BusyIndicators</pre>
+
+> **Note**
+> NuGet address is changed!
 
 2. Add resource call to App.xaml:
 <pre><code>&lt;Application.Resources&gt;
@@ -23,11 +27,15 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 &lt;/Application.Resources&gt;
 </code></pre>  
 
-3. Add a reference to the library in your view:
+3. Add a reference to the library:
 <pre>xmlns:busyIndicator="https://github.com/moh3ngolshani/BusyIndicator"</pre>
 
 4. Create a BusyMask on top of main view:
-<pre><code>&lt;busyIndicator:BusyMask x:Name="BusyIndicator" IsBusy="False" IndicatorType="Dashes" BusyContent="Please wait..." BusyContentMargin="0,20,0,0" &gt;
+<pre><code>&lt;busyIndicator:BusyMask x:Name="BusyIndicator" 
+                                      IsBusy="False" 
+                                      IndicatorType="Dashes" 
+                                      BusyContent="Please wait..." 
+                                      BusyContentMargin="0,20,0,0" &gt;
          
          
           <... MAIN VIEW GOES HERE... >
@@ -35,15 +43,15 @@ BusyIndicator for Windows Presentation Foundation (WPF)
          
 &lt;/busyIndicator:BusyMask&gt;</code></pre>
 
-5. Bind or Set `IsBusy` property: 
+5. Bind or Set `IsBusy` property.
 
-### How to change indicator Size:
-Indicators size can be changed now:
+### How to change indicator Sizes:
+Indicator sizes can be changed now:
 
-1. Add a reference to the mscorlib in your view:
+*Add a reference to the mscorlib assembly:
 <pre>xmlns:sys="clr-namespace:System;assembly=mscorlib"</pre>
 
-2. Override the IndicatorScaleX & IndicatorScaleY on your Window, UserControl or even BusyMask resources as following:
+*Override the `IndicatorScaleX` & `IndicatorScaleY`:
 
 <pre>
 &lt;Window.Resources>
@@ -52,8 +60,8 @@ Indicators size can be changed now:
 &lt;/Window.Resources>
 </pre>
 
-### How to change indicator color:
-Override the IndicatorForeground & IndicatorBackground on your Window, UserControl or even BusyMask resources as following:
+### How to change indicator colors:
+Override the `IndicatorForeground` & `IndicatorBackground`:
 
 <pre>
 &lt;Window.Resources>
@@ -72,7 +80,7 @@ You can also use gradients:
 </pre> 
 
 #### Hint: 
->Not all indicators have background, so that change background might not affect all indicators.
+>Not all indicators have background, so changing the `IndicatorBackground` might not affect all indicators.
 
 ##
 If you like this, give it a * please.
