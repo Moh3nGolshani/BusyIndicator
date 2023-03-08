@@ -33,10 +33,10 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 
 4. Create a BusyMask on top of main view:
 <pre><code>&lt;busyIndicator:BusyMask x:Name="BusyIndicator" 
-                     IsBusy="False" 
-                     IndicatorType="Dashes" 
-                     BusyContent="Please wait..." 
-                     BusyContentMargin="0,20,0,0" &gt;
+                        IsBusy="False" 
+                        IndicatorType="Dashes" 
+                        BusyContent="Please wait..." 
+                        BusyContentMargin="0,20,0,0" &gt;
          
          
           <... MAIN VIEW GOES HERE... >
