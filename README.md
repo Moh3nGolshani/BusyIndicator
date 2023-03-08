@@ -46,7 +46,7 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 
 5. Bind or Set `IsBusy` property.
 
-### How to change indicator Sizes:
+### How to change indicator sizes:
 Indicator sizes can be changed now:
 
 * Add a reference to the mscorlib assembly:
