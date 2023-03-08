@@ -20,7 +20,7 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 
 > **Note**
 > NuGet address is changed!  
-
+<br />
 
 2. Add resource call to App.xaml:
 <pre><code>&lt;Application.Resources&gt;
