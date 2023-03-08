@@ -19,8 +19,8 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 <pre>Install-Package BusyIndicators</pre>
 
 > **Note**
-> NuGet address is changed!
-#
+> NuGet address is changed!  
+
 
 2. Add resource call to App.xaml:
 <pre><code>&lt;Application.Resources&gt;
