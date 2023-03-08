@@ -49,10 +49,10 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 ### How to change indicator Sizes:
 Indicator sizes can be changed now:
 
-*Add a reference to the mscorlib assembly:
+<ul><li>Add a reference to the mscorlib assembly:</li></ul>
 <pre>xmlns:sys="clr-namespace:System;assembly=mscorlib"</pre>
 
-*Override the `IndicatorScaleX` & `IndicatorScaleY`:
+<ul><li>Override the `IndicatorScaleX` & `IndicatorScaleY`:</li></ul>
 
 <pre>
 &lt;Window.Resources>
