@@ -19,6 +19,7 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 <pre>Install-Package BusyIndicators</pre>
 
 > **Note**
+<br />
 > NuGet address is changed!  
 <br />
 
