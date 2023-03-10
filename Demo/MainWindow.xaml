@@ -74,7 +74,9 @@
         IndicatorType="Dashes"
         IsBusy="False"
         Background="#D8FFFFFF"
-        >
+        IsBusyAtStartup="False">
+        <!-- Set IsBusyAtStartup to "True" if you want the indicator to be in the "busy" state at startup -->
+
         <StackPanel>
             <ComboBox
                 x:Name="IndicatorComboBox"
