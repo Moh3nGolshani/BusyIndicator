@@ -36,7 +36,8 @@ BusyIndicator for Windows Presentation Foundation (WPF)
                         IsBusy="False" 
                         IndicatorType="Dashes" 
                         BusyContent="Please wait..." 
-                        BusyContentMargin="0,20,0,0" &gt;
+                        BusyContentMargin="0,20,0,0" 
+                        IsBusyAtStartup="False" &gt;
          
          
           <... MAIN VIEW GOES HERE... >
