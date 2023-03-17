@@ -15,19 +15,20 @@ namespace BusyIndicator
             get { return (bool)GetValue(IsBusyProperty); }
             set { SetValue(IsBusyProperty, value); }
         }
-        [Description("Gets or sets whether the indicator is busy by default on startup.")]
-        public bool IsBusyAtStartup
-        {
-            get { return _IsBusyATStartup; }
-            set { _IsBusyATStartup = value; }
-        }
-        private bool _IsBusyATStartup;
 
         public static readonly DependencyProperty IsBusyProperty =
             DependencyProperty.Register("IsBusy",
                 typeof(bool),
                 typeof(BusyMask),
                 new PropertyMetadata(false, OnIsBusyChanged));
+
+        [Description("Gets or sets whether the indicator is busy by default on startup.")]
+        private bool _IsBusyATStartup;
+        public bool IsBusyAtStartup
+        {
+            get { return _IsBusyATStartup; }
+            set { _IsBusyATStartup = value; }
+        }
 
         [Category(nameof(BusyIndicator))]
         [Description("Gets or sets indicator content such as waiting message.")]
@@ -115,6 +116,7 @@ namespace BusyIndicator
 
         public override void OnApplyTemplate()
         {
+            IsBusy = IsBusyAtStartup;
             ChangeVisualState(IsBusyAtStartup);
         }
 

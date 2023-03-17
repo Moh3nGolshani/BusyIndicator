@@ -14,6 +14,13 @@ namespace Demo
             InitializeComponent();
             IndicatorComboBox.SelectedIndex = 0;
 
+            Stop();
+        }
+
+        private async void Stop()
+        {
+            await Task.Delay(System.TimeSpan.FromSeconds(3));
+            BusyIndicator.IsBusy = false;
         }
 
         private void Window_MouseLeftButtonDown(object sender, MouseButtonEventArgs e)

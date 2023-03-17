@@ -3,7 +3,7 @@
     <OutputType>Library</OutputType>
     <UseWPF>true</UseWPF>
     <TargetFrameworks>net46;net6.0-windows</TargetFrameworks>
-	  <Version>2.1.0.0</Version>
+	  <Version>2.1.1.0</Version>
 	  <Authors>Mohsen Golshani</Authors>
 	  <Company>Mohsen Golshani</Company>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
@@ -11,13 +11,13 @@
     <!--<PackageIcon>Icon.ico</PackageIcon>-->
     <RepositoryUrl>https://github.com/moh3ngolshani/BusyIndicator</RepositoryUrl>
     <PackageTags>BusyIndicator Loader Spinner LoadingIndicator</PackageTags>
-    <PackageReleaseNotes>Indicators size can be changed now by 2 new dynamic resources: IndicatorScaleX and IndicatorScaleY; New dependency property BusyContentMargin, Fixed Escalade indicator beginning animation bug; Renamed XmlnsPrefix according to github new username</PackageReleaseNotes>
+    <PackageReleaseNotes>Added "IsBusyAtStartup" property to allow the user to set the default indicator's state on startup.</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/moh3ngolshani/BusyIndicator</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <AssemblyVersion>2.1.0.0</AssemblyVersion>
-    <FileVersion>2.1.0.0</FileVersion>
+    <AssemblyVersion>2.1.1.0</AssemblyVersion>
+    <FileVersion>2.1.1.0</FileVersion>
     <PackageIcon>Icon.png</PackageIcon>
     <PackageReadmeFile></PackageReadmeFile>
     <Description>Loading indicator for WPF applications.</Description>
