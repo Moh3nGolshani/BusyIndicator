@@ -116,7 +116,7 @@ namespace BusyIndicator
 
         public override void OnApplyTemplate()
         {
-            IsBusy = IsBusyAtStartup;
+            if (IsBusyAtStartup) IsBusy = true;
             ChangeVisualState(IsBusyAtStartup);
         }
 

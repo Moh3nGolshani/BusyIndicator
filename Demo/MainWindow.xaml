@@ -11,8 +11,16 @@
     Height="500"
     MouseLeftButtonDown="Window_MouseLeftButtonDown"
     mc:Ignorable="d"
+    x:Name="DemoWindow"
     >
     <Window.Resources>
+        <ObjectDataProvider x:Key="IndicatorTypes"
+            MethodName="GetValues" ObjectType="{x:Type sys:Enum}">
+            <ObjectDataProvider.MethodParameters>
+                <x:Type TypeName="busyIndicator:IndicatorType"/>
+            </ObjectDataProvider.MethodParameters>
+        </ObjectDataProvider>
+
         <!--<SolidColorBrush x:Key="IndicatorForeground" Color="#FF0991FA" />-->
         <!--<SolidColorBrush x:Key="IndicatorBackground" Color="#FF36E00E" />-->
 
@@ -67,15 +75,15 @@
     </Window.Resources>
 
     <busyIndicator:BusyMask
+        DataContext="{Binding ElementName=DemoWindow}"
         x:Name="BusyIndicator"
         BusyContent="Please wait..."
         BusyContentMargin="10"
         FocusAfterBusy="{Binding ElementName=MyTextBox}"
-        IndicatorType="Dashes"
-        IsBusy="False"
+        IndicatorType="{Binding ElementName=IndicatorComboBox, Path=SelectedItem, Mode=TwoWay}"
+        IsBusy="{Binding IsBusy, Mode=TwoWay}"
         Background="#D8FFFFFF"
         IsBusyAtStartup="False">
-        <!-- Set IsBusyAtStartup to "True" if you want the indicator to be in the "busy" state at startup -->
 
         <StackPanel>
             <ComboBox
@@ -84,66 +92,8 @@
                 Margin="5"
                 HorizontalAlignment="Center"
                 VerticalAlignment="Center"
-                SelectionChanged="ComboBox_SelectionChanged"
-                Text="Dash Loader"
+                ItemsSource="{Binding Source={StaticResource IndicatorTypes}}"
                 >
-                <ComboBoxItem>
-                    Dashes
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    FourDots
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    Bar
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    Ring
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    Ellipse
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    Cupertino
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    Cogs
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    DotCircle
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    Piston
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    Swirl
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    Blocks
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    Wave
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    Pulse
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    DoubleBounce
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    ThreeDots
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    Grid
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    BouncingDot
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    Escalade
-                </ComboBoxItem>
-                <ComboBoxItem>
-                    Twist
-                </ComboBoxItem>
             </ComboBox>
             <Button
                 Width="90"
@@ -163,7 +113,7 @@
                     Margin="0 5"
                     Focusable="True"
                     PreviewTextInput="NumberValidationTextBox"
-                    Text="10"
+                    Text="5"
                     />
             </StackPanel>
         </StackPanel>
