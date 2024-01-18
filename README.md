@@ -57,8 +57,8 @@ Indicator sizes can be changed now:
 
 <pre>
 &lt;Window.Resources>
-    &lt;sys:Double x:Key="IndicatorScaleX" />2&lt;/sys:Double>
-    &lt;sys:Double x:Key="IndicatorScaleY" />2&lt;/sys:Double>
+    &lt;sys:Double x:Key="IndicatorScaleX" >2&lt;/sys:Double>
+    &lt;sys:Double x:Key="IndicatorScaleY" >2&lt;/sys:Double>
 &lt;/Window.Resources>
 </pre>
 
