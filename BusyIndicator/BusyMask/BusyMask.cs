@@ -1,4 +1,5 @@
-﻿using System.ComponentModel;
+﻿using System;
+using System.ComponentModel;
 using System.Windows;
 using System.Windows.Controls;
 
@@ -24,6 +25,7 @@ namespace BusyIndicator
 
         [Description("Gets or sets whether the indicator is busy by default on startup.")]
         private bool _IsBusyATStartup;
+        [Obsolete("Use the initial value of IsBusy to control the initial state.")]
         public bool IsBusyAtStartup
         {
             get { return _IsBusyATStartup; }
@@ -116,8 +118,7 @@ namespace BusyIndicator
 
         public override void OnApplyTemplate()
         {
-            if (IsBusyAtStartup) IsBusy = true;
-            ChangeVisualState(IsBusyAtStartup);
+            ChangeVisualState(IsBusyAtStartup || IsBusy);
         }
 
         protected virtual void ChangeVisualState(bool isBusyContentVisible = false)
