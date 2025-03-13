@@ -1,8 +1,9 @@
-﻿using System.Threading.Tasks;
-using System.Windows;
-using System.Text.RegularExpressions;
-using System.Windows.Input;
+﻿using System;
 using System.ComponentModel;
+using System.Text.RegularExpressions;
+using System.Threading.Tasks;
+using System.Windows;
+using System.Windows.Input;
 
 namespace Demo
 {
@@ -17,6 +18,9 @@ namespace Demo
             
             if(BusyIndicator.IsBusyAtStartup)
                 Stop();
+
+            // Emulate that IsBusy is true from the very beginning:
+            Button_Click(null, null);
         }
 
         public bool IsBusy
@@ -36,7 +40,7 @@ namespace Demo
 
         private async void Stop()
         {
-            await Task.Delay(System.TimeSpan.FromSeconds(3));
+            await Task.Delay(TimeSpan.FromSeconds(3));
             IsBusy = false;
         }
 
@@ -59,7 +63,7 @@ namespace Demo
             }
 
             IsBusy = true;
-            await Task.Delay(System.TimeSpan.FromSeconds(duration));
+            await Task.Delay(TimeSpan.FromSeconds(duration));
             IsBusy = false;
         }
     }
