@@ -2,7 +2,7 @@
   <PropertyGroup>
     <OutputType>Library</OutputType>
     <UseWPF>true</UseWPF>
-    <TargetFrameworks>net46;net6.0-windows</TargetFrameworks>
+    <TargetFrameworks>net48;net6.0-windows</TargetFrameworks>
 	  <Version>2.1.1.0</Version>
 	  <Authors>Mohsen Golshani</Authors>
 	  <Company>Mohsen Golshani</Company>
@@ -11,13 +11,13 @@
     <!--<PackageIcon>Icon.ico</PackageIcon>-->
     <RepositoryUrl>https://github.com/moh3ngolshani/BusyIndicator</RepositoryUrl>
     <PackageTags>BusyIndicator Loader Spinner LoadingIndicator</PackageTags>
-    <PackageReleaseNotes>Added "IsBusyAtStartup" property to allow the user to set the default indicator's state on startup.</PackageReleaseNotes>
+    <PackageReleaseNotes>Respect the initial value of IsBusy, deprecate IsBusyAtStartup. Minimum required .NET version updated to 4.8.</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/moh3ngolshani/BusyIndicator</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <AssemblyVersion>2.1.1.0</AssemblyVersion>
-    <FileVersion>2.1.1.0</FileVersion>
+    <AssemblyVersion>2.1.2.0</AssemblyVersion>
+    <FileVersion>2.1.2.0</FileVersion>
     <PackageIcon>Icon.png</PackageIcon>
     <PackageReadmeFile></PackageReadmeFile>
     <Description>Loading indicator for WPF applications.</Description>

@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <OutputType>WinExe</OutputType>
-    <TargetFrameworks>net46;net6.0-windows</TargetFrameworks>
+    <TargetFrameworks>net48;net6.0-windows</TargetFrameworks>
     <UseWPF>true</UseWPF>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
     <ApplicationIcon>Icon.ico</ApplicationIcon>

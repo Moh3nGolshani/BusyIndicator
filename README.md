@@ -10,7 +10,7 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 </p>
 
 ## Prerequisites:
-<ul><li>.Net Framework 4.6+</li></ul>
+<ul><li>.Net Framework 4.8+</li></ul>
 <ul><li>.Net Core6+</li></ul>
 
 ## How to use:
@@ -19,10 +19,10 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 <pre>Install-Package BusyIndicators</pre>
 
 > **Note**
-> NuGet address is changed!  
+> NuGet address has changed.
 <br />
 
-2. Add resource call to App.xaml:
+2. Add the following resource to App.xaml:
 <pre><code>&lt;Application.Resources&gt;
      &lt;ResourceDictionary Source="pack://application:,,,/BusyIndicator;component/Theme/Default.xaml"/&gt;
 &lt;/Application.Resources&gt;
@@ -31,7 +31,7 @@ BusyIndicator for Windows Presentation Foundation (WPF)
 3. Add a reference to the library:
 <pre>xmlns:busyIndicator="https://github.com/moh3ngolshani/BusyIndicator"</pre>
 
-4. Create a BusyMask on top of main view:
+4. Create a BusyMask on top of your main view:
 <pre><code>&lt;busyIndicator:BusyMask x:Name="BusyIndicator" 
                         IsBusy="False" 
                         IndicatorType="Dashes" 
@@ -45,15 +45,15 @@ BusyIndicator for Windows Presentation Foundation (WPF)
          
 &lt;/busyIndicator:BusyMask&gt;</code></pre>
 
-5. Bind or Set `IsBusy` property.
+5. Bind or Set the `IsBusy` property.
 
 ### How to change indicator sizes:
-Indicator sizes can be changed now:
+You can now customize the indicator sizes:
 
 * Add a reference to the mscorlib assembly:
 <pre>xmlns:sys="clr-namespace:System;assembly=mscorlib"</pre>
 
-* Override the `IndicatorScaleX` & `IndicatorScaleY`:
+* Override the `IndicatorScaleX` & `IndicatorScaleY` properties:
 
 <pre>
 &lt;Window.Resources>
@@ -63,7 +63,7 @@ Indicator sizes can be changed now:
 </pre>
 
 ### How to change indicator colors:
-Override the `IndicatorForeground` & `IndicatorBackground`:
+Override the `IndicatorForeground` & `IndicatorBackground` properties:
 
 <pre>
 &lt;Window.Resources>
@@ -82,10 +82,10 @@ You can also use gradients:
 </pre> 
 
 #### Hint: 
->Not all indicators have background, so changing the `IndicatorBackground` might not affect all indicators.
+>Not all indicators have background, so changing the `IndicatorBackground` may not affect all indicators.
 
 ##
-If you like this, give it a * please.
+If you like this, feel free to show your support!
 
 <a href="https://www.buymeacoffee.com/coffeemakes" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-green.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 

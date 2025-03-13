@@ -82,8 +82,7 @@
         FocusAfterBusy="{Binding ElementName=MyTextBox}"
         IndicatorType="{Binding ElementName=IndicatorComboBox, Path=SelectedItem, Mode=TwoWay}"
         IsBusy="{Binding IsBusy, Mode=TwoWay}"
-        Background="#D8FFFFFF"
-        IsBusyAtStartup="False">
+        Background="#D8FFFFFF">
 
         <StackPanel>
             <ComboBox

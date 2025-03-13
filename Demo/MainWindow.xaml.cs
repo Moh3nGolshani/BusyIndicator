@@ -15,12 +15,12 @@ namespace Demo
         {
             InitializeComponent();
             IndicatorComboBox.SelectedIndex = 0;
-            
-            if(BusyIndicator.IsBusyAtStartup)
+
+            if (BusyIndicator.IsBusy)
                 Stop();
 
             // Emulate that IsBusy is true from the very beginning:
-            Button_Click(null, null);
+            //Button_Click(null, null);
         }
 
         public bool IsBusy
