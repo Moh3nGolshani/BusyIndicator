@@ -3,7 +3,7 @@
     <OutputType>Library</OutputType>
     <UseWPF>true</UseWPF>
     <TargetFrameworks>net48;net6.0-windows</TargetFrameworks>
-	  <Version>2.1.1.0</Version>
+	  <Version>2.1.3.0</Version>
 	  <Authors>Mohsen Golshani</Authors>
 	  <Company>Mohsen Golshani</Company>
     <GenerateAssemblyInfo>False</GenerateAssemblyInfo>
@@ -11,13 +11,13 @@
     <!--<PackageIcon>Icon.ico</PackageIcon>-->
     <RepositoryUrl>https://github.com/moh3ngolshani/BusyIndicator</RepositoryUrl>
     <PackageTags>BusyIndicator Loader Spinner LoadingIndicator</PackageTags>
-    <PackageReleaseNotes>Respect the initial value of IsBusy, deprecate IsBusyAtStartup. Minimum required .NET version updated to 4.8.</PackageReleaseNotes>
+    <PackageReleaseNotes>Respect the initial value of IsBusy, deprecate IsBusyAtStartup. Minimum required .NET version updated to 4.8. Updated NuGet package version from 2.1.2 to 2.1.3</PackageReleaseNotes>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageProjectUrl>https://github.com/moh3ngolshani/BusyIndicator</PackageProjectUrl>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
-    <AssemblyVersion>2.1.2.0</AssemblyVersion>
-    <FileVersion>2.1.2.0</FileVersion>
+    <AssemblyVersion>2.1.3.0</AssemblyVersion>
+    <FileVersion>2.1.3.0</FileVersion>
     <PackageIcon>Icon.png</PackageIcon>
     <PackageReadmeFile></PackageReadmeFile>
     <Description>Loading indicator for WPF applications.</Description>
